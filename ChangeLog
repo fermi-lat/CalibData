@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 13:28:46 PDT 2004
+CalibData/CalibData/Acd
+
+Added Files:
+	AcdCalibBase.h AcdCalibGain.h AcdCalibPed.h AcdFinder.h 
+	AcdGain.h AcdPed.h 
+Log Message:
+Support for Acd gain and ped calibrations (plus underpinnings)
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 13:28:12 PDT 2004
 CalibData/CalibData
 
