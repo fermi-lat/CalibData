@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/TkrTot.cxx,v 1.1 2004/12/10 18:53:55 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/TkrTot.cxx,v 1.2 2004/12/17 18:58:35 jrb Exp $
 
 /**
   @file TkrTot.cxx
@@ -71,6 +71,21 @@ namespace CalibData {
 
     m_strips[iStrip].copy(strip);
     return true;
+  }
+
+  void TkrTotUni::clearStrips() {
+    for (unsigned ix=0; ix < m_nStrips; ix++) {
+      (m_strips + ix)->clear();
+    }
+  }
+
+  void TkrTotUni::resize(unsigned n) {
+    if (n == m_nStrips) clearStrips();
+    else {
+      delete [] m_strips;
+      m_strips = new TkrTotStrip[n];
+      m_nStrips = n;
+    }
   }
   //  TkrTotCol
 

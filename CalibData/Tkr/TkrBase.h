@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrBase.h,v 1.1 2004/08/09 17:38:18 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrBase.h,v 1.2 2004/12/17 18:58:12 jrb Exp $
 /// @file TkrBase.h
 /// @author J. Bogart
 
@@ -70,7 +70,7 @@ namespace CalibData {
     unsigned getNUnilayer() const;
 
     /// Get reference to vector of uni for specified tower.
-    const std::vector<UniBase*>& getUnis(int iTow) const 
+    std::vector<UniBase*>& getUnis(int iTow) 
       // or maybe RootTkrBaseCnv should provide this service
     {return m_towers[iTow]->m_unis; }
 
