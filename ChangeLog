@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 13:30:16 PDT 2004
+CalibData/CalibData/Cal
+
+Modified Files:
+	Gain.h IntNonlin.h LightAsym.h LightAtt.h MuSlope.h Ped.h 
+Removed Files:
+	RangeBase.h 
+Log Message:
+Slight mods for relocated includes
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 13:28:46 PDT 2004
 CalibData/CalibData/Acd
 
