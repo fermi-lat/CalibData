@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan 22 13:17:08 PST 2003
+CalibData/src
+
+Modified Files:
+	CalibBase.cxx CalibTest1.cxx 
+Log Message:
+Much simpler protocol for update (making proper use of virtual functions
+the first time)
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jan 22 13:16:56 PST 2003
 CalibData/CalibData
 
