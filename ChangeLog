@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 10 10:53:55 PST 2004
+CalibData/src/Tkr
+
+Modified Files:
+	TkrBase.cxx 
+Added Files:
+	TkrTot.cxx 
+Log Message:
+TkrTot.cxx: Calib. TDS classes needed for ToT calibration
+TkrBase.cxx: Changes to handle memory allocation scheme used for ToT
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 10 10:51:40 PST 2004
 CalibData/CalibData/Tkr
 
