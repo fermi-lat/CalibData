@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu May 20 16:53:22 PDT 2004
+CalibData
+
+Modified Files:
+	.cvsignore 
+Log Message:
+Ignore rh9* binary directories
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Feb 17 10:21:14 PST 2004
 CalibData/doc
 
