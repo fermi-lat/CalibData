@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Jul 12 11:16:01 PDT 2004
+CalibData/CalibData
+
+Modified Files:
+	CalibBase.h CalibTime.h 
+Log Message:
+CalibBase.h: add nicer access methods for start and stop of validity interval
+CalibTime.h: improve doc
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 13:55:04 PDT 2004
 CalibData/doc
 
