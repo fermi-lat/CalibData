@@ -1,4 +1,4 @@
-// $Header:  $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibPed.h,v 1.1 2003/02/25 06:19:50 jrb Exp $
 #ifndef CalibData_CalCalibPed_h
 #define CalibData_CalCalibPed_h
 
@@ -25,9 +25,13 @@ namespace CalibData {
 
     ~CalCalibPed() {}
 
-    /// Override putRange implementation in order to add consistency
+    /// Override putRange implementations in order to add consistency
     /// check
     bool putRange(idents::CalXtalId id, unsigned range, 
+                  unsigned face, RangeBase* data);
+
+    bool putRange(unsigned towerRow, unsigned towerCol, 
+                  unsigned layer, unsigned xtal, unsigned range,
                   unsigned face, RangeBase* data);
 
     virtual const CLID& clID() const { return classID(); }

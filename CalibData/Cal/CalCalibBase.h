@@ -1,4 +1,4 @@
-// $Header:   $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibBase.h,v 1.1 2003/02/25 06:19:50 jrb Exp $
 
 /// @file CalCalibBase
 /// @author J. Bogart
@@ -21,7 +21,7 @@ namespace CalibData {
        individual per-range datasets and a pointer to a helper class,
        CalFinder, which knows how to compute indices.
   */
-  class CalCalibBase : CalibBase {
+  class CalCalibBase : public CalibBase {
 
   public:
     CalCalibBase(unsigned nTowerRow=4, unsigned nTowerCol=4, unsigned nLayer=8, 
