@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModel.h,v 1.3 2002/11/21 19:11:00 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModel.h,v 1.4 2002/11/26 18:20:29 jrb Exp $
 
 #ifndef CalibData_CalibModel_h
 #define CalibData_CalibModel_h
@@ -59,7 +59,7 @@
 
       //   ... simple type whose "data" just come from MySQL metadata row
       //       for testing
-      _EXTERN_ std::string   TestMetadataInfo;
+      _EXTERN_ std::string   Test_Gen;
 
       typedef  std::vector<std::pair <std::string, CLID> > CalibPairCol;
       typedef  CalibPairCol::const_iterator PairIt;

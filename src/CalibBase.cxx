@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.2 2002/11/21 19:13:29 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.3 2002/11/27 21:47:05 jrb Exp $
 
 /** @class CalibBase
  *    Implementation of base class for all calibration data objects
@@ -17,6 +17,13 @@ namespace CalibData {
   {
     m_validSince = new CalibTime::CalibTime(since);
     m_validTill = new CalibTime::CalibTime(till);
+  }
+
+  CalibBase::CalibBase(const CalibBase& other) : 
+    DataObject( (DataObject&) other) {
+    m_validSince = other.m_validSince;
+    m_validTill = other.m_validTill;
+    m_serNo     = other.m_serNo;
   }
 
   // Should be overridden by derived classes

@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.2 2002/11/21 19:11:00 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.3 2002/11/27 21:46:50 jrb Exp $
 #ifndef CalibData_CalibBase_h
 #define CalibData_CalibBase_h
 
@@ -28,7 +28,7 @@ namespace CalibData {
     CalibBase();
     CalibBase(const ITime& since, const ITime& till, int serNo = -1);
     
-    CalibBase(CalibBase& obj);
+    CalibBase(const CalibBase& obj);
     
     /// Following is intended for deep copy
     virtual void update(CalibBase& obj);
@@ -87,6 +87,8 @@ namespace CalibData {
 
     /// Serial number of corresponding metadata row. 
     int m_serNo;
+
+    // Other possible things to keep here:  flavor, calibration type
     
   };
 
