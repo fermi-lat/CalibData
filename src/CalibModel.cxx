@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.5 2002/12/05 22:35:31 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.6 2002/12/21 00:56:42 jrb Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -90,15 +90,18 @@ public:
     CalibData::CAL_DiscrHI = cal + "_DiscrHI";
 
     CalibData::Test_Gen = test + "_Gen";
+    CalibData::Test_1   = test + "_1";
 
 
     // Use same class for hot strips, dead strips or (merged) bad strips,
     // but different path in TDDS
 
     CalibData::pairs.push_back(std::make_pair(CalibData::TKR_HotChan,
-                                                CLID_Calib_TKR_HotChan));
+                                              CLID_Calib_TKR_HotChan));
     CalibData::pairs.push_back(std::make_pair(CalibData::TKR_DeadChan,
-                                                CLID_Calib_TKR_DeadChan));
+                                              CLID_Calib_TKR_DeadChan));
+    CalibData::pairs.push_back(std::make_pair(CalibData::Test_1,
+                                              CLID_Calib_CalibTest1));
 
 
   }
