@@ -1,0 +1,36 @@
+------------------------------------------------------------
+User: jrb  Thu Nov 14 12:38:20 PST 2002
+CalibData
+
+Log Message:
+First import
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0r0
+		
+N CalibData/.cvsignore
+N CalibData/CalibData/BadStrips.h
+N CalibData/CalibData/CalibModel.h
+N CalibData/CalibData/HeaderInfo.h
+N CalibData/CalibData/HotStrips.h
+N CalibData/CalibData/MetadataInfo.h
+N CalibData/cmt/.cvsignore
+I CalibData/cmt/cleanup.csh
+I CalibData/cmt/cleanup.sh
+I CalibData/cmt/Makefile
+N CalibData/cmt/requirements
+I CalibData/cmt/setup.csh
+I CalibData/cmt/setup.sh
+N CalibData/doc/release.notes
+N CalibData/src/CalibModel.cxx
+N CalibData/src/mainpage.h
+N CalibData/src/MetadataInfo.cxx
+N CalibData/src/Dll/CalibData_dll.cxx
+N CalibData/src/Dll/CalibData_load.cxx
+I CalibData/src/Dll/CalibData_load.cxx~
+
+No conflicts created by this import
+
+    *
