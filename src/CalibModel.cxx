@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.13 2004/01/07 23:35:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.14 2004/05/20 23:54:34 jrb Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -113,6 +113,10 @@ public:
                                               CLID_Calib_CAL_LightAsym));
     CalibData::pairs.push_back(std::make_pair(CalibData::CAL_IntNonlin,
                                               CLID_Calib_CAL_IntNonlin));
+    CalibData::pairs.push_back(std::make_pair(CalibData::ACD_Ped,
+                                              CLID_Calib_ACD_Ped));
+    CalibData::pairs.push_back(std::make_pair(CalibData::ACD_ElecGain,
+                                              CLID_Calib_ACD_ElecGain));
     CalibData::pairs.push_back(std::make_pair(CalibData::Test_1,
                                               CLID_Calib_CalibTest1));
 
