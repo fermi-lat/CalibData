@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Feb 27 13:49:15 PST 2003
+CalibData/CalibData/Cal
+
+Modified Files:
+	CalCalibBase.h CalCalibGain.h CalCalibPed.h 
+Log Message:
+Better handling of memory allocation for collection of range data
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Feb 26 17:02:30 PST 2003
 CalibData/src/Cal
 
