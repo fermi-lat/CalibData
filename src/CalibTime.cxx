@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTime.cxx,v 1.2 2003/01/03 23:00:16 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTime.cxx,v 1.3 2003/01/09 23:56:44 jrb Exp $
 #include "CalibData/CalibTime.h"
 
 namespace {
@@ -48,7 +48,7 @@ namespace CalibData {
   }
 
   ITime::DimensionedTime CalibTime::seconds() const {
-    ITime::DimensionedTime dim = m_nano * 1000000000.0;
+    ITime::DimensionedTime dim = m_nano / 1000000000.0;
     dim += m_time;
     return dim;
   }
