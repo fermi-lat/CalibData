@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Mar  6 14:30:43 PST 2003
+CalibData/src/Tkr
+
+Modified Files:
+	BadStrips.cxx 
+Log Message:
+Fix for compilation with VC7
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Mar  3 09:15:41 PST 2003
 CalibData/doc
 
