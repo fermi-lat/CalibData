@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: jrb  Thu Nov 21 11:13:29 PST 2002
+CalibData/src
+
+Modified Files:
+	CalibBase.cxx CalibModel.cxx 
+Added Files:
+	CalibTime.cxx 
+Removed Files:
+	MetadataInfo.cxx 
+Log Message:
+1. Don't make metadata for test converter after all, so remove MetadataInfo
+2. CalibTime satisfies ITime interface
+3. Other mods part of ongoing work.  Compiles now.
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Nov 21 11:12:47 PST 2002
 CalibData/cmt
 
