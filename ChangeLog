@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Feb 24 22:43:43 PST 2003
+CalibData/src/Cal
+
+Modified Files:
+	CalCalibPed.cxx 
+Log Message:
+CalCalibPed  -- re-implement both forms of putRange
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Feb 24 22:43:17 PST 2003
 CalibData/CalibData/Cal
 
