@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu May 20 16:54:34 PDT 2004
+CalibData/src
+
+Modified Files:
+	CalibModel.cxx 
+Log Message:
+for CAL Light asymmetry calibration and integral nonlinearity (add them
+to list of calibrations to keep in calib. TDS)
+
+    *
+------------------------------------------------------------
 User: jrb  Thu May 20 16:53:48 PDT 2004
 CalibData/CalibData/Cal
 
