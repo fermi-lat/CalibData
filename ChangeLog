@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Feb 26 17:02:30 PST 2003
+CalibData/src/Cal
+
+Modified Files:
+	CalCalibGain.cxx CalCalibPed.cxx CalFinder.cxx 
+Log Message:
+various bug fixes; not necessarily right yet
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Feb 26 17:02:24 PST 2003
 CalibData/CalibData/Cal
 
