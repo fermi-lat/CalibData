@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: hansl  Mon Aug 11 17:50:20 PDT 2003
+CalibData/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+apply pattern shared_library
+    *
+------------------------------------------------------------
 User: jrb  Thu Apr 17 14:29:51 PDT 2003
 CalibData/doc
 
