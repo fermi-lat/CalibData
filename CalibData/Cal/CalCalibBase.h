@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibBase.h,v 1.1 2003/02/25 06:19:50 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibBase.h,v 1.2 2003/02/25 06:43:17 jrb Exp $
 
 /// @file CalCalibBase
 /// @author J. Bogart
@@ -41,7 +41,7 @@ namespace CalibData {
     static const CLID& classID();   // shouldn't get called
 
     // Maybe won't need to be virtual after all
-    virtual void update(CalCalibBase& other);
+    virtual StatusCode update(CalibBase& other, MsgStream* log);
     
   private:
     CalFinder* m_finder;

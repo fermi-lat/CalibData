@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/BadStrips.h,v 1.3 2003/01/29 23:59:20 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/BadStrips.h,v 1.4 2003/01/30 22:33:16 jrb Exp $
 #ifndef CalibData_BadStrips_h
 #define CalibData_BadStrips_h
 
@@ -105,7 +105,7 @@ namespace CalibData {
     static inline const CLID& classID() { return CLID_Calib_TKR_BadChan; }
 
     // Re-implemented from CalibBase
-    virtual void    update(CalibBase& other);
+    virtual StatusCode update(CalibBase& other, MsgStream* log);
 
   private:
     class Uniplane {
