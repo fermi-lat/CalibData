@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 17 10:58:35 PST 2004
+CalibData/src/Tkr
+
+Modified Files:
+	TkrBase.cxx TkrSplitsCalib.cxx TkrTot.cxx 
+Added Files:
+	OldTkrBase.cxx OldTkrFinder.cxx 
+Removed Files:
+	TkrFinder.cxx 
+Log Message:
+2nd try for handling ToT data and friends. Versions of utility Finder and 
+Base classes used by splits calibration have been renamed to OldFinder, 
+OldBase.  Will convert splits to use new scheme one of these days..
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 17 10:58:12 PST 2004
 CalibData/CalibData/Tkr
 
