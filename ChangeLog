@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Dec 27 16:19:07 PST 2004
+CalibData/src
+
+Modified Files:
+	CalibModel.cxx 
+Log Message:
+Activate TKR_TOTSignal calibration type in calibration TDS
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Dec 26 16:12:49 PST 2004
 CalibData/src/Tkr
 
