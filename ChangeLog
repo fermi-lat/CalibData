@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov 27 13:47:05 PST 2002
+CalibData/src
+
+Modified Files:
+	CalibBase.cxx 
+Log Message:
+Add serial number (of metadata row) field to CalibBase. 
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov 27 13:46:50 PST 2002
 CalibData/CalibData
 
