@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sun Dec 26 16:12:49 PST 2004
+CalibData/src/Tkr
+
+Modified Files:
+	TkrTot.cxx 
+Log Message:
+Fix up ToT-related classes slightly so converter gets necessary access
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Dec 26 16:12:22 PST 2004
 CalibData/CalibData/Tkr
 
