@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Aug 17 16:58:54 PDT 2004
+CalibData/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Make include files visible to VS users
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug  9 11:03:56 PDT 2004
 CalibData/doc
 
