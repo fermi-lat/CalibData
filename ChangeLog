@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Oct  7 12:46:11 PDT 2004
+CalibData/CalibData/Cal
+
+Modified Files:
+	CalFinder.h 
+Log Message:
+Define checkIx methods
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct  6 17:09:41 PDT 2004
 CalibData/doc
 
