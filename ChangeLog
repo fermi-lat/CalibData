@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar 21 17:38:23 PST 2003
+CalibData/CalibData/Cal
+
+Modified Files:
+	Gain.h MuSlope.h 
+Log Message:
+Modifications to support new sigma field for gain and error for mu slope
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar 21 12:17:01 PST 2003
 CalibData/doc
 
