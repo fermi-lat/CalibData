@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 10 10:50:50 PST 2004
+CalibData/CalibData
+
+Modified Files:
+	RangeBase.h 
+Log Message:
+Add new method makeNew with default (empty) implementation, needed for Tkr ToT
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Oct 15 10:59:56 PDT 2004
 CalibData/doc
 
