@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 28 11:56:33 PST 2003
+CalibData/CalibData/Tkr
+
+Added Files:
+	BadStrips.h 
+Log Message:
+Definition for bad strips calibration (TCDS) class
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 28 11:55:58 PST 2003
 CalibData/CalibData
 
