@@ -1,10 +1,10 @@
-// $Header:  $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/DacCol.cxx,v 1.1 2004/05/26 22:36:05 jrb Exp $
 
 #include "CalibData/DacCol.h"
 
 namespace CalibData {
 
-  DacCol::DacCol(std::vector<unsigned>* vals=0) {
+  DacCol::DacCol(std::vector<unsigned>* vals) {
     if (vals) {
       m_dacs.clear();
       for (unsigned int iDac = 0; iDac < vals->size(); iDac++) {
@@ -12,7 +12,7 @@ namespace CalibData {
       }
     }
   }
-  DacCol::DacCol(std::vector<int>* vals=0) {
+  DacCol::DacCol(std::vector<int>* vals) {
     if (vals) {
       m_dacs.clear();
       for (unsigned int iDac = 0; iDac < vals->size(); iDac++) {
