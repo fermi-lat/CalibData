@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Sep 21 14:54:51 PDT 2004
+CalibData/src/Cal
+
+Modified Files:
+	CalAsym.cxx CalMevPerDac.cxx 
+Log Message:
+Minor naming changes. Consistently use "N" or "Neg" for negative end 
+rather than "M".
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Sep 21 14:54:39 PDT 2004
 CalibData/CalibData/Cal
 
