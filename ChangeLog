@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  9 10:37:14 PDT 2004
+CalibData/CalibData
+
+Modified Files:
+	CalibModel.h 
+Log Message:
+Add TKR_Splits to list of active calibration types
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Aug  5 13:07:04 PDT 2004
 CalibData/src
 
