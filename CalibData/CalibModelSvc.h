@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModelSvc.h,v 1.1 2002/11/26 18:20:29 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModelSvc.h,v 1.2 2002/11/27 21:46:50 jrb Exp $
 #ifndef CalibData_CalibModelSvc_h
 #define CalibData_CalibModelSvc_h
 
@@ -22,6 +22,12 @@ namespace CalibData {
     const std::vector<CalibPair>& getPairs() const;
 
     CLID getCLIDNodeCLID() const;
+
+    /// Return flavor string, extracted from full path name in TCDS
+    static std::string getFlavor(const std::string& fullpath);
+
+    /// Return calibration type name, extracted from full path name in TCDS
+    static std::string getCalibType(const std::string& fullpath);
   };
 }
 
