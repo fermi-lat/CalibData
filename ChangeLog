@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Feb 13 11:17:56 PST 2003
+CalibData/src/Cal
+
+Added Files:
+	CalFinder.cxx 
+Log Message:
+Guess at piece of implementation for CAL calibration classes; just
+provisional for now
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Feb 13 11:17:13 PST 2003
 CalibData/cmt
 
