@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.1.1.1 2002/11/14 20:38:20 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.2 2002/11/18 23:12:22 jrb Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -125,6 +125,7 @@ static CalibModel mod;
 //     6500 - 6599        test 
 
 const CLID& CLID_Calib_CalibCLIDNode     = 6000;
+const CLID& CLID_Calib_CalibBase         = 6001;
 const CLID& CLID_Calib_TkrBadStrips      = 6100;
 
 const CLID& CLID_Calib_MetadataInfo       = 6500;
