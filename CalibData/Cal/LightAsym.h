@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/Gain.h,v 1.3 2003/03/22 01:38:22 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/LightAsym.h,v 1.1 2004/05/20 23:53:48 jrb Exp $
 #ifndef CalibData_LightAsym_h
 #define CalibData_LightAsym_h
 
@@ -7,6 +7,11 @@
 
 namespace CalibData {
 
+  /**  @class LightAsym
+    Class to keep track of light asymmetry calibration data
+    for a single crystal, for a single diode size: just a
+    set of values and a single error number. 
+  */
   class LightAsym : public RangeBase {
   public:
     LightAsym(const std::vector<float>* values=0, float err = 0.0);
