@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Oct  7 12:46:40 PDT 2004
+CalibData/src/Cal
+
+Modified Files:
+	CalCalibBase.cxx CalFinder.cxx 
+Log Message:
+Define (CalFinder.cxx) and use (CalCalibBase) checkIx methods
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Oct  7 12:46:11 PDT 2004
 CalibData/CalibData/Cal
 
