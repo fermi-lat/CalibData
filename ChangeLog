@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Feb 26 17:02:24 PST 2003
+CalibData/CalibData/Cal
+
+Modified Files:
+	CalCalibBase.h CalCalibGain.h CalCalibPed.h CalFinder.h Gain.h 
+	Ped.h 
+Log Message:
+various bug fixes; not necessarily right yet
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Feb 25 17:27:53 PST 2003
 CalibData/src/Tkr
 
