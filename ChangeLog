@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Feb 28 15:37:36 PST 2003
+CalibData/src/Cal
+
+Modified Files:
+	CalCalibBase.cxx CalFinder.cxx 
+Log Message:
+1. Add method to CalFinder to check for (essential) equality of finders
+2. Invoke new method in CalCalibBase::update to check that old and 
+   new data are dimensioned the same way
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Feb 28 15:36:23 PST 2003
 CalibData/CalibData/Cal
 
