@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 16 12:14:36 PST 2003
+CalibData/src
+
+Modified Files:
+	CalibBase.cxx CalibTest1.cxx 
+Log Message:
+Add some obscure machinery so that derived classes can be properly updated
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 16 12:14:24 PST 2003
 CalibData/CalibData
 
