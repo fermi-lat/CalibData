@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Feb 24 22:43:17 PST 2003
+CalibData/CalibData/Cal
+
+Modified Files:
+	CalCalibBase.h CalCalibPed.h 
+Log Message:
+CalCalibBase -- need public inheritance from CalibBase
+CalCalibPed  -- re-implement both forms of putRange
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Feb 24 22:22:01 PST 2003
 CalibData/src/Cal
 
