@@ -1,6 +1,6 @@
 package CalibData
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/cmt/requirements,v 1.21 2004/05/26 22:46:59 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/cmt/requirements,v 1.22 2004/06/04 16:48:52 jrb Exp $
 
 version v0r4p0
 
@@ -17,6 +17,6 @@ private
 
 apply_pattern package_headers
 
-library CalibData *.cxx Cal/*.cxx Tkr/*.cxx ${CalibData_headers}
+library CalibData *.cxx Cal/*.cxx Tkr/*.cxx Acd/*.cxx ${CalibData_headers}
 
 
