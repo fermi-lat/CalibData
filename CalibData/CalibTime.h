@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTime.h,v 1.2 2002/12/21 00:56:17 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTime.h,v 1.3 2003/01/03 23:00:07 jrb Exp $
 
 #ifndef CalibData_CalibTime_h
 #define CalibData_CalibTime_h
@@ -46,10 +46,10 @@ namespace CalibData {
     bool              operator> ( const ITime& other) const;
   
     // adding   -- doesn't make sense for timestamps
-    CalibTime&            operator+=(const ITime& other);
+    ITime&            operator+=(const ITime& other);
   
     // substraction  -- doesn't make sense for timestamps
-    CalibTime&            operator-=(const ITime& other);
+    ITime&            operator-=(const ITime& other);
       
     std::ostream& printOut(std::ostream&) const;
   };
