@@ -1,4 +1,4 @@
-// $Header: $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/BadStrips.cxx,v 1.1 2003/01/28 19:58:02 jrb Exp $
 /** @class BadStrips
  *    Implementation of bad or hot strips TCDS representation
  */
@@ -65,6 +65,7 @@ namespace CalibData {
                        int serNo) :
     CalibBase(since, till, serNo), m_type(bType), m_towers(0)
   {
+    m_towers = new std::vector<Tower>;
   }
 
 
@@ -112,7 +113,7 @@ namespace CalibData {
     }
     // If got to here, traversed the entire data structure without
     // a murmur from client
-    return ret;
+    return DONE;
   }
   // No copy constructor for now.  If we ever have one, it should
   // be private.
