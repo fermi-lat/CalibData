@@ -1,7 +1,7 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibBase.cxx,v 1.4 2003/02/28 23:37:36 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibBase.cxx,v 1.5 2004/05/26 22:36:45 jrb Exp $
 
 #include "CalibData/Cal/CalFinder.h"
-#include "CalibData/Cal/RangeBase.h" 
+#include "CalibData/RangeBase.h" 
 #include "CalibData/Cal/CalCalibBase.h"
 #include "CalibData/DacCol.h"
 #include "GaudiKernel/MsgStream.h"
