@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Mar 20 16:03:33 PST 2003
+CalibData/src
+
+Modified Files:
+	CalibModel.cxx 
+Log Message:
+Add single range class and colleciton class for calorimeter mu slope 
+calibration type
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Mar 20 16:03:24 PST 2003
 CalibData/CalibData/Cal
 
