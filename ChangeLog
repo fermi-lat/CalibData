@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 20 16:56:18 PST 2002
+CalibData/CalibData
+
+Modified Files:
+	CalibBase.h CalibModel.h CalibTest1.h CalibTime.h 
+Log Message:
+Give up for now on clever ways to define class id's for TCDS classes.
+Just assign them in CalibModel.h and include as needed.
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Dec 19 12:46:55 PST 2002
 CalibData/cmt
 
