@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Oct 15 10:38:56 PDT 2004
+CalibData/src/Cal
+
+Modified Files:
+	CalFinder.cxx 
+Log Message:
+Support for getRange, putRange changes to make use of new CalXtalId which may
+contain range and/or face information
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Oct 15 10:38:28 PDT 2004
 CalibData/CalibData/Cal
 
