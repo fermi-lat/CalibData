@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/BadStrips.cxx,v 1.3 2003/01/30 22:33:27 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/BadStrips.cxx,v 1.4 2003/02/26 01:27:53 jrb Exp $
 /** @class BadStrips
  *    Implementation of bad or hot strips TCDS representation
  */
@@ -178,11 +178,12 @@ namespace CalibData {
   }
 
   BadStrips::Tower* BadStrips::findTower(unsigned row, unsigned col) {
-    std::vector<Tower>::const_iterator iTower = m_towers->begin();
+    std::vector<Tower>::iterator iTower = m_towers->begin();
 
     while (iTower != m_towers->end() ) {
       if ((iTower->m_col == col) && (iTower->m_row == row)) {
-        Tower* pTower = const_cast<Tower*>(iTower);
+        //        Tower* pTower = const_cast<Tower*>(iTower);
+        Tower* pTower = &(*iTower);
         return pTower;
       }
       iTower++;
