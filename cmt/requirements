@@ -1,7 +1,7 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/cmt/requirements,v 1.9 2003/02/27 22:08:20 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/cmt/requirements,v 1.10 2003/03/03 17:13:52 jrb Exp $
 
 package CalibData
-version v0r2p0
+version v0r2p1
 
 use facilities v2r*
 use idents     v2r*
