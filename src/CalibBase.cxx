@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.4 2002/12/05 22:35:31 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.5 2003/01/04 00:17:34 jrb Exp $
 
 /** @class CalibBase
  *    Implementation of base class for all calibration data objects
@@ -79,7 +79,7 @@ namespace CalibData {
   }
 
   void CalibBase::setValidityTill(const ITime& till) {
-    delete m_validSince;
+    delete m_validTill;
     m_validTill = new CalibTime(till);
   }
 
