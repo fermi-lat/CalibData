@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTest1.h,v 1.3 2003/01/15 23:16:20 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTest1.h,v 1.4 2003/01/16 20:14:24 jrb Exp $
 #ifndef CalibData_CalibTest1_h
 #define CalibData_CalibTest1_h
 
@@ -30,13 +30,14 @@ namespace CalibData {
     
     inline static  const CLID& classID() { return CLID_Calib_CalibTest1; };
 
+
     // Re-implemented from CalibBase
-    virtual void    update(CalibTest1& other);
+    virtual void    update(CalibBase& other);
+
     std::string getValueName() const;
     int         getValue() const {return m_value;}
 
   protected:
-    virtual void iUpdate(CalibBase* pOther);
 
   private:
     std::string m_name;

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTest1.cxx,v 1.2 2003/01/15 23:16:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTest1.cxx,v 1.3 2003/01/16 20:14:36 jrb Exp $
 
 /** @class CalibTest1
  *    Implementation of near-simplest-possible calibration TCDS class
@@ -12,32 +12,22 @@ namespace CalibData {
                          int serNo) :
     CalibBase(since, till, serNo), m_name(name), m_value(value)
   {
-    m_me = this;
+    //    m_me = this;
   }
 
 
-  void CalibTest1::update(CalibTest1& other) {
-    CalibBase::update(other);
-    m_name = other.m_name;
-    m_value = other.m_value;
-    m_me = this;
-  }
+  void CalibTest1::update(CalibBase& other) {
+    // The following dynamic_cast has got to work
+    CalibTest1& other1 = dynamic_cast<CalibTest1& >(other);
 
-  void CalibTest1::iUpdate(CalibBase* pOther) {
-    CalibTest1* pSpecific = dynamic_cast<CalibTest1 *> (pOther);
-
-    if (!pSpecific) {
-      // complain
-    }
-    m_name= pSpecific->m_name;
-    m_value = pSpecific->m_value;
-    m_me = this;
+    CalibBase::update(other1);
+    m_name = other1.m_name;
+    m_value = other1.m_value;
   }
 
   CalibTest1::CalibTest1(const CalibTest1& other) : CalibBase(other),
                                                     m_name(other.m_name), 
                                                     m_value(other.m_value) {
-    m_me = this;
   }
     
   std::string CalibTest1::getValueName() const {
