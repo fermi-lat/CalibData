@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sat Oct  9 13:20:49 PDT 2004
+CalibData/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+add a space in a macro definition, make a patch tag for Windows. -->p3
+    *
+------------------------------------------------------------
+User: burnett  Sat Oct  9 13:20:49 PDT 2004
 CalibData/cmt
 
 Modified Files:
