@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModel.h,v 1.7 2003/01/08 00:19:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModel.h,v 1.8 2003/03/21 00:02:52 jrb Exp $
 
 #ifndef CalibData_CalibModel_h
 #define CalibData_CalibModel_h
@@ -35,6 +35,7 @@ const CLID CLID_Calib_TKR_BadChan      = 6102;
 const CLID CLID_Calib_TKR_TOTSignal      = 6103;
 const CLID CLID_Calib_TKR_TOTDist      = 6104;
 const CLID CLID_Calib_TKR_MIPEff       = 6105;
+const CLID CLID_Calib_TKR_Splits       = 6106;
 
 const CLID CLID_Calib_CAL_LightAtt   = 6200;
 const CLID CLID_Calib_CAL_LightAsym  = 6201;
@@ -82,6 +83,7 @@ const CLID CLID_Calib_CalibTest1       = 6500;
       _EXTERN_ std::string   TKR_TOTSignal;
       _EXTERN_ std::string   TKR_TOTDist;
       _EXTERN_ std::string   TKR_MIPEff;
+      _EXTERN_ std::string   TKR_Splits;
 
       _EXTERN_ std::string   CAL_LightAtt;
       _EXTERN_ std::string   CAL_LightAsym;

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.14 2004/05/20 23:54:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.15 2004/06/11 20:31:16 jrb Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -74,6 +74,7 @@ public:
 
     CalibData::TKR_TOTSignal = tkr +"_TOTSignal";
     CalibData::TKR_TOTDist = tkr + "_TOTDist";
+    CalibData::TKR_Splits = tkr + "_Splits";
 
     CalibData::TKR_MIPEff = tkr + "_MIPEff";
 
@@ -101,6 +102,8 @@ public:
                                               CLID_Calib_TKR_BadChan));
     CalibData::pairs.push_back(std::make_pair(CalibData::TKR_DeadChan,
                                               CLID_Calib_TKR_BadChan));
+    CalibData::pairs.push_back(std::make_pair(CalibData::TKR_Splits,
+                                              CLID_Calib_TKR_Splits));
     CalibData::pairs.push_back(std::make_pair(CalibData::CAL_Ped,
                                               CLID_Calib_CAL_Ped));
     CalibData::pairs.push_back(std::make_pair(CalibData::CAL_ElecGain,
