@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu May 20 16:54:54 PDT 2004
+CalibData/src/Cal
+
+Added Files:
+	CalCalibLightAsym.cxx LightAsym.cxx 
+Log Message:
+for CAL Light asymmetry calibration
+
+    *
+------------------------------------------------------------
 User: jrb  Thu May 20 16:54:34 PDT 2004
 CalibData/src
 
