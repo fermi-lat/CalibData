@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTime.cxx,v 1.1 2002/11/21 19:13:29 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTime.cxx,v 1.2 2003/01/03 23:00:16 jrb Exp $
 #include "CalibData/CalibTime.h"
 
 namespace {
@@ -23,7 +23,7 @@ namespace CalibData {
     m_nano = absTime - (m_time * billion);
   }
 
-  CalibTime&  CalibTime::operator+=( const ITime& ) {
+  ITime&  CalibTime::operator+=( const ITime& ) {
     /*   *this =  this->facilities::Timestamp::operator+=(CalibTime(other));
          return *this;
     */
@@ -31,7 +31,7 @@ namespace CalibData {
       ("CalibData::CalibTime Unsupported timestamp operation +=");
   }
 
-  CalibTime&  CalibTime::operator-=( const ITime& ) {
+  ITime&  CalibTime::operator-=( const ITime& ) {
     /*   *this =  this->facilities::Timestamp::operator-=(CalibTime(other));
          return *this;
     */
