@@ -1,4 +1,4 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/cmt/requirements,v 1.4 2003/01/21 19:51:18 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/cmt/requirements,v 1.5 2003/01/27 18:13:42 jrb Exp $
 
 package CalibData
 version v0r0p0
@@ -10,7 +10,7 @@ use GaudiInterface * IExternal
 apply_pattern package_include
 apply_pattern package_headers
 
-library CalibData *.cxx Cal/*.cxx ${CalibData_headers}
+library CalibData *.cxx Cal/*.cxx Tkr/*.cxx ${CalibData_headers}
 
 
 # For a "linker library" could try new pattern available in GaudiPolicy
