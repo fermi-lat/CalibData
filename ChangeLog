@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Wed May 26 15:36:45 PDT 2004
+CalibData/src/Cal
+
+Modified Files:
+	CalCalibBase.cxx CalFinder.cxx 
+Added Files:
+	CalCalibIntNonlin.cxx IntNonlin.cxx 
+Log Message:
+For integral nonlinearity calibration
+
+    *
+------------------------------------------------------------
 User: jrb  Wed May 26 15:36:06 PDT 2004
 CalibData/src
 
