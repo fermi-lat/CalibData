@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Dec 19 12:46:55 PST 2002
+CalibData/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+1. Build (Gaudi) linker library.
+2. Add subdirectories for subsystem code
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Dec 19 12:41:53 PST 2002
 CalibData/src/Tkr
 
