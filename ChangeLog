@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Oct 15 10:38:28 PDT 2004
+CalibData/CalibData/Cal
+
+Modified Files:
+	CalCalibBase.h CalFinder.h 
+Log Message:
+getRange, putRange changes to make use of new CalXtalId which may
+contain range and/or face information
+
+    *
+------------------------------------------------------------
 User: burnett  Sat Oct  9 13:20:49 PDT 2004
 CalibData/doc
 
