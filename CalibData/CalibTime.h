@@ -1,4 +1,4 @@
-// $Header:   $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTime.h,v 1.1 2002/11/21 19:11:00 jrb Exp $
 
 #ifndef CalibData_CalibTime_h
 #define CalibData_CalibTime_h
@@ -11,7 +11,9 @@
 #include "GaudiKernel/ITime.h" 
 
 namespace CalibData {
-  class CalibTime : public facilities::Timestamp, public ITime {
+  class CalibTime : public ITime,
+                    public facilities::Timestamp
+{
 
   public:
     CalibTime();

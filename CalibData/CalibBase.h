@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.3 2002/11/27 21:46:50 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.4 2002/12/05 22:34:43 jrb Exp $
 #ifndef CalibData_CalibBase_h
 #define CalibData_CalibBase_h
 
@@ -18,8 +18,8 @@
 #include "GaudiKernel/IValidity.h"
 #include "GaudiKernel/ITime.h"
 
-
-extern const CLID& CLID_Calib_CalibBase;
+#include "CalibData/CalibModel.h"
+// extern const CLID& CLID_Calib_CalibBase;
 
 namespace CalibData {
   class CalibBase : public DataObject,

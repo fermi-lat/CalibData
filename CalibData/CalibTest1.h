@@ -1,4 +1,4 @@
-// $Header:    $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTest1.h,v 1.1 2002/12/05 22:34:44 jrb Exp $
 #ifndef CalibData_CalibTest1_h
 #define CalibData_CalibTest1_h
 
@@ -11,8 +11,8 @@
 */
 
 #include "CalibData/CalibBase.h"
-
-extern const CLID& CLID_Calib_CalibTest1;
+#include "CalibData/CalibModel.h"
+// extern const CLID& CLID_Calib_CalibTest1;
 
 
 namespace CalibData {
