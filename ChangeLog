@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Mar 28 17:08:53 PST 2005
+CalibData/src/Tkr
+
+Added Files:
+	TkrScale.cxx 
+Log Message:
+Implementation of Calib TDS classes for charge scale calibration
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Mar 28 17:08:34 PST 2005
 CalibData/src
 
