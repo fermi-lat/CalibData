@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/RangeBase.h,v 1.1 2004/06/11 20:28:12 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/RangeBase.h,v 1.2 2004/09/20 23:08:50 jrb Exp $
 #ifndef CalibData_RangeBase_h
 #define CalibData_RangeBase_h
 namespace CalibData {
@@ -30,9 +30,9 @@ namespace CalibData {
   public:
     ValSig(float val=-1, float sig=-1) : m_val(val), m_sig(sig) {} 
     ValSig(const ValSig& other) {m_val = other.m_val; m_sig = other.m_sig;}
-    bool isDefined( ) {return (m_sig >= 0.0); }
-    float getVal() {return m_val;}
-    float getSig() {return m_sig;}
+    bool isDefined( ) const {return (m_sig >= 0.0); }
+    float getVal() const {return m_val;}
+    float getSig() const {return m_sig;}
 
     void setUndefined() {m_val= -1.0; m_sig = -1;}
     float m_val;
