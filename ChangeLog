@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Mon Sep 20 16:09:50 PDT 2004
+CalibData/CalibData/Cal
+
+Modified Files:
+	CalCalibBase.h CalFinder.h 
+Added Files:
+	CalAsym.h CalMevPerDac.h CalTholdCI.h CalTholdMuon.h Xpos.h 
+Log Message:
+Add classes for new calorimeter calibration types and support class Xpos
+
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Sep 20 16:08:50 PDT 2004
 CalibData/CalibData
 
