@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibGain.cxx,v 1.2 2003/02/25 07:12:05 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibGain.cxx,v 1.3 2003/02/27 01:02:30 jrb Exp $
 
 #include "CalibData/Cal/CalCalibGain.h"
 #include "CalibData/Cal/CalFinder.h"
@@ -13,9 +13,16 @@ namespace CalibData {
     unsigned ix = 0;
     unsigned size = m_finder->getSize();
 
+    Gain* pGains = new Gain[size];
     for (ix = 0; ix < size; ix++) {
-      (*m_pR)[ix] = new Gain(0.0);
+      m_ranges[ix] = pGains; 
+      ++pGains;
     }
+  }
+
+  CalCalibGain::~CalCalibGain() {
+    Gain* pGains = dynamic_cast<Gain* >(m_ranges[0]);
+    if (pGains) delete [] pGains;
   }
 
   const CLID& CalCalibGain::classID()   {return CLID_Calib_CAL_ElecGain;}
