@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModelSvc.cxx,v 1.1 2002/11/26 18:20:50 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModelSvc.cxx,v 1.2 2002/12/21 00:56:43 jrb Exp $
 
 #include "CalibData/CalibModelSvc.h"
 #include "CalibData/CalibModel.h"
@@ -14,4 +14,22 @@ namespace CalibData {
   CLID CalibModelSvc::getCLIDNodeCLID() const {
     return CLID_Calib_CalibCLIDNode;
   }
+
+
+  std::string CalibModelSvc::getFlavor(const std::string& fullpath) {
+    // flavor is the last field
+    unsigned lastSlash = fullpath.rfind("/");
+    return fullpath.substr(lastSlash+1, fullpath.size() - lastSlash);
+  }
+
+  std::string CalibModelSvc::getCalibType(const std::string& fullpath) {
+    // flavor is the last field
+    unsigned lastSlash = fullpath.rfind("/");
+
+    // calib type is second-to-last
+    unsigned prevSlash = fullpath.rfind("/", lastSlash - 1);
+    return fullpath.substr(prevSlash+1, lastSlash - prevSlash - 1);
+  }
+
+
 }
