@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibBase.cxx,v 1.7 2004/07/25 00:28:48 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/TkrBase.cxx,v 1.1 2004/08/09 17:39:45 jrb Exp $
 
 #include "CalibData/Tkr/TkrFinder.h"
 #include "CalibData/RangeBase.h" 
@@ -51,7 +51,13 @@ namespace CalibData {
     //  if not indirect, derived class has to do the rest
     if (!m_indirect) return true;  
 
+    
     RangeBase* pDest = m_ranges[m_ix];
+    if (!pDest) {  // call back derived class to make a place for itself
+      data->makeNew(&m_ranges[m_ix]);
+      pDest = m_ranges[m_ix];
+    }
+
     pDest->update(data);
     return true;
   }
@@ -90,8 +96,11 @@ namespace CalibData {
     m_finder = new TkrFinder(nTowerRow, nTowerCol, nTray, nChip);
     unsigned n = m_finder->getSize();
 
-    //    m_pR = new vector<RangeBase*>(n, 0);
-    if (m_indirect) m_ranges.reserve(n);
+    // had this before
+    //    if (m_indirect) m_ranges.reserve(n);
+
+    // Following should allocate and also initialize all entries to 0
+    if (m_indirect) m_ranges.resize(n, 0);
   }
 
 
