@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan  7 15:36:14 PST 2004
+CalibData/src/Cal
+
+Added Files:
+	CalCalibLightAtt.cxx LightAtt.cxx 
+Log Message:
+(For Pol)  Support light attenuation calibration data 
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jan  7 15:35:39 PST 2004
 CalibData/src
 
