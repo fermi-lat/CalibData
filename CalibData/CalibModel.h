@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModel.h,v 1.2 2002/11/18 23:12:09 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModel.h,v 1.3 2002/11/21 19:11:00 jrb Exp $
 
 #ifndef CalibData_CalibModel_h
 #define CalibData_CalibModel_h
@@ -16,7 +16,7 @@
 #include "GaudiKernel/ClassID.h"
 
 // For everybody except the CalibModel class implementation file,
-// the variables are extern.  CalibModel actually defines them.
+// the variables are extern.  CalibModel.cxx actually defines them.
 
 #if defined(_CalibData_CalibModel_cxx)
 #define  _EXTERN_ 
@@ -43,6 +43,7 @@
       _EXTERN_ std::string   CAL_LightAtt;
       _EXTERN_ std::string   CAL_LightAsym;
       _EXTERN_ std::string   CAL_LightYield;
+
       _EXTERN_ std::string   CAL_Ped;
       _EXTERN_ std::string   CAL_ElecGain;
       _EXTERN_ std::string   CAL_IntNonlin;
