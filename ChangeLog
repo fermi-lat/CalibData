@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Dec 29 00:23:40 PST 2004
+CalibData/CalibData/Tkr
+
+Modified Files:
+	TkrBase.h TkrTot.h 
+Log Message:
+TkrBase.h:  Change interface for getUnis method
+TkrBase.h, TkrTot.h: clean up comments
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Dec 27 16:19:07 PST 2004
 CalibData/src
 
