@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Mon Sep 20 16:11:03 PDT 2004
+CalibData/src/Cal
+
+Modified Files:
+	CalCalibBase.cxx CalFinder.cxx 
+Added Files:
+	CalAsym.cxx CalMevPerDac.cxx CalTholdCI.cxx CalTholdMuon.cxx 
+	Xpos.cxx 
+Log Message:
+Add classes for new calorimeter calibration types and support class Xpos
+
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Sep 20 16:10:29 PDT 2004
 CalibData/src
 
