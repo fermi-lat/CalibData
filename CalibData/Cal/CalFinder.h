@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalFinder.h,v 1.4 2003/02/28 23:36:22 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalFinder.h,v 1.5 2004/05/20 23:53:48 jrb Exp $
 #ifndef CalibData_CalFinder_h
 #define CalibData_CalFinder_h
 
@@ -32,7 +32,8 @@ namespace CalibData {
   class CalFinder {
   public: 
     CalFinder(unsigned nTowerRow, unsigned nTowerCol, unsigned nLayer, 
-              unsigned nXtal, unsigned nFace=2, unsigned nRange=4);
+              unsigned nXtal, unsigned nFace=2, unsigned nRange=4,
+              unsigned nDacCol=0);
 
 
     ~CalFinder() {}
@@ -51,6 +52,8 @@ namespace CalibData {
 
     unsigned getNRange() const {return m_range;}
 
+    unsigned getNDacCol() const {return m_dacCol;}
+
     bool equals(const CalFinder& other) const;
 
   private:
@@ -61,6 +64,7 @@ namespace CalibData {
     unsigned m_xtal;
     unsigned m_face;
     unsigned m_range;
+    unsigned m_dacCol;
 
     unsigned m_c0;
     unsigned m_c1;
