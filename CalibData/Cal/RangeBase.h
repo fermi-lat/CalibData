@@ -1,5 +1,6 @@
-// $Header:   $
-
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/RangeBase.h,v 1.1 2003/02/25 06:19:50 jrb Exp $
+#ifndef CalibData_RangeBase_h
+#define CalibData_RangeBase_h
 namespace CalibData {
 
   /** Base class for per crystal-face-range Calorimeter calibration data.
@@ -17,3 +18,4 @@ namespace CalibData {
   };
 
 }
+#endif
