@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Feb 25 17:27:53 PST 2003
+CalibData/src/Tkr
+
+Modified Files:
+	BadStrips.cxx 
+Log Message:
+Beef up interface of update(..) method to return status and take MsgStream arg
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Feb 25 17:27:44 PST 2003
 CalibData/src/Cal
 
