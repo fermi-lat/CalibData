@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Feb 25 17:27:33 PST 2003
+CalibData/src
+
+Modified Files:
+	CalibBase.cxx CalibTest1.cxx 
+Log Message:
+Beef up interface of update(..) method to return status and take MsgStream arg
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Feb 25 17:27:20 PST 2003
 CalibData/CalibData/Tkr
 
