@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Mar 25 11:07:02 PST 2003
+CalibData/src
+
+Modified Files:
+	CalibModel.cxx 
+Log Message:
+Make nodes in TDS for mu slope calibration
+
+    *
+------------------------------------------------------------
 User: jrb  Sat Mar 22 13:24:29 PST 2003
 CalibData/doc
 
