@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Feb 28 15:36:23 PST 2003
+CalibData/CalibData/Cal
+
+Modified Files:
+	CalFinder.h 
+Log Message:
+Add method to CalFinder to check for (essential) equality of finders
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Feb 27 14:09:09 PST 2003
 CalibData/doc
 
