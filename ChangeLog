@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Feb 13 11:17:13 PST 2003
+CalibData/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+CAL calibration classes need access to idents package
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Feb 13 11:16:47 PST 2003
 CalibData/CalibData/Cal
 
