@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sat Jul 24 17:28:23 PDT 2004
+CalibData/CalibData
+
+Modified Files:
+	CalibBase.h 
+Log Message:
+Smallish additions needed for ROOT conversion support
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jul 12 11:18:40 PDT 2004
 CalibData/doc
 
