@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Thu May 20 16:53:48 PDT 2004
+CalibData/CalibData/Cal
+
+Modified Files:
+	CalCalibBase.h CalFinder.h 
+Added Files:
+	CalCalibLightAsym.h LightAsym.h 
+Log Message:
+for CAL Light asymmetry calibration
+
+    *
+------------------------------------------------------------
 User: jrb  Thu May 20 16:53:22 PDT 2004
 CalibData
 
