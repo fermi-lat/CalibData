@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan 15 15:16:20 PST 2003
+CalibData/CalibData
+
+Modified Files:
+	CalibTest1.h 
+Log Message:
+Move some implementations to .cxx file
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan  9 15:56:44 PST 2003
 CalibData/src
 
