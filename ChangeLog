@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan  3 15:00:07 PST 2003
+CalibData/CalibData
+
+Modified Files:
+	CalibTime.h 
+Log Message:
+Complain if operator+= or operator-= is invoked
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 20 16:56:43 PST 2002
 CalibData/src
 
