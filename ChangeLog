@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Sep 20 16:08:50 PDT 2004
+CalibData/CalibData
+
+Modified Files:
+	CalibModel.h RangeBase.h 
+Log Message:
+CalibModel.h:  Add new calorimeter calibration types
+RangeBase.h:   Add ValSig class definition, used by new CAL types
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Aug 17 16:59:48 PDT 2004
 CalibData/doc
 
