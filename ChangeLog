@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Mar 20 16:02:52 PST 2003
+CalibData/CalibData
+
+Modified Files:
+	CalibModel.h 
+Log Message:
+Changes for calorimeter mu slope calibration type
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Mar  6 21:44:23 PST 2003
 CalibData/doc
 
