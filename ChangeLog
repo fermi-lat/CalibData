@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Thu Dec  5 14:35:31 PST 2002
+CalibData/src
+
+Modified Files:
+	CalibBase.cxx CalibModel.cxx 
+Added Files:
+	CalibTest1.cxx 
+Log Message:
+Add minimal TCDS class for testing; fix up base class; add
+correct (for now) set of calibration types to TCDS model
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Dec  5 14:34:52 PST 2002
 CalibData/CalibData
 
