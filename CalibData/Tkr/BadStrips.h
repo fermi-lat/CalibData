@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/BadStrips.h,v 1.1 2003/01/28 19:56:33 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/BadStrips.h,v 1.2 2003/01/29 18:28:22 jrb Exp $
 #ifndef CalibData_BadStrips_h
 #define CalibData_BadStrips_h
 
@@ -83,6 +83,10 @@ namespace CalibData {
       HOT  = 1 };
 
     eBadType getBadType() const;
+
+    int getBadTowerCount() const {
+      return m_towers->size(); 
+    }
 
     /// call back method for client to access all data
     eVisitorRet traverse(BadStripsVisitor *visitor) const;
