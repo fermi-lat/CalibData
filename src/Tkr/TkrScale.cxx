@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/TkrScale.cxx,v 1.1 2005/03/29 01:08:53 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/TkrScale.cxx,v 1.2 2005/03/31 20:30:35 jrb Exp $
 
 /**
   @file TkrScale.cxx
@@ -123,6 +123,7 @@ namespace CalibData {
       m_nObjs = n;
     }
     m_perStrip = perStrip;
+    m_nStrips = (perStrip) ? m_nObjs : (n * N_STRIPS_PER_GTFE);
   }
 
   //  TkrScaleCol
