@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Feb 25 17:27:07 PST 2003
+CalibData/CalibData/Cal
+
+Modified Files:
+	CalCalibBase.h 
+Log Message:
+Beef up interface of update(..) method to return status and take MsgStream arg
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Feb 25 17:26:50 PST 2003
 CalibData/CalibData
 
