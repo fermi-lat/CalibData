@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalMevPerDac.h,v 1.1 2004/09/20 23:09:50 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalMevPerDac.h,v 1.2 2004/09/21 21:54:39 jrb Exp $
 
 /// @file CalMevPerDac.h
 /** 
@@ -41,7 +41,7 @@ namespace CalibData {
 
   private:
 
-    /// Gain and uncertainty for sqrt (P*M), big diode
+    /// Gain and uncertainty for sqrt (P*N), big diode
     ValSig m_big;
     /// Gain and uncertainty for sqrt (P*N), small diode
     ValSig m_small;

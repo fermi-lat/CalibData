@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/DacCol.cxx,v 1.2 2004/06/04 16:27:43 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/Xpos.cxx,v 1.1 2004/09/20 23:11:02 jrb Exp $
 
 #include "CalibData/Cal/Xpos.h"
 
@@ -6,21 +6,21 @@ namespace CalibData {
 
   Xpos::Xpos(std::vector<float>* vals) {
     if (vals) {
-      m_xpos.clear();
-      m_xpos.reserve(vals->size());
+      m_vals.clear();
+      m_vals.reserve(vals->size());
       for (unsigned int i = 0; i < vals->size(); i++) {
         float val = (*vals)[i];
-        m_xpos.push_back(val);
+        m_vals.push_back(val);
       }
     }
   }
   
   void Xpos::update(const Xpos* other) {
-    m_xpos.clear();
-    unsigned size = other->m_xpos.size();
-    m_xpos.reserve(size);
+    m_vals.clear();
+    unsigned size = other->m_vals.size();
+    m_vals.reserve(size);
     for (unsigned i = 0; i < size; i++) {
-      m_xpos.push_back((other->m_xpos)[i]);
+      m_vals.push_back((other->m_vals)[i]);
     }
   }
 
