@@ -1,8 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/LightAsym.h,v 1.1 2004/05/20 23:53:48 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/LightAsym.h,v 1.2 2004/05/26 22:35:18 jrb Exp $
 #ifndef CalibData_LightAsym_h
 #define CalibData_LightAsym_h
 
-#include "CalibData/Cal/RangeBase.h"
+#include "CalibData/RangeBase.h"
 #include <vector>
 
 namespace CalibData {

@@ -1,8 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/MuSlope.h,v 1.1 2003/03/21 00:03:24 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/MuSlope.h,v 1.2 2003/03/22 01:38:22 jrb Exp $
 #ifndef CalibData_MuSlope_h
 #define CalibData_MuSlope_h
 
-#include "CalibData/Cal/RangeBase.h"
+#include "CalibData/RangeBase.h"
 
 namespace CalibData {
 

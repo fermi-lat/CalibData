@@ -1,8 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/LightAtt.h,v 1.2 2003/02/27 01:02:24 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/LightAtt.h,v 1.1 2004/01/07 23:35:06 jrb Exp $
 #ifndef CalibData_LightAtt_h
 #define CalibData_LightAtt_h
 
-#include "CalibData/Cal/RangeBase.h"
+#include "CalibData/RangeBase.h"
 
 namespace CalibData {
 
