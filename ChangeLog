@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan  8 10:16:16 PST 2004
+CalibData/CalibData/Cal
+
+Modified Files:
+	CalCalibBase.h 
+Log Message:
+Small change needed to support CAL light attenuation calibration type
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jan  7 15:36:14 PST 2004
 CalibData/src/Cal
 
