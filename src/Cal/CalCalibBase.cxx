@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibBase.cxx,v 1.2 2003/02/26 01:27:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibBase.cxx,v 1.3 2003/02/27 21:50:12 jrb Exp $
 
 #include "CalibData/Cal/CalFinder.h"
 #include "CalibData/Cal/RangeBase.h" 
@@ -62,11 +62,10 @@ namespace CalibData {
 
     unsigned n = m_finder->getSize();
 
-    // Make a simple but insufficient check that the new data is
-    // structured like the old
-    if (n != other1.m_finder->getSize() ) {  // tilt!  
+    // Check that new data is dimensioned the same as old
+    if (!(m_finder->equals(*(other1.m_finder)) ) ) {  // tilt!  
       (*log) << MSG::ERROR 
-             << "CalCalibBase::update failure: sizes unequal" << endreq;
+             << "CalCalibBase::update failure: dimensioning unequal" << endreq;
       return StatusCode::FAILURE;
     }
 

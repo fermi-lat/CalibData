@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalFinder.cxx,v 1.2 2003/02/25 06:22:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalFinder.cxx,v 1.3 2003/02/27 01:02:30 jrb Exp $
 
 /**
       @file CalFinder.cxx
@@ -38,5 +38,14 @@ namespace CalibData {
         findIx(iRow, iCol, id.getLayer(), id.getColumn(), range, face);
     }
 
+  bool CalFinder::equals(const CalFinder& other) const {
+    return
+      ((m_towerRow == other.m_towerRow) &&
+       (m_towerCol == other.m_towerCol) &&
+       (m_layer    == other.m_layer)    &&
+       (m_xtal     == other.m_xtal)     &&
+       (m_face     == other.m_face)     &&
+       (m_range    == other.m_range)      );
+  }
 }
 
