@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Mar 31 12:55:50 PST 2005
+CalibData/src/Tkr
+
+Modified Files:
+	TkrScale.cxx 
+Log Message:
+Bug fix: Always properly initialize m_nStrips
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Mar 31 12:30:35 PST 2005
 CalibData/src/Tkr
 
