@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/RangeBase.h,v 1.2 2004/09/20 23:08:50 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/RangeBase.h,v 1.3 2004/10/07 00:03:06 jrb Exp $
 #ifndef CalibData_RangeBase_h
 #define CalibData_RangeBase_h
 namespace CalibData {
@@ -17,6 +17,13 @@ namespace CalibData {
     /// Derived classes will do a dynamic cast of argument, which 
     /// must be of same type, and then a deep copy.
     virtual void update(RangeBase* ) {}
+
+    // Only put in default impl. because not all derived classes need
+    // to do this at all.  Don't force them to put in dummy definition.
+    // Otherwise would be pure virtual, since derived classes which do
+    // need this have to do it themselves.  
+    // Might be better to do this with a factory pattern.
+    virtual void makeNew(RangeBase** ) { }
     
   };
 
