@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 13:31:43 PDT 2004
+CalibData/src/Acd
+
+Added Files:
+	AcdCalibBase.cxx AcdCalibGain.cxx AcdCalibPed.cxx 
+	AcdFinder.cxx AcdGain.cxx AcdPed.cxx 
+Log Message:
+Support for Acd gain and ped calibrations (plust underpinnings)
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 13:31:16 PDT 2004
 CalibData/src
 
