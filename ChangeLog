@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Feb 24 22:21:00 PST 2003
+CalibData/src
+
+Modified Files:
+	CalibModel.cxx 
+Log Message:
+Enable handling of Cal gain and pedestal calibration TCDS data
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Feb 24 22:19:51 PST 2003
 CalibData/CalibData/Cal
 
