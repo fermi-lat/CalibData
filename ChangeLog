@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sat Jul 24 17:28:48 PDT 2004
+CalibData/src/Cal
+
+Modified Files:
+	CalCalibBase.cxx 
+Log Message:
+Smallish additions needed for ROOT conversion support
+
+    *
+------------------------------------------------------------
 User: jrb  Sat Jul 24 17:28:35 PDT 2004
 CalibData/CalibData/Cal
 
