@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun  4 09:27:45 PDT 2004
+CalibData/src
+
+Modified Files:
+	DacCol.cxx 
+Log Message:
+Bug fix for Windows compiler
+
+    *
+------------------------------------------------------------
 User: jrb  Wed May 26 15:48:23 PDT 2004
 CalibData/doc
 
