@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibBase.h,v 1.9 2004/07/25 00:28:35 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibBase.h,v 1.10 2004/09/20 23:09:50 jrb Exp $
 
 /// @file CalCalibBase
 /// @author J. Bogart
@@ -43,8 +43,13 @@ namespace CalibData {
                                 unsigned layer, unsigned xtal,
                                 unsigned range=0, unsigned face=0);
 
-    bool putRange(idents::CalXtalId id, unsigned range, unsigned face, 
-                  RangeBase* data);
+    // **NEW** 
+    bool putRange(idents::CalXtalId id, RangeBase* data) {
+      return putRange(id, 0, 0, data);
+    }
+
+    bool putRange(idents::CalXtalId id, 
+                  unsigned range, unsigned face, RangeBase* data);
 
     bool putRange(unsigned towerRow, unsigned towerCol, 
                   unsigned layer, unsigned xtal, unsigned range,
