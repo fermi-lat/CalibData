@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 16 13:55:40 PST 2003
+CalibData/src
+
+Modified Files:
+	CalibBase.cxx 
+Log Message:
+Fix for compile on Windows
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 16 12:14:36 PST 2003
 CalibData/src
 
