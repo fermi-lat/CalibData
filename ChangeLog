@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Feb 24 22:17:18 PST 2003
+CalibData/CalibData
+
+Modified Files:
+	CalibBase.h 
+Log Message:
+Add setSerNo function (protected)
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Feb 13 11:17:56 PST 2003
 CalibData/src/Cal
 
