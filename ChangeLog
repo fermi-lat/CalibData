@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 13:30:55 PDT 2004
+CalibData/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Add src/Acd subdirectory to list of places to look for source 
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 13:30:16 PDT 2004
 CalibData/CalibData/Cal
 
