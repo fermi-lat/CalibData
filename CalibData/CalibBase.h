@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.9 2003/02/26 01:26:49 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.10 2004/07/12 18:16:01 jrb Exp $
 #ifndef CalibData_CalibBase_h
 #define CalibData_CalibBase_h
 
@@ -31,6 +31,7 @@ namespace CalibData {
                     virtual public IValidity {
 
     friend class XmlBaseCnv;
+    friend class RootBaseCnv;
     
   public:
     CalibBase();
