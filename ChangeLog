@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Mar 25 13:00:01 PST 2003
+CalibData/CalibData/Cal
+
+Modified Files:
+	RangeBase.h 
+Log Message:
+Add missing #ifndef protection
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Mar 25 11:12:04 PST 2003
 CalibData/doc
 
