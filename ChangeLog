@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan 29 15:59:20 PST 2003
+CalibData/CalibData/Tkr
+
+Modified Files:
+	BadStrips.h 
+Log Message:
+Add another get function primarily for testing/check-out
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jan 29 10:28:22 PST 2003
 CalibData/CalibData/Tkr
 
