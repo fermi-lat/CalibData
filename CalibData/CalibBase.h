@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.6 2003/01/16 20:14:24 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.7 2003/01/22 21:16:56 jrb Exp $
 #ifndef CalibData_CalibBase_h
 #define CalibData_CalibBase_h
 
@@ -24,6 +24,9 @@
 namespace CalibData {
   class CalibBase : public DataObject,
                     virtual public IValidity {
+
+    friend class XmlBaseCnv;
+    
   public:
     CalibBase();
     CalibBase(const ITime& since, const ITime& till, int serNo = -1);
@@ -86,6 +89,8 @@ namespace CalibData {
 
     /// Serial number of corresponding metadata row. 
     int m_serNo;
+
+    void setSerNo(int ser) { m_serNo = ser;}
 
     // Other possible things to keep here:  flavor, calibration type
     
