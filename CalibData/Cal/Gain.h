@@ -1,8 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/Gain.h,v 1.2 2003/02/27 01:02:24 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/Gain.h,v 1.3 2003/03/22 01:38:22 jrb Exp $
 #ifndef CalibData_Gain_h
 #define CalibData_Gain_h
 
-#include "CalibData/Cal/RangeBase.h"
+#include "CalibData/RangeBase.h"
 
 namespace CalibData {
 

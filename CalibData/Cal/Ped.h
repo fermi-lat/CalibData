@@ -1,8 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/Ped.h,v 1.2 2003/02/27 01:02:24 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/Ped.h,v 1.3 2004/02/17 17:57:16 jrb Exp $
 #ifndef CalibData_Ped_h
 #define CalibData_Ped_h
 
-#include "CalibData/Cal/RangeBase.h"
+#include "CalibData/RangeBase.h"
 
 namespace CalibData {
 
