@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 28 11:57:39 PST 2003
+CalibData/src
+
+Modified Files:
+	CalibModel.cxx 
+Log Message:
+Modify slightly for bad strips.  Different paths for hot and dead, but
+same class ID
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 28 11:57:04 PST 2003
 CalibData/cmt
 
