@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.1 2002/11/19 19:31:32 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.2 2002/11/21 19:13:29 jrb Exp $
 
 /** @class CalibBase
  *    Implementation of base class for all calibration data objects
@@ -10,10 +10,10 @@
 #include "GaudiKernel/StatusCode.h"
 
 namespace CalibData {
-  CalibBase::CalibBase() : m_validSince(0), m_validTill(0) {}
+  CalibBase::CalibBase() : m_validSince(0), m_validTill(0), m_serNo(-1) {}
 
-  CalibBase::CalibBase(const ITime& since, const ITime& till) :
-    m_validSince(0), m_validTill(0) 
+  CalibBase::CalibBase(const ITime& since, const ITime& till, int serNo) :
+    m_validSince(0), m_validTill(0), m_serNo(serNo)
   {
     m_validSince = new CalibTime::CalibTime(since);
     m_validTill = new CalibTime::CalibTime(till);
