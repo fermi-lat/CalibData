@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrFinder.h,v 1.1 2004/08/09 17:38:18 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrFinder.h,v 1.2 2004/12/17 18:58:12 jrb Exp $
 #ifndef CalibData_TkrFinder_h
 #define CalibData_TkrFinder_h
 #include "idents/TkrId.h"
@@ -65,7 +65,7 @@ namespace CalibData {
       return 
         (   (id.getTowerX() < m_towerCol) &&
             (id.getTowerY() < m_towerRow) &&
-            (id.getPlane() < m_nUni)           );
+            (2*id.getTray() <= m_nUni)           );
     }
 
     unsigned findUniIx(const idents::TkrId& id)                            {
