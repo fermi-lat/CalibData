@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.16 2004/08/09 17:39:14 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.17 2004/09/20 23:10:29 jrb Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -111,6 +111,8 @@ public:
                                               CLID_Calib_TKR_BadChan));
     CalibData::pairs.push_back(std::make_pair(CalibData::TKR_Splits,
                                               CLID_Calib_TKR_Splits));
+    CalibData::pairs.push_back(std::make_pair(CalibData::TKR_TOTSignal,
+                                              CLID_Calib_TKR_TOTSignal));
 
     CalibData::pairs.push_back(std::make_pair(CalibData::CAL_Ped,
                                               CLID_Calib_CAL_Ped));
