@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalFinder.h,v 1.3 2003/02/27 01:02:24 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalFinder.h,v 1.4 2003/02/28 23:36:22 jrb Exp $
 #ifndef CalibData_CalFinder_h
 #define CalibData_CalFinder_h
 
@@ -48,6 +48,8 @@ namespace CalibData {
       const;
 
     unsigned getSize() const {return m_c3*m_tower;}
+
+    unsigned getNRange() const {return m_range;}
 
     bool equals(const CalFinder& other) const;
 
