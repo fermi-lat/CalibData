@@ -1,4 +1,21 @@
 ------------------------------------------------------------
+User: jrb  Mon Feb 24 22:22:01 PST 2003
+CalibData/src/Cal
+
+Modified Files:
+	CalFinder.cxx 
+Added Files:
+	CalCalibBase.cxx CalCalibGain.cxx CalCalibPed.cxx Gain.cxx 
+	Ped.cxx 
+Log Message:
+Non-template implementation for Cal calibration classes:
+ RangeBase is base class for per-range information (no .cxx necessary)
+ Gain, Ped are derived from RangeBase
+ CalCalibBase is base class for full collection of per-range information
+ CalCalibGain and CalCalibPed are derived from CalCalibBase
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Feb 24 22:21:00 PST 2003
 CalibData/src
 
