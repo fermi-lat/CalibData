@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/BadStrips.h,v 1.2 2003/01/29 18:28:22 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/BadStrips.h,v 1.3 2003/01/29 23:59:20 jrb Exp $
 #ifndef CalibData_BadStrips_h
 #define CalibData_BadStrips_h
 
@@ -59,12 +59,14 @@ namespace CalibData {
         @param col         zero-based column of tower
         @param badness     if gradations of badness have been recorded,
                            larger number here corresponds to worse failure
+        @param allBad      if true all strips are bad. @arg strips should
+                           be ignored
         @param strips      vector of strips of badness @arg badness.  If
                            empty, entire plane is bad.
     */
     virtual eVisitorRet badPlane(unsigned int row, unsigned int col, 
                                  unsigned int tray, bool top,
-                                 int badness, 
+                                 int badness, bool allBad,
                                  const StripCol& strips)=0;
 
   };    // end pure virtual visitor class definition
@@ -154,7 +156,7 @@ namespace CalibData {
 
     StatusCode addBadPlane(unsigned short row, unsigned short col,
                            unsigned int tray, bool top, int howBad,
-                           StripCol& badStrips);
+                           bool allBad, StripCol& badStrips);
 
     // internal stuff
     Tower* findTower(unsigned row, unsigned col);
