@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 13:28:12 PDT 2004
+CalibData/CalibData
+
+Added Files:
+	RangeBase.h 
+Log Message:
+Was in Cal subdirectory, but now used by ACD and CAL
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun  4 09:51:31 PDT 2004
 CalibData/doc
 
