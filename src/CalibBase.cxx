@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.8 2003/01/16 21:55:40 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.9 2003/01/22 21:17:08 jrb Exp $
 
 /** @class CalibBase
  *    Implementation of base class for all calibration data objects
@@ -32,13 +32,14 @@ namespace CalibData {
   }
 
 
-  void CalibBase::update(CalibBase& obj) {
+  StatusCode CalibBase::update(CalibBase& obj, MsgStream* ) {
     delete m_validSince;
     delete m_validTill;
 
     m_validTill = new CalibData::CalibTime(obj.validTill() );
     m_validSince = new CalibData::CalibTime(obj.validSince() );
     m_serNo = obj.m_serNo;  
+    return StatusCode::SUCCESS;
   }
 
   bool CalibBase::isValid() {

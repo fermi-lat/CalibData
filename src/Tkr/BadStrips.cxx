@@ -1,9 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/BadStrips.cxx,v 1.2 2003/01/29 23:59:33 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/BadStrips.cxx,v 1.3 2003/01/30 22:33:27 jrb Exp $
 /** @class BadStrips
  *    Implementation of bad or hot strips TCDS representation
  */
 
 #include "CalibData/Tkr/BadStrips.h"
+#include "GaudiKernel/MsgStream.h"
 
 namespace CalibData {
   BadStrips::Tower::Tower(bool allBad, int howBad, 
@@ -69,11 +70,13 @@ namespace CalibData {
   }
 
 
-  void BadStrips::update(CalibBase& other) {
+  StatusCode BadStrips::update(CalibBase& other, MsgStream* log) {
     // The following dynamic_cast has got to work
     BadStrips& other1 = dynamic_cast<BadStrips& >(other);
 
-    CalibBase::update(other1);
+    StatusCode sc = CalibBase::update(other1, log);
+    if (sc != StatusCode::SUCCESS) return sc;
+
     m_type = other1.m_type;
 
     m_towers->clear();
@@ -84,6 +87,8 @@ namespace CalibData {
       m_towers->push_back(*iT);
       iT++;
     }
+
+    return StatusCode::SUCCESS;
   }
 
   BadStrips::eBadType BadStrips::getBadType() const {return m_type;}

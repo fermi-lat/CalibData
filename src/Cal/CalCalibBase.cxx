@@ -1,8 +1,9 @@
-// $Header:  $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibBase.cxx,v 1.1 2003/02/25 06:22:01 jrb Exp $
 
 #include "CalibData/Cal/CalFinder.h"
 #include "CalibData/Cal/RangeBase.h" 
 #include "CalibData/Cal/CalCalibBase.h"
+#include "GaudiKernel/MsgStream.h"
 
 namespace CalibData {
 
@@ -57,14 +58,25 @@ namespace CalibData {
     return true;
   }
 
-  void CalCalibBase::update(CalCalibBase& other) {
+  StatusCode CalCalibBase::update(CalibBase& other, MsgStream* log) {
+    CalCalibBase& other1 = dynamic_cast<CalCalibBase& >(other);
+
     unsigned n = m_finder->getSize();
+
+    // Make a simple but insufficient check that the new data is
+    // structured like the old
+    if (n != other1.m_finder->getSize() ) {  // tilt!  
+      (*log) << MSG::ERROR 
+             << "CalCalibBase::update failure: sizes unequal" << endreq;
+      return StatusCode::FAILURE;
+    }
+      
     unsigned i;
     for (i = 0; i < n; i++) {
       RangeBase* dest = (*m_pR)[i];
-      dest->update((*other.m_pR)[i]);
+      dest->update((*other1.m_pR)[i]);
     }
+    return StatusCode::SUCCESS;
   }
-
 
 }

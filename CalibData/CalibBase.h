@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.7 2003/01/22 21:16:56 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.8 2003/02/25 06:17:17 jrb Exp $
 #ifndef CalibData_CalibBase_h
 #define CalibData_CalibBase_h
 
@@ -19,7 +19,10 @@
 #include "GaudiKernel/ITime.h"
 
 #include "CalibData/CalibModel.h"
+
 // extern const CLID& CLID_Calib_CalibBase;
+
+class MsgStream;
 
 namespace CalibData {
   class CalibBase : public DataObject,
@@ -34,7 +37,7 @@ namespace CalibData {
     CalibBase(const CalibBase& obj);
     
     /// Following is intended for deep copy
-    virtual void update(CalibBase& obj);
+    virtual StatusCode update(CalibBase& obj, MsgStream *);
     virtual ~CalibBase();
     
     // Re-implemented from DataObject

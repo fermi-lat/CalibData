@@ -1,10 +1,11 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTest1.cxx,v 1.3 2003/01/16 20:14:36 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTest1.cxx,v 1.4 2003/01/22 21:17:08 jrb Exp $
 
 /** @class CalibTest1
  *    Implementation of near-simplest-possible calibration TCDS class
  */
 
 #include "CalibData/CalibTest1.h"
+#include "GaudiKernel/MsgStream.h"
 
 namespace CalibData {
   CalibTest1::CalibTest1(const std::string& name, int value, 
@@ -16,13 +17,15 @@ namespace CalibData {
   }
 
 
-  void CalibTest1::update(CalibBase& other) {
+  StatusCode CalibTest1::update(CalibBase& other, MsgStream* log) {
     // The following dynamic_cast has got to work
     CalibTest1& other1 = dynamic_cast<CalibTest1& >(other);
 
-    CalibBase::update(other1);
+    CalibBase::update(other1, log);
     m_name = other1.m_name;
     m_value = other1.m_value;
+
+    return StatusCode::SUCCESS;
   }
 
   CalibTest1::CalibTest1(const CalibTest1& other) : CalibBase(other),

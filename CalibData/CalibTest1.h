@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTest1.h,v 1.4 2003/01/16 20:14:24 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTest1.h,v 1.5 2003/01/22 21:16:56 jrb Exp $
 #ifndef CalibData_CalibTest1_h
 #define CalibData_CalibTest1_h
 
@@ -32,7 +32,7 @@ namespace CalibData {
 
 
     // Re-implemented from CalibBase
-    virtual void    update(CalibBase& other);
+    virtual StatusCode   update(CalibBase& other, MsgStream* log);
 
     std::string getValueName() const;
     int         getValue() const {return m_value;}
