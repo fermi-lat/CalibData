@@ -1,6 +1,6 @@
-//$Header:          $
-#ifndef CalibBase_h
-#define CalibBase_h
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.1 2002/11/19 19:31:00 jrb Exp $
+#ifndef CalibData_CalibBase_h
+#define CalibData_CalibBase_h
 
 /** @class CalibBase
 
@@ -16,8 +16,7 @@
 
 #include "GaudiKernel/DataObject.h"
 #include "GaudiKernel/IValidity.h"
-
-class ITime;
+#include "GaudiKernel/ITime.h"
 
 
 extern const CLID& CLID_Calib_CalibBase;
@@ -84,3 +83,4 @@ namespace CalibData {
   };
 
 }
+#endif
