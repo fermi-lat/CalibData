@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Nov 19 11:31:00 PST 2002
+CalibData/CalibData
+
+Added Files:
+	CalibBase.h 
+Log Message:
+base class for all calibration data objects
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Nov 18 15:12:22 PST 2002
 CalibData/src
 
