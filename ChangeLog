@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar 21 17:39:00 PST 2003
+CalibData/src/Cal
+
+Modified Files:
+	Gain.cxx MuSlope.cxx 
+Log Message:
+Add new sigma field for Gain and error for MuSlope
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar 21 17:38:39 PST 2003
 CalibData/src
 
