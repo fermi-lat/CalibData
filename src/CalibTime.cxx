@@ -1,4 +1,4 @@
-// $Header:  $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTime.cxx,v 1.1 2002/11/21 19:13:29 jrb Exp $
 #include "CalibData/CalibTime.h"
 
 namespace {
@@ -22,6 +22,23 @@ namespace CalibData {
     m_time = absTime / billion;
     m_nano = absTime - (m_time * billion);
   }
+
+  CalibTime&  CalibTime::operator+=( const ITime& ) {
+    /*   *this =  this->facilities::Timestamp::operator+=(CalibTime(other));
+         return *this;
+    */
+    throw facilities::BadTimeInput
+      ("CalibData::CalibTime Unsupported timestamp operation +=");
+  }
+
+  CalibTime&  CalibTime::operator-=( const ITime& ) {
+    /*   *this =  this->facilities::Timestamp::operator-=(CalibTime(other));
+         return *this;
+    */
+    throw facilities::BadTimeInput
+      ("CalibData::CalibTime Unsupported timestamp operation -=");
+  }
+
 
   ITime::AbsoluteTime CalibTime::absoluteTime() const {
     ITime::AbsoluteTime abs = m_time;
