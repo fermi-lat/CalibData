@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan 29 10:28:22 PST 2003
+CalibData/CalibData/Tkr
+
+Modified Files:
+	BadStrips.h 
+Log Message:
+make converter XmlBadStripsCnv a friend
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 28 11:58:02 PST 2003
 CalibData/src/Tkr
 
