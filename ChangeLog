@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Tue Nov 26 10:20:30 PST 2002
+CalibData/CalibData
+
+Modified Files:
+	CalibModel.h 
+Added Files:
+	CalibModelSvc.h 
+Log Message:
+Use CalibModelSvc class to make certain information local to the
+component accessible to other components
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Nov 21 11:13:29 PST 2002
 CalibData/src
 
