@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug  5 13:07:04 PDT 2004
+CalibData
+
+Modified Files:
+	.cvsignore 
+Log Message:
+.cvsignore    ignore Windows binary directories
+requirements  Add pattern definition use_CalibData_symbols 
+mainpage.h    Update doc
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug  2 16:30:03 PDT 2004
 CalibData/doc
 
