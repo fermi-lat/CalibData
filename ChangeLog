@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 13:31:16 PDT 2004
+CalibData/src
+
+Modified Files:
+	CalibModel.cxx 
+Log Message:
+Include acd ped and gain among supported calibrations
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 13:30:55 PDT 2004
 CalibData/cmt
 
