@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 28 11:57:04 PST 2003
+CalibData/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Include source in subdirectories in library
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 28 11:56:33 PST 2003
 CalibData/CalibData/Tkr
 
