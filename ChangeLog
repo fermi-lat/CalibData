@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Wed May 26 15:35:18 PDT 2004
+CalibData/CalibData/Cal
+
+Modified Files:
+	CalCalibBase.h CalFinder.h LightAsym.h 
+Added Files:
+	CalCalibIntNonlin.h IntNonlin.h 
+Log Message:
+For integral nonlinearity calibrations
+
+    *
+------------------------------------------------------------
 User: jrb  Wed May 26 15:34:33 PDT 2004
 CalibData/CalibData
 
