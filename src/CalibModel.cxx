@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.10 2003/03/21 00:03:33 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.11 2003/03/22 01:38:39 jrb Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -105,6 +105,8 @@ public:
                                               CLID_Calib_CAL_Ped));
     CalibData::pairs.push_back(std::make_pair(CalibData::CAL_ElecGain,
                                               CLID_Calib_CAL_ElecGain));
+    CalibData::pairs.push_back(std::make_pair(CalibData::CAL_MuSlope,
+                                              CLID_Calib_CAL_MuSlope));
     CalibData::pairs.push_back(std::make_pair(CalibData::Test_1,
                                               CLID_Calib_CalibTest1));
 
