@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 13:32:59 PDT 2004
+CalibData/src/Cal
+
+Modified Files:
+	CalCalibBase.cxx 
+Log Message:
+Allow possibility of incomplete instrument
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 13:31:43 PDT 2004
 CalibData/src/Acd
 
