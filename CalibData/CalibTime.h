@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTime.h,v 1.3 2003/01/03 23:00:07 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTime.h,v 1.4 2003/01/09 23:56:36 jrb Exp $
 
 #ifndef CalibData_CalibTime_h
 #define CalibData_CalibTime_h
@@ -6,6 +6,10 @@
     Implements ITime interface and has facilities::Timestamp as base
     class.  Just need to implement a few more methods to satisfy
     ITime.
+
+    Note facilities::Timestamp, hence CalibTime, has get methods for 
+    several different time formats, including julian date, ascii string, 
+    and (seconds, nanoseconds) since Jan. 1 1970.
 */
 #include "facilities/Timestamp.h"
 #include "GaudiKernel/ITime.h" 
