@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalFinder.h,v 1.5 2004/05/20 23:53:48 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalFinder.h,v 1.6 2004/05/26 22:35:18 jrb Exp $
 #ifndef CalibData_CalFinder_h
 #define CalibData_CalFinder_h
 
@@ -50,8 +50,13 @@ namespace CalibData {
 
     unsigned getSize() const {return m_c3*m_tower;}
 
-    unsigned getNRange() const {return m_range;}
+    unsigned getNTowerRow() const {return m_towerRow;}
+    unsigned getNTowerCol() const {return m_towerCol;}
 
+    unsigned getNLayer() const {return m_layer;}
+    unsigned getNXtal() const {return m_xtal;}
+    unsigned getNFace() const {return m_face;}
+    unsigned getNRange() const {return m_range;}
     unsigned getNDacCol() const {return m_dacCol;}
 
     bool equals(const CalFinder& other) const;

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibBase.cxx,v 1.5 2004/05/26 22:36:45 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibBase.cxx,v 1.6 2004/06/11 20:32:59 jrb Exp $
 
 #include "CalibData/Cal/CalFinder.h"
 #include "CalibData/RangeBase.h" 
@@ -24,6 +24,16 @@ namespace CalibData {
   RangeBase*  CalCalibBase::getRange(idents::CalXtalId id, unsigned range, 
                                      unsigned face) {
     unsigned ix = m_finder->findIx(id, range, face);
+    if (ix < m_finder->getSize() ) { 
+      return m_ranges[ix];
+    }
+    else return 0;
+  }
+  RangeBase*  CalCalibBase::getRange(unsigned towerRow, unsigned towerCol, 
+                                     unsigned layer, unsigned xtal, 
+                                     unsigned range, unsigned face) {
+    unsigned ix = m_finder->findIx(towerRow, towerCol, layer, xtal, 
+                                   range, face);
     if (ix < m_finder->getSize() ) { 
       return m_ranges[ix];
     }
