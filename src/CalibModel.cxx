@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.9 2003/02/25 06:21:00 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.10 2003/03/21 00:03:33 jrb Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -81,7 +81,7 @@ public:
     CalibData::CAL_LightAsym = cal + "_LightAsym";
     CalibData::CAL_LightYield = cal + "_LightYield";
     CalibData::CAL_Ped = cal + "_Ped";
-    CalibData::CAL_ElecGain = cal + "_ElectGain";
+    CalibData::CAL_ElecGain = cal + "_ElecGain";
     CalibData::CAL_IntNonlin = cal + "_IntNonlin";
     CalibData::CAL_DiffNonlin = cal + "_DiffNonlin";
     CalibData::CAL_HotChan = cal + "_HotChan";
