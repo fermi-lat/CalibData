@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.4 2002/12/05 22:34:43 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.5 2002/12/21 00:56:17 jrb Exp $
 #ifndef CalibData_CalibBase_h
 #define CalibData_CalibBase_h
 
@@ -85,8 +85,12 @@ namespace CalibData {
     /// End of validity
     ITime* m_validTill;
 
+    virtual void iUpdate(CalibBase* ) {}    
+
     /// Serial number of corresponding metadata row. 
     int m_serNo;
+
+    CalibBase* m_me;   // will be pointer to derived class where appropriate
 
     // Other possible things to keep here:  flavor, calibration type
     
