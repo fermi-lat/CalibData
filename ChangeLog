@@ -1,4 +1,23 @@
 ------------------------------------------------------------
+User: jrb  Mon Feb 24 22:19:51 PST 2003
+CalibData/CalibData/Cal
+
+Modified Files:
+	CalFinder.h 
+Added Files:
+	CalCalibBase.h CalCalibGain.h CalCalibPed.h Gain.h Ped.h 
+	RangeBase.h 
+Removed Files:
+	CalCalib.h 
+Log Message:
+Non-template implementation for Cal calibration classes:
+ RangeBase is base class for per-range information
+ Gain, Ped are derived from RangeBase
+ CalCalibBase is base class for full collection of per-range information
+ CalCalibGain and CalCalibPed are derived from CalCalibBase
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Feb 24 22:17:18 PST 2003
 CalibData/CalibData
 
