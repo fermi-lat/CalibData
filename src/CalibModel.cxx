@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.7 2003/01/08 00:19:57 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.8 2003/01/28 19:57:39 jrb Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -100,6 +100,10 @@ public:
                                               CLID_Calib_TKR_BadChan));
     CalibData::pairs.push_back(std::make_pair(CalibData::TKR_DeadChan,
                                               CLID_Calib_TKR_BadChan));
+    CalibData::pairs.push_back(std::make_pair(CalibData::CAL_Ped,
+                                              CLID_Calib_CAL_Ped));
+    CalibData::pairs.push_back(std::make_pair(CalibData::CAL_ElecGain,
+                                              CLID_Calib_CAL_ElecGain));
     CalibData::pairs.push_back(std::make_pair(CalibData::Test_1,
                                               CLID_Calib_CalibTest1));
 
