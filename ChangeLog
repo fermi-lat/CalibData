@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Sep 20 16:10:29 PDT 2004
+CalibData/src
+
+Modified Files:
+	CalibModel.cxx 
+Log Message:
+Add new calorimeter calibration types
+
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Sep 20 16:09:50 PDT 2004
 CalibData/CalibData/Cal
 
