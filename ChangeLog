@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov 27 13:46:50 PST 2002
+CalibData/CalibData
+
+Modified Files:
+	CalibBase.h CalibModelSvc.h 
+Log Message:
+1. Add serial number (of metadata row) field to CalibBase. 
+2. Put in accidentally omitted calibration type
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Nov 26 11:21:49 PST 2002
 CalibData/src
 
