@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan 15 15:16:44 PST 2003
+CalibData/src
+
+Modified Files:
+	CalibBase.cxx CalibTest1.cxx 
+Log Message:
+CalibTest1.cxx: Move some implementations to .cxx file
+CalibBase.cxx:  little bug fix
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jan 15 15:16:20 PST 2003
 CalibData/CalibData
 
