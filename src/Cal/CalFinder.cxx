@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalFinder.cxx,v 1.6 2004/09/20 23:11:02 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalFinder.cxx,v 1.7 2004/10/07 19:46:40 jrb Exp $
 
 /**
       @file CalFinder.cxx
@@ -35,15 +35,19 @@ namespace CalibData {
     unsigned iTow = id.getTower();
     unsigned iRow = iTow / m_towerCol;
     unsigned iCol = iTow - iRow*m_towerCol;
-    return 
-      findIx(iRow, iCol, id.getLayer(), id.getColumn(), range, face);
-    }
+    if (id.validFace()) face = id.getFace();
+
+    if (id.validRange()) range = id.getRange();
+    return findIx(iRow, iCol, id.getLayer(), id.getColumn(), range, face);
+  }
 
   bool CalFinder::checkIx(idents::CalXtalId id, unsigned range, 
                           unsigned face) {
     unsigned iTow = id.getTower();
     unsigned iRow = iTow / m_towerCol;
     unsigned iCol = iTow - iRow*m_towerCol;
+    if (id.validFace()) face = id.getFace();
+    if (id.validRange()) range = id.getRange();
     return 
       checkIx(iRow, iCol, id.getLayer(), id.getColumn(), range, face);
   }
