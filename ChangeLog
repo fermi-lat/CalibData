@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  9 10:39:46 PDT 2004
+CalibData/src/Tkr
+
+Added Files:
+	TkrBase.cxx TkrFinder.cxx TkrSplitsCalib.cxx 
+Log Message:
+Add TKR_Splits TDS class (CalibData::TkrSplitsCalib) and related classes
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug  9 10:39:14 PDT 2004
 CalibData/src
 
