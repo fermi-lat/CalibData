@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibPed.h,v 1.2 2003/02/25 06:43:17 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibPed.h,v 1.3 2003/02/27 01:02:24 jrb Exp $
 #ifndef CalibData_CalCalibPed_h
 #define CalibData_CalCalibPed_h
 
@@ -22,7 +22,7 @@ namespace CalibData {
     CalCalibPed(unsigned nTowerRow=4, unsigned nTowerCol=4, unsigned nLayer=8, 
                 unsigned nXtal=12, unsigned nFace=2, unsigned nRange=4);
 
-    ~CalCalibPed() {}
+    ~CalCalibPed();
 
     /// Override putRange implementations in order to add consistency
     /// check
