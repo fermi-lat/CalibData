@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Feb 13 11:16:47 PST 2003
+CalibData/CalibData/Cal
+
+Added Files:
+	CalCalib.h CalFinder.h 
+Log Message:
+Guesses about how one might handle CAL calibration classes; only 
+provisional for now
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Feb  7 10:34:22 PST 2003
 CalibData/doc
 
