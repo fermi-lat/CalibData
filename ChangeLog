@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 30 14:33:27 PST 2003
+CalibData/src/Tkr
+
+Modified Files:
+	BadStrips.cxx 
+Log Message:
+Keep "allBad" attribute of a plane explicitly everywhere
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 30 14:33:16 PST 2003
 CalibData/CalibData/Tkr
 
