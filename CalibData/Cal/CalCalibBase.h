@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibBase.h,v 1.3 2003/02/26 01:27:07 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibBase.h,v 1.4 2003/02/27 01:02:23 jrb Exp $
 
 /// @file CalCalibBase
 /// @author J. Bogart
@@ -45,7 +45,8 @@ namespace CalibData {
     
   protected:
     CalFinder* m_finder;
-    std::vector<RangeBase* >* m_pR;
+    //    std::vector<RangeBase* >* m_pR;
+    std::vector<RangeBase* > m_ranges;
   private:
     static const CLID noCLID;
   };

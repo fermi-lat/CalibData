@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibGain.h,v 1.2 2003/02/25 07:11:35 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibGain.h,v 1.3 2003/02/27 01:02:24 jrb Exp $
 #ifndef CalibData_CalCalibGain_h
 #define CalibData_CalCalibGain_h
 
@@ -15,7 +15,7 @@ namespace CalibData {
                  unsigned nLayer=8, 
                  unsigned nXtal=12, unsigned nFace=2, unsigned nRange=4);
 
-    ~CalCalibGain() {}
+    ~CalCalibGain();
 
     /// Override putRange implementation in order to add consistency
     /// check
