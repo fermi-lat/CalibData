@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalFinder.h,v 1.1 2003/02/13 19:16:46 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalFinder.h,v 1.2 2003/02/25 06:19:50 jrb Exp $
 #ifndef CalibData_CalFinder_h
 #define CalibData_CalFinder_h
 
@@ -45,11 +45,7 @@ namespace CalibData {
     }
 
     unsigned findIx(idents::CalXtalId id, unsigned range, unsigned face=0) 
-      const
-    {
-      return 
-        findIx(id.getTower(), id.getLayer(), id.getColumn(), range, face);
-    }
+      const;
 
     unsigned getSize() const {return m_c3*m_tower;}
 

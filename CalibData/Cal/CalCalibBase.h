@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibBase.h,v 1.2 2003/02/25 06:43:17 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibBase.h,v 1.3 2003/02/26 01:27:07 jrb Exp $
 
 /// @file CalCalibBase
 /// @author J. Bogart
@@ -43,9 +43,10 @@ namespace CalibData {
     // Maybe won't need to be virtual after all
     virtual StatusCode update(CalibBase& other, MsgStream* log);
     
-  private:
+  protected:
     CalFinder* m_finder;
     std::vector<RangeBase* >* m_pR;
+  private:
     static const CLID noCLID;
   };
 

@@ -1,9 +1,23 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibPed.cxx,v 1.1 2003/02/25 06:22:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibPed.cxx,v 1.2 2003/02/25 06:43:43 jrb Exp $
 
 #include "CalibData/Cal/CalCalibPed.h"
+#include "CalibData/Cal/CalFinder.h"
 #include "CalibData/CalibModel.h"
 
 namespace CalibData {
+
+  CalCalibPed::CalCalibPed(unsigned nTowerRow, unsigned nTowerCol, 
+                           unsigned nLayer, unsigned nXtal, 
+                           unsigned nFace, unsigned nRange) :
+    CalCalibBase(nTowerRow, nTowerCol, nLayer, nXtal, nFace, nRange) {
+    unsigned ix = 0;
+    unsigned size = m_finder->getSize();
+
+    for (ix = 0; ix < size; ix++) {
+      (*m_pR)[ix] = new Ped(0.0, 0.0);
+    }
+  }
+
 
   const CLID& CalCalibPed::classID()   {return CLID_Calib_CAL_Ped;}
 

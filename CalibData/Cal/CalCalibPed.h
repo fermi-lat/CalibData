@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibPed.h,v 1.1 2003/02/25 06:19:50 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibPed.h,v 1.2 2003/02/25 06:43:17 jrb Exp $
 #ifndef CalibData_CalCalibPed_h
 #define CalibData_CalCalibPed_h
 
@@ -20,8 +20,7 @@ namespace CalibData {
 
   public:
     CalCalibPed(unsigned nTowerRow=4, unsigned nTowerCol=4, unsigned nLayer=8, 
-                unsigned nXtal=12, unsigned nFace=2, unsigned nRange=4) :
-      CalCalibBase(nTowerRow, nTowerCol, nLayer, nXtal, nFace, nRange) {}
+                unsigned nXtal=12, unsigned nFace=2, unsigned nRange=4);
 
     ~CalCalibPed() {}
 
