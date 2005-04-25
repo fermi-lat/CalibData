@@ -1,4 +1,99 @@
 ------------------------------------------------------------
+TAG
+Tag name: v0r12p1, operation: add
+Package: CalibData
+User: jrb  Mon Apr 25 00:24:48 2005
+Files:
+  CalibData/.cvsignore  1.4
+  CalibData/ChangeLog  1.221
+  CalibData/CalibData/CalibTime.h  1.5
+  CalibData/CalibData/CalibModel.h  1.11
+  CalibData/CalibData/RangeBase.h  1.4
+  CalibData/CalibData/CalibModelSvc.h  1.3
+  CalibData/CalibData/CalibTest1.h  1.6
+  CalibData/CalibData/CalibBase.h  1.11
+  CalibData/CalibData/DacCol.h  1.1
+  CalibData/CalibData/Acd/AcdPed.h  1.1
+  CalibData/CalibData/Acd/AcdGain.h  1.1
+  CalibData/CalibData/Acd/AcdCalibGain.h  1.1
+  CalibData/CalibData/Acd/AcdCalibBase.h  1.1
+  CalibData/CalibData/Acd/AcdCalibPed.h  1.1
+  CalibData/CalibData/Acd/AcdFinder.h  1.1
+  CalibData/CalibData/Cal/CalTholdCI.h  1.1
+  CalibData/CalibData/Cal/CalMevPerDac.h  1.3
+  CalibData/CalibData/Cal/CalCalibPed.h  1.4
+  CalibData/CalibData/Cal/CalCalibLightAsym.h  1.1
+  CalibData/CalibData/Cal/Ped.h  1.4
+  CalibData/CalibData/Cal/LightAsym.h  1.3
+  CalibData/CalibData/Cal/CalTholdMuon.h  1.1
+  CalibData/CalibData/Cal/CalFinder.h  1.10
+  CalibData/CalibData/Cal/MuSlope.h  1.3
+  CalibData/CalibData/Cal/CalCalibMuSlope.h  1.1
+  CalibData/CalibData/Cal/IntNonlin.h  1.2
+  CalibData/CalibData/Cal/Xpos.h  1.2
+  CalibData/CalibData/Cal/CalCalibIntNonlin.h  1.1
+  CalibData/CalibData/Cal/Gain.h  1.4
+  CalibData/CalibData/Cal/LightAtt.h  1.2
+  CalibData/CalibData/Cal/CalAsym.h  1.2
+  CalibData/CalibData/Cal/CalCalibBase.h  1.11
+  CalibData/CalibData/Cal/CalCalibLightAtt.h  1.1
+  CalibData/CalibData/Cal/CalCalibGain.h  1.4
+  CalibData/CalibData/Tkr/TkrSplitsCalib.h  1.2
+  CalibData/CalibData/Tkr/UniBase.h  1.1
+  CalibData/CalibData/Tkr/TkrScale.h  1.2
+  CalibData/CalibData/Tkr/BadStrips.h  1.5
+  CalibData/CalibData/Tkr/TkrTot.h  1.4
+  CalibData/CalibData/Tkr/OldTkrBase.h  1.1
+  CalibData/CalibData/Tkr/OldTkrFinder.h  1.1
+  CalibData/CalibData/Tkr/TkrBase.h  1.4
+  CalibData/CalibData/Tkr/TkrFinder.h  1.3
+  CalibData/cmt/.cvsignore  1.1.1.1
+  CalibData/cmt/requirements  1.42
+  CalibData/doc/release.notes  1.33
+  CalibData/src/DacCol.cxx  1.2
+  CalibData/src/mainpage.h  1.3
+  CalibData/src/CalibModelSvc.cxx  1.3
+  CalibData/src/CalibTime.cxx  1.4
+  CalibData/src/CalibTest1.cxx  1.5
+  CalibData/src/CalibModel.cxx  1.19
+  CalibData/src/CalibBase.cxx  1.10
+  CalibData/src/Acd/AcdPed.cxx  1.1
+  CalibData/src/Acd/AcdCalibPed.cxx  1.1
+  CalibData/src/Acd/AcdCalibBase.cxx  1.1
+  CalibData/src/Acd/AcdGain.cxx  1.1
+  CalibData/src/Acd/AcdFinder.cxx  1.1
+  CalibData/src/Acd/AcdCalibGain.cxx  1.1
+  CalibData/src/Cal/LightAtt.cxx  1.1
+  CalibData/src/Cal/CalFinder.cxx  1.8
+  CalibData/src/Cal/LightAsym.cxx  1.1
+  CalibData/src/Cal/CalCalibPed.cxx  1.4
+  CalibData/src/Cal/IntNonlin.cxx  1.1
+  CalibData/src/Cal/MuSlope.cxx  1.2
+  CalibData/src/Cal/Gain.cxx  1.2
+  CalibData/src/Cal/Ped.cxx  1.2
+  CalibData/src/Cal/CalAsym.cxx  1.2
+  CalibData/src/Cal/CalCalibLightAtt.cxx  1.1
+  CalibData/src/Cal/Xpos.cxx  1.2
+  CalibData/src/Cal/CalTholdMuon.cxx  1.1
+  CalibData/src/Cal/CalCalibBase.cxx  1.9
+  CalibData/src/Cal/CalCalibIntNonlin.cxx  1.1
+  CalibData/src/Cal/CalMevPerDac.cxx  1.2
+  CalibData/src/Cal/CalCalibMuSlope.cxx  1.1
+  CalibData/src/Cal/CalCalibGain.cxx  1.4
+  CalibData/src/Cal/CalTholdCI.cxx  1.1
+  CalibData/src/Cal/CalCalibLightAsym.cxx  1.1
+  CalibData/src/Dll/CalibData_dll.cxx  1.1.1.1
+  CalibData/src/Dll/CalibData_load.cxx  1.1.1.1
+  CalibData/src/Tkr/TkrScale.cxx  1.3
+  CalibData/src/Tkr/OldTkrBase.cxx  1.1
+  CalibData/src/Tkr/TkrSplitsCalib.cxx  1.2
+  CalibData/src/Tkr/TkrTot.cxx  1.3
+  CalibData/src/Tkr/BadStrips.cxx  1.6
+  CalibData/src/Tkr/TkrBase.cxx  1.3
+  CalibData/src/Tkr/OldTkrFinder.cxx  1.1
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Apr 25 00:24:36 PDT 2005
 CalibData/doc
 
