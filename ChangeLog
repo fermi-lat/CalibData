@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Apr 25 00:23:50 PDT 2005
+CalibData/src/Tkr
+
+Modified Files:
+	BadStrips.cxx 
+Log Message:
+Merge bad strips for same uniplane, same badness rather than returning bad
+status and ignoring
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r12, operation: add
 Package: CalibData
