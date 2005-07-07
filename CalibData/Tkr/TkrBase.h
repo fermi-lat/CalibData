@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrBase.h,v 1.3 2004/12/27 00:12:22 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrBase.h,v 1.4 2004/12/29 08:23:40 jrb Exp $
 /// @file TkrBase.h
 /// @author J. Bogart
 
@@ -57,6 +57,11 @@ namespace CalibData {
 
     virtual bool putUni(UniBase* data, unsigned towerRow, 
                         unsigned towerCol, unsigned tray, bool top);
+
+    virtual const std::string* getHwserial(unsigned towerRow, 
+                                           unsigned TowerCol)
+      const;
+
 
     // Get dimensioning information; needed when transforming to 
     // permanent storage...might not need this
