@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Wed Jul  6 18:05:51 PDT 2005
+CalibData/src/Tkr
+
+Modified Files:
+	TkrBase.cxx 
+Log Message:
+Add access function for tower hw serial no.
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Jul  6 18:05:51 PDT 2005
 CalibData/CalibData/Tkr
 
 Modified Files:
