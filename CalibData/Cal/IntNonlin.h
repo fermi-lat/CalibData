@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/IntNonlin.h,v 1.1 2004/05/26 22:35:18 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/IntNonlin.h,v 1.2 2004/06/11 20:30:16 jrb Exp $
 #ifndef CalibData_IntNonlin_h
 #define CalibData_IntNonlin_h
 
@@ -18,16 +18,22 @@ namespace CalibData {
   */
   class IntNonlin : public RangeBase {
   public:
-    IntNonlin(const std::vector<float>* values=0, float err = 0.0);
-    ~IntNonlin() {if (m_values) delete m_values;}
+    IntNonlin(const std::vector<float>* values=0, float err = 0.0,
+              const std::vector<float>* sdacs=0);
+    ~IntNonlin() {
+      if (m_values) delete m_values;
+      if (m_sdacs) delete m_sdacs;
+    }
 
     const std::vector<float>* getValues() const {return m_values;}
+    const std::vector<float>* getSdacs() const {return m_sdacs;}
     float getError() {return m_error;}
 
     virtual void update(RangeBase* other);
 
   private:
     std::vector<float>* m_values;
+    std::vector<float>* m_sdacs;
     float m_error;
 
   };
