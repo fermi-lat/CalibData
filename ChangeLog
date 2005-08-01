@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sun Jul 31 21:19:09 PDT 2005
+CalibData/src/Cal
+
+Modified Files:
+	IntNonlin.cxx 
+Log Message:
+Allow for per-channel "smoothed dacs" in IntNonlin calibrations
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Jul 31 21:19:08 PDT 2005
 CalibData/CalibData/Cal
 
