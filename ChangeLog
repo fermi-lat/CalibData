@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sun Jul 31 21:19:08 PDT 2005
+CalibData/CalibData/Cal
+
+Modified Files:
+	IntNonlin.h 
+Log Message:
+Allow for per-channel "smoothed dacs" in IntNonlin calibrations
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r12p2, operation: add
 Package: CalibData
