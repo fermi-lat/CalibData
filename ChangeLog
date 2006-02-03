@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Feb  3 11:43:14 PST 2006
+CalibData/CalibData/Cal
+
+Modified Files:
+	Gain.h LightAsym.h LightAtt.h MuSlope.h Ped.h 
+Log Message:
+Make get routines const when possible
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Feb  3 11:43:13 PST 2006
 CalibData/CalibData/Acd
 
