@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Feb  3 11:43:13 PST 2006
+CalibData/CalibData/Acd
+
+Modified Files:
+	AcdGain.h AcdPed.h 
+Log Message:
+Make get routines const when possible
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r12p3, operation: add
 Package: CalibData
