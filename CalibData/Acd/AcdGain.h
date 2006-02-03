@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/Gain.h,v 1.3 2003/03/22 01:38:22 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdGain.h,v 1.1 2004/06/11 20:28:46 jrb Exp $
 #ifndef CalibData_AcdGain_h
 #define CalibData_AcdGain_h
 
@@ -11,8 +11,8 @@ namespace CalibData {
     AcdGain(float gain = 0.0, float sig = 0.0) : m_gain(gain), m_sig(sig) {}
     ~AcdGain() {}
 
-    float getGain() {return m_gain;}
-    float getSig() {return m_sig;}
+    float getGain() const {return m_gain;}
+    float getSig() const {return m_sig;}
 
     virtual void update(RangeBase* other);
 

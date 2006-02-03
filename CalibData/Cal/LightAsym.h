@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/LightAsym.h,v 1.2 2004/05/26 22:35:18 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/LightAsym.h,v 1.3 2004/06/11 20:30:16 jrb Exp $
 #ifndef CalibData_LightAsym_h
 #define CalibData_LightAsym_h
 
@@ -18,7 +18,7 @@ namespace CalibData {
     ~LightAsym() {if (m_values) delete m_values;}
 
     const std::vector<float>* getValues() const {return m_values;}
-    float getError() {return m_error;}
+    float getError() const {return m_error;}
 
     virtual void update(RangeBase* other);
 

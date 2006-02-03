@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/LightAtt.h,v 1.1 2004/01/07 23:35:06 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/LightAtt.h,v 1.2 2004/06/11 20:30:16 jrb Exp $
 #ifndef CalibData_LightAtt_h
 #define CalibData_LightAtt_h
 
@@ -10,8 +10,8 @@ namespace CalibData {
   public:
     LightAtt(float att = 0.0, float norm = 0.0) : m_lightAtt(att), m_lightNorm(norm) {}
     ~LightAtt() {}
-    float getAtt() { return m_lightAtt; }
-    float getNorm() { return m_lightNorm; }
+    float getAtt() const { return m_lightAtt; }
+    float getNorm() const { return m_lightNorm; }
 
     virtual void update(RangeBase* other);
 

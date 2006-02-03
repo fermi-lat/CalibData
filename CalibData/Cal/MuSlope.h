@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/MuSlope.h,v 1.2 2003/03/22 01:38:22 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/MuSlope.h,v 1.3 2004/06/11 20:30:16 jrb Exp $
 #ifndef CalibData_MuSlope_h
 #define CalibData_MuSlope_h
 
@@ -12,8 +12,8 @@ namespace CalibData {
     m_error(error) {}
     ~MuSlope() {}
 
-    float getSlope() {return m_muSlope;}
-    float getError() {return m_error;}
+    float getSlope() const {return m_muSlope;}
+    float getError() const {return m_error;}
 
     virtual void update(RangeBase* other);
 
