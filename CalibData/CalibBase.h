@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.10 2004/07/12 18:16:01 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibBase.h,v 1.11 2004/07/25 00:28:23 jrb Exp $
 #ifndef CalibData_CalibBase_h
 #define CalibData_CalibBase_h
 
@@ -55,16 +55,16 @@ namespace CalibData {
     // Implementation of IValidity
     
     /// Check if the data object has a well defined validity range
-    virtual bool isValid();
+    virtual bool isValid() const;
     
     /// Check if the data object is valid at the specified time
-    virtual bool isValid(const ITime& t);
+    virtual bool isValid(const ITime& t) const;
     
     /// Get start of validity
-    virtual const ITime& validSince();
+    virtual const ITime& validSince() const;
     
     /// Get end of validity
-    virtual const ITime& validTill();
+    virtual const ITime& validTill() const;
     
     /// Set validity range
     virtual void setValidity(const ITime& since, const ITime& till);  
