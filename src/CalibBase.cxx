@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.9 2003/01/22 21:17:08 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.10 2006/02/13 22:58:41 usher Exp $
 
 /** @class CalibBase
  *    Implementation of base class for all calibration data objects
@@ -42,7 +42,7 @@ namespace CalibData {
     return StatusCode::SUCCESS;
   }
 
-  bool CalibBase::isValid() {
+  bool CalibBase::isValid() const {
     return ((m_validSince != 0) && (m_validTill != 0)
             && (validSince() <= validTill())   );
   }
@@ -57,16 +57,16 @@ namespace CalibData {
   // In our case, we assume that the underlying class implementing
   // ITime is always CalibTime.
 
-  bool CalibBase::isValid (const ITime& t) {
+  bool CalibBase::isValid (const ITime& t) const {
     if (!isValid()) return false;
     return validSince() <= t &&  t <= validTill();
   };
 
-  const ITime& CalibBase::validSince() {
+  const ITime& CalibBase::validSince() const {
     return *m_validSince;
   }
 
-  const ITime& CalibBase::validTill() {
+  const ITime& CalibBase::validTill() const {
     return *m_validTill;
   }
 
