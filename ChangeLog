@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: jrb  Sat Apr  8 14:40:02 PDT 2006
+CalibData/src/Acd
+
+Modified Files:
+	AcdCalibBase.cxx AcdCalibGain.cxx AcdCalibPed.cxx 
+	AcdFinder.cxx AcdGain.cxx AcdPed.cxx 
+Added Files:
+	AcdCalibCno.cxx AcdCalibVeto.cxx AcdCno.cxx AcdFinder.h 
+	AcdVeto.cxx 
+Log Message:
+1. Move AcdFinder.h to src/Acd; doesn't need to be public
+2. Add/modify a bunch of things to support new calibration types
+   and handle NA channels
+
+    *
+------------------------------------------------------------
 User: jrb  Sat Apr  8 14:40:01 PDT 2006
 CalibData/CalibData/Acd
 
