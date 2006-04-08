@@ -1,26 +1,26 @@
 // $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdCalibPed.cxx,v 1.1 2004/06/11 20:31:43 jrb Exp $
 
-#include "CalibData/Acd/AcdCalibPed.h"
+#include "CalibData/Acd/AcdCalibVeto.h"
 #include "AcdFinder.h"
 #include "CalibData/CalibModel.h"
 
 namespace CalibData {
 
-  AcdCalibPed::AcdCalibPed(unsigned nFace, unsigned nRow, unsigned nCol, 
+  AcdCalibVeto::AcdCalibVeto(unsigned nFace, unsigned nRow, unsigned nCol, 
                            unsigned nNA, unsigned nPmt) :
     AcdCalibBase(nFace, nRow, nCol, nNA, nPmt) {
     unsigned ix = 0;
     unsigned size = m_finder->getSize();
 
-    AcdPed* pPeds = new AcdPed[size];
+    AcdVeto* pVetos = new AcdVeto[size];
     for (ix = 0; ix < size; ix++) {
-      m_pmts[ix] = pPeds; 
-      ++pPeds;
+      m_pmts[ix] = pVetos; 
+      ++pVetos;
     }
 
     // and similarly for NAs
     size = m_finder->getNNA();
-    AcdPed* pNAs = new AcdPed[size];
+    AcdVeto* pNAs = new AcdVeto[size];
     for (ix = 0; ix < size; ix++) {
       m_NAs[ix] = pNAs; 
       ++pNAs;
@@ -28,24 +28,24 @@ namespace CalibData {
 
   }
 
-  AcdCalibPed::~AcdCalibPed() {
-    AcdPed* pPeds = dynamic_cast<AcdPed* >(m_pmts[0]);
-    if (pPeds) delete [] pPeds;
-    pPeds = dynamic_cast<AcdPed* >(m_NAs[0]);
-    if (pPeds) delete [] pPeds;
+  AcdCalibVeto::~AcdCalibVeto() {
+    AcdVeto* pVetos = dynamic_cast<AcdVeto* >(m_pmts[0]);
+    if (pVetos) delete [] pVetos;
+    pVetos = dynamic_cast<AcdVeto* >(m_NAs[0]);
+    if (pVetos) delete [] pVetos;
   }
 
-  const CLID& AcdCalibPed::classID()   {return CLID_Calib_ACD_Ped;}
+  const CLID& AcdCalibVeto::classID()   {return CLID_Calib_ACD_ThreshVeto;}
 
-  bool AcdCalibPed::putPmt(idents::AcdId id, unsigned pmt, RangeBase* data) {
-    if (!dynamic_cast<AcdPed* >(data)) return false;
+  bool AcdCalibVeto::putPmt(idents::AcdId id, unsigned pmt, RangeBase* data) {
+    if (!dynamic_cast<AcdVeto* >(data)) return false;
 
     // Otherwise go ahead and let base class handle it
     return AcdCalibBase::putPmt(id, pmt, data);
   }
-  bool AcdCalibPed::putPmt(unsigned face, unsigned row, unsigned col, 
+  bool AcdCalibVeto::putPmt(unsigned face, unsigned row, unsigned col, 
                               unsigned pmt, RangeBase* data) {
-    if (!dynamic_cast<AcdPed* >(data)) return false;
+    if (!dynamic_cast<AcdVeto* >(data)) return false;
 
     // Otherwise go ahead and let base class handle it
     return AcdCalibBase::putPmt(face, row, col, pmt, data);
