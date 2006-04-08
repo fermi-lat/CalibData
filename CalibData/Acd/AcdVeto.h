@@ -1,25 +1,25 @@
 // $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdGain.h,v 1.2 2006/02/03 19:43:12 jrb Exp $
-#ifndef CalibData_AcdGain_h
-#define CalibData_AcdGain_h
+#ifndef CalibData_AcdVeto_h
+#define CalibData_AcdVeto_h
 
 #include "CalibData/RangeBase.h"
 
 namespace CalibData {
 
-  class AcdGain : public RangeBase {
+  class AcdVeto : public RangeBase {
   public:
-    AcdGain(float peak = 0.0, float width = 0.0, unsigned status=0) :
-      m_peak(peak), m_width(width), m_status(status) {}
-    ~AcdGain() {}
+    AcdVeto(float veto = 0.0, float width = 0.0, unsigned status=0) :
+      m_veto(veto), m_width(width), m_status(status) {}
+    ~AcdVeto() {}
 
-    float getPeak() const {return m_peak;}
+    float getVeto() const {return m_veto;}
 
     float getWidth() const {return m_width;}
     unsigned getStatus() const {return m_status;}
     virtual void update(RangeBase* other);
 
   private:
-    float m_peak;
+    float m_veto;
     float m_width;
     unsigned m_status;
   };
