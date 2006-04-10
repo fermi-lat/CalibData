@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sun Apr  9 22:44:33 PDT 2006
+CalibData/CalibData/Acd
+
+Modified Files:
+	AcdCno.h AcdGain.h AcdPed.h AcdVeto.h 
+Log Message:
+Bug fixes in new Acd support
+
+    *
+------------------------------------------------------------
 User: jrb  Sat Apr  8 14:40:02 PDT 2006
 CalibData/src/Acd
 
