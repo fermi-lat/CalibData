@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdGain.h,v 1.2 2006/02/03 19:43:12 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdGain.h,v 1.3 2006/04/08 21:40:01 jrb Exp $
 #ifndef CalibData_AcdGain_h
 #define CalibData_AcdGain_h
 
@@ -15,13 +15,13 @@ namespace CalibData {
     float getPeak() const {return m_peak;}
 
     float getWidth() const {return m_width;}
-    unsigned getStatus() const {return m_status;}
+    int getStatus() const {return m_status;}
     virtual void update(RangeBase* other);
 
   private:
     float m_peak;
     float m_width;
-    unsigned m_status;
+    int m_status;
   };
 }
 

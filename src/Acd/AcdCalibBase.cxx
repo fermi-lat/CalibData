@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdCalibBase.cxx,v 1.1 2004/06/11 20:31:43 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdCalibBase.cxx,v 1.2 2006/04/08 21:40:01 jrb Exp $
 
 #include "AcdFinder.h"
 #include "CalibData/RangeBase.h" 
@@ -29,7 +29,7 @@ namespace CalibData {
     }
     else {
       unsigned uix = NAindex(ix);
-      if (uix < m_finder->getNNA()) {
+      if (uix < m_finder->getNNASize()) {
         return m_NAs[uix];
       }
     }
@@ -59,7 +59,7 @@ namespace CalibData {
       pDest = m_pmts[uix];
     }  else {
       unsigned uix = NAindex(ix);
-      if (uix >= m_finder->getNNA()) return false;
+      if (uix >= m_finder->getNNASize()) return false;
       pDest = m_NAs[uix];
     }
 
@@ -88,7 +88,7 @@ namespace CalibData {
       dest->update(other1.m_pmts[i]);
     }
 
-    n = m_finder->getNNA();
+    n = m_finder->getNNASize();
     for (unsigned j = 0; j < n; j++) {
       RangeBase* dest = m_NAs[j];
       dest->update(other1.m_NAs[j]);
