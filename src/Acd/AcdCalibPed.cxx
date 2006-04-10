@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdCalibPed.cxx,v 1.1 2004/06/11 20:31:43 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdCalibPed.cxx,v 1.2 2006/04/08 21:40:01 jrb Exp $
 
 #include "CalibData/Acd/AcdCalibPed.h"
 #include "AcdFinder.h"
@@ -19,7 +19,7 @@ namespace CalibData {
     }
 
     // and similarly for NAs
-    size = m_finder->getNNA();
+    size = m_finder->getNNASize();
     AcdPed* pNAs = new AcdPed[size];
     for (ix = 0; ix < size; ix++) {
       m_NAs[ix] = pNAs; 
