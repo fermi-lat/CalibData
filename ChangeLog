@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jrb  Sun Apr  9 22:44:33 PDT 2006
+CalibData/src/Acd
+
+Modified Files:
+	AcdCalibBase.cxx AcdCalibCno.cxx AcdCalibGain.cxx 
+	AcdCalibPed.cxx AcdCalibVeto.cxx AcdFinder.h 
+Log Message:
+Bug fixes in new Acd support
+
+    *
+------------------------------------------------------------
+User: jrb  Sun Apr  9 22:44:33 PDT 2006
 CalibData/CalibData/Acd
 
 Modified Files:
