@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdGain.cxx,v 1.1 2004/06/11 20:31:43 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdVeto.cxx,v 1.1 2006/04/08 21:40:01 jrb Exp $
 #include "CalibData/Acd/AcdVeto.h"
 
 namespace CalibData {

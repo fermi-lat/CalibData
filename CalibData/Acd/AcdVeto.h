@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdVeto.h,v 1.1 2006/04/08 21:40:01 jrb Exp $
+// $Header:$
 #ifndef CalibData_AcdVeto_h
 #define CalibData_AcdVeto_h
 
