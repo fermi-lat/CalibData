@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdFinder.h,v 1.1 2006/04/08 21:40:01 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdFinder.h,v 1.2 2006/04/10 05:44:33 jrb Exp $
 #ifndef CalibData_AcdFinder_h
 #define CalibData_AcdFinder_h
 

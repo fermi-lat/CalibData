@@ -1,45 +1,54 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibGain.cxx,v 1.4 2003/02/27 21:50:12 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdCalibPed.cxx,v 1.3 2006/04/10 05:44:33 jrb Exp $
 
 #include "CalibData/Acd/AcdCalibPed.h"
-#include "CalibData/Acd/AcdFinder.h"
+#include "AcdFinder.h"
 #include "CalibData/CalibModel.h"
 
 namespace CalibData {
 
   AcdCalibPed::AcdCalibPed(unsigned nFace, unsigned nRow, unsigned nCol, 
-                             unsigned nPmt, unsigned nRange) :
-    AcdCalibBase(nFace, nRow, nCol, nPmt, nRange) {
+                           unsigned nNA, unsigned nPmt) :
+    AcdCalibBase(nFace, nRow, nCol, nNA, nPmt) {
     unsigned ix = 0;
     unsigned size = m_finder->getSize();
 
     AcdPed* pPeds = new AcdPed[size];
     for (ix = 0; ix < size; ix++) {
-      m_ranges[ix] = pPeds; 
+      m_pmts[ix] = pPeds; 
       ++pPeds;
     }
+
+    // and similarly for NAs
+    size = m_finder->getNNASize();
+    AcdPed* pNAs = new AcdPed[size];
+    for (ix = 0; ix < size; ix++) {
+      m_NAs[ix] = pNAs; 
+      ++pNAs;
+    }
+
   }
 
   AcdCalibPed::~AcdCalibPed() {
-    AcdPed* pPeds = dynamic_cast<AcdPed* >(m_ranges[0]);
+    AcdPed* pPeds = dynamic_cast<AcdPed* >(m_pmts[0]);
+    if (pPeds) delete [] pPeds;
+    pPeds = dynamic_cast<AcdPed* >(m_NAs[0]);
     if (pPeds) delete [] pPeds;
   }
 
   const CLID& AcdCalibPed::classID()   {return CLID_Calib_ACD_Ped;}
 
-  bool AcdCalibPed::putRange(idents::AcdId id, unsigned pmt, unsigned range, 
-                              RangeBase* data) {
+  bool AcdCalibPed::putPmt(idents::AcdId id, unsigned pmt, RangeBase* data) {
     if (!dynamic_cast<AcdPed* >(data)) return false;
 
     // Otherwise go ahead and let base class handle it
-    return AcdCalibBase::putRange(id, pmt, range, data);
+    return AcdCalibBase::putPmt(id, pmt, data);
   }
-  bool AcdCalibPed::putRange(unsigned face, unsigned row, unsigned col, 
-                              unsigned pmt, unsigned range,
-                              RangeBase* data) {
+  bool AcdCalibPed::putPmt(unsigned face, unsigned row, unsigned col, 
+                              unsigned pmt, RangeBase* data) {
     if (!dynamic_cast<AcdPed* >(data)) return false;
 
     // Otherwise go ahead and let base class handle it
-    return AcdCalibBase::putRange(face, row, col, pmt, range, data);
+    return AcdCalibBase::putPmt(face, row, col, pmt, data);
   }
 
 }

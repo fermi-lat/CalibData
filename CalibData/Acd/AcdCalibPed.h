@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/CalCalibGain.h,v 1.4 2003/02/27 21:49:15 jrb Exp $
+// $Header: $
 #ifndef CalibData_AcdCalibPed_h
 #define CalibData_AcdCalibPed_h
 
@@ -11,26 +11,22 @@ namespace CalibData {
   class AcdCalibPed : public AcdCalibBase {
 
   public:
-    AcdCalibPed(unsigned nFace=5, unsigned nRow=5, unsigned nCol=5, 
-                unsigned nPmt=2, unsigned nRange=2);
+    AcdCalibPed(unsigned nFace=7, unsigned nRow=5, unsigned nCol=5, 
+                unsigned nNA=11, unsigned nPmt=2);
 
     ~AcdCalibPed();
 
     /// Override putRange implementation in order to add consistency
     /// check
-    bool putRange(idents::AcdId id, unsigned pmt,
-                  unsigned range, RangeBase* data);
+    bool putPmt(idents::AcdId id, unsigned pmt, RangeBase* data);
 
-    bool putRange(unsigned face, unsigned row, unsigned col, 
-                  unsigned pmt, unsigned range,
-                  RangeBase* data);
+    bool putPmt(unsigned face, unsigned row, unsigned col, 
+                unsigned pmt, RangeBase* data);
 
     virtual const CLID& clID() const {return classID(); }
 
     static const CLID& classID();
 
-
   };
-
 }
 #endif

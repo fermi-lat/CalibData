@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Cal/Gain.h,v 1.3 2003/03/22 01:38:22 jrb Exp $
+// $Header: $
 #ifndef CalibData_AcdPed_h
 #define CalibData_AcdPed_h
 
@@ -8,18 +8,19 @@ namespace CalibData {
 
   class AcdPed : public RangeBase {
   public:
-    AcdPed(float ped = 0.0, float sig = 0.0) : m_ped(ped), m_sig(sig) {}
+    AcdPed(float mean = 0.0, float width = 0.0, unsigned status=0) :
+      m_mean(mean), m_width(width), m_status(status) {}
     ~AcdPed() {}
 
-    float getPed() {return m_ped;}
-    float getSig() {return m_sig;}
-
+    float getMean() const {return m_mean;}
+    float getWidth() const {return m_width;}
+    int getStatus() const {return m_status;}
     virtual void update(RangeBase* other);
 
   private:
-    float m_ped;
-    float m_sig;
-
+    float m_mean;
+    float m_width;
+    int m_status;
   };
 }
 
