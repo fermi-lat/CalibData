@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: jrb  Thu Apr 13 10:29:30 PDT 2006
+CalibData/src/Acd
+
+Modified Files:
+      Tag: EM-v6r070329p2
+	AcdCalibBase.cxx AcdCalibGain.cxx AcdCalibPed.cxx 
+	AcdFinder.cxx AcdGain.cxx AcdPed.cxx 
+Added Files:
+      Tag: EM-v6r070329p2
+	AcdCalibCno.cxx AcdCalibVeto.cxx AcdCno.cxx AcdFinder.h 
+	AcdVeto.cxx 
+Log Message:
+Merge changes for Acd calibration into branch for EM
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Apr 13 10:29:29 PDT 2006
 CalibData/CalibData/Acd
 
