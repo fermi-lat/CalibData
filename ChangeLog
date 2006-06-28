@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jun 28 16:49:39 PDT 2006
+CalibData/CalibData
+
+Modified Files:
+	CalibModel.h 
+Log Message:
+Add three ancillary data calib. types
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jun 28 13:47:20 PDT 2006
 CalibData/src/Anc
 
