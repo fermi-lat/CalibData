@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCalibBase.h,v 1.1 2004/06/11 20:28:46 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCalibBase.h,v 1.2 2006/04/08 21:40:01 jrb Exp $
 
 /// @file AcdCalibBase
 /// @author J. Bogart
-#ifndef CalibData_CalCalibBase_h
-#define CalibData_CalCalibBase_h
+#ifndef CalibData_AcdCalibBase_h
+#define CalibData_AcdCalibBase_h
 
 #include <vector>
 #include "CalibData/CalibBase.h"
@@ -30,10 +30,7 @@ namespace CalibData {
     virtual ~AcdCalibBase();
 
     /** 
-        Pick out calibration data associated with a particular crystal,
-        face, range.
-        May need to be overridden in case same data should be associated
-        with more than one range (e.g., light asym)
+        Pick out calibration data associated with a particular tile, pmt
      */
     virtual RangeBase* getPmt(idents::AcdId id, unsigned pmt=0);
 
