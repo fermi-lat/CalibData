@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun 29 12:50:30 PDT 2006
+CalibData/src
+
+Modified Files:
+	CalibModel.cxx 
+Log Message:
+Make intermediate strings public to see if this fixes Windows unresolved
+ref. problem
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jun 29 12:50:18 PDT 2006
 CalibData/cmt
 
