@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun 29 12:50:12 PDT 2006
+CalibData/CalibData/Anc
+
+Modified Files:
+	AncQdcPed.h 
+Added Files:
+	AncCalibQdcPed.h AncCalibTaggerGain.h AncCalibTaggerPed.h 
+Log Message:
+For beamtest ancillary data
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jun 29 12:49:47 PDT 2006
 CalibData/CalibData
 
