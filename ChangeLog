@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun 29 12:49:47 PDT 2006
+CalibData/CalibData
+
+Modified Files:
+	CalibModel.h 
+Log Message:
+Make intermediate strings public to see if this fixes Windows unresolved
+ref. problem
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jun 28 16:51:33 PDT 2006
 CalibData/src/Anc
 
