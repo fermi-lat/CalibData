@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun 29 15:37:16 PDT 2006
+CalibData/src
+
+Modified Files:
+	CalibModel.cxx 
+Log Message:
+get rid of extraneous unused declarations
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jun 29 12:50:42 PDT 2006
 CalibData/src/Anc
 
