@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.20 2006/06/28 23:50:26 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.21 2006/06/29 19:50:30 jrb Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -35,14 +35,6 @@
             dynamically without having to do any violence to what
             we've got below.
 */
-
-std::string root;
-std::string tkr;
-std::string cal;
-std::string acd;
-std::string test;
-std::string nas;
-std::string anc;
 
 class CalibModel {
 public:
