@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdFinder.cxx,v 1.2 2006/04/08 21:40:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Anc/AncFinder.cxx,v 1.1 2006/06/28 23:51:33 jrb Exp $
 
 /**
       @file AncFinder.cxx
@@ -21,7 +21,7 @@
 
 namespace CalibData {
   AncFinder::AncFinder(unsigned nMod, unsigned nLay, unsigned nChan) :
-    : m_mod(nMod), m_lay(nLay), m_chan(nChan)
+    m_mod(nMod), m_lay(nLay), m_chan(nChan)
   {
     m_c0 = m_chan;
     m_c1 = m_c0 * m_lay;

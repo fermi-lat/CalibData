@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdFinder.h,v 1.2 2006/04/10 05:44:33 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Anc/AncFinder.h,v 1.1 2006/06/28 23:51:33 jrb Exp $
 #ifndef CalibData_AncFinder_h
 #define CalibData_AncFinder_h
 
@@ -8,7 +8,6 @@
    correct set of Anc calibration constants given module, layer, chan
 
    @author J. Bogart
-
 */
 
 namespace CalibData {
@@ -22,8 +21,7 @@ namespace CalibData {
     /**
        Find index of "regular" 
      */
-    int findIx(unsigned face, unsigned row, unsigned col, 
-                    unsigned pmt) const {
+    int findIx(unsigned mod, unsigned lay, unsigned chan) const {
       return chan + m_c0*lay + m_c1*mod;
     }
 
