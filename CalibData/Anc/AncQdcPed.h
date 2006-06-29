@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdPed.h,v 1.4 2006/04/10 05:44:33 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Anc/AncQdcPed.h,v 1.1 2006/06/28 23:50:10 jrb Exp $
 #ifndef CalibData_AncQdcPed_h
 #define CalibData_AncQdcPed_h
 
@@ -8,7 +8,7 @@ namespace CalibData {
 
   class AncQdcPed : public RangeBase {
   public:
-    AncPed(float val = 0.0, float rms=0.0, unsigned isBad=0) : 
+    AncQdcPed(float val = 0.0, float rms=0.0, unsigned isBad=0) : 
       m_val(val), m_rms(rms), m_isBad(isBad) {}
     ~AncQdcPed() {}
 

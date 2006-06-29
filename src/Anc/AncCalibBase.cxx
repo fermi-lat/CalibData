@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdCalibBase.cxx,v 1.3 2006/04/10 05:44:33 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Anc/AncCalibBase.cxx,v 1.1 2006/06/28 23:51:32 jrb Exp $
 
 #include "AncFinder.h"
 #include "CalibData/RangeBase.h" 
@@ -9,7 +9,8 @@ namespace CalibData {
 
   const CLID AncCalibBase::noCLID = 0;
   const CLID& AncCalibBase::classID() {return noCLID;}
-  AncCalibBase::AncCalibBase(unsigned nMod, nLay, nChan) : m_finder(0) {
+  AncCalibBase::AncCalibBase(unsigned nMod, unsigned nLay, unsigned nChan) 
+    : m_finder(0) {
     cGuts(nMod, nLay, nChan);
   }
 
