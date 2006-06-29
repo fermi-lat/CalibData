@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModel.h,v 1.11 2005/03/29 01:07:48 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModel.h,v 1.12 2006/06/28 23:49:39 jrb Exp $
 
 #ifndef CalibData_CalibModel_h
 #define CalibData_CalibModel_h
@@ -89,6 +89,15 @@ const CLID CLID_Calib_ANC_QdcPed       = 6702;
 #endif
 
     namespace CalibData {
+      // Just for building remainder
+      _EXTERN_ std::string root;
+      _EXTERN_ std::string acd;
+      _EXTERN_ std::string cal;
+      _EXTERN_ std::string tkr;
+      _EXTERN_ std::string test;
+      _EXTERN_ std::string nas;
+      _EXTERN_ std::string anc;
+
       // ACD calib types
       _EXTERN_ std::string   ACD_Eff;
       _EXTERN_ std::string   ACD_ThreshHigh;
