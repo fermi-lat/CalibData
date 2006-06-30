@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 30 12:19:26 PDT 2006
+CalibData/src/Anc
+
+Modified Files:
+	AncQdcPed.cxx 
+Log Message:
+Store 'device' attribute
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 30 12:19:22 PDT 2006
 CalibData/CalibData/Anc
 
