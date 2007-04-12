@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Apr 12 12:40:02 PDT 2007
+CalibData/CalibData
+
+Modified Files:
+	CalibModel.h 
+Log Message:
+Put back previous version (without special macro definitions for Windows)
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Apr 10 19:37:05 PDT 2007
 CalibData/CalibData
 
