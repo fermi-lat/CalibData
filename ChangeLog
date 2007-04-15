@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sun Apr 15 15:15:16 PDT 2007
+CalibData/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Make use_CalibData_symbols pattern sensitive to CMT version
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Apr 12 12:40:02 PDT 2007
 CalibData/CalibData
 
