@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Mon Apr 16 16:26:28 PDT 2007
+CalibData/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Put back old version of use_CalibData_symbols because
+ * new version didn't behave as intended and
+ * don't need CMT version-sensitive behavior after all
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Apr 15 15:15:16 PDT 2007
 CalibData/cmt
 
