@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Apr 18 15:33:52 PDT 2007
+CalibData/src/Tkr
+
+Modified Files:
+	BadStrips.cxx 
+Log Message:
+1) Make the mask array the right size.  
+2) Complain if we're handed a strip id which is too large
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Apr 16 16:26:28 PDT 2007
 CalibData/cmt
 
