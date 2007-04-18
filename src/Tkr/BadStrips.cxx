@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/BadStrips.cxx,v 1.5 2003/03/06 22:30:43 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/BadStrips.cxx,v 1.6 2005/04/25 07:23:50 jrb Exp $
 /** @class BadStrips
  *    Implementation of bad or hot strips TCDS representation
  */
@@ -16,6 +16,11 @@ namespace {
     for (unsigned s = 0; s < sz; s++) {
       unsigned iWd = vec[s] / 32;
       unsigned iBit = vec[s] % 32;
+      if (iWd >= N_MASK) {
+        std::cerr << "Illegal strip id "  << s << std::endl;
+        std::cerr << "Exiting..." << std::endl;
+        exit(1);
+      }
       *(mask + iWd) |= (((unsigned) 1) << iBit);
     }
   }
@@ -25,7 +30,7 @@ namespace {
   void merge(std::vector<unsigned short int>* orig, 
              std::vector<unsigned short int>* more) {
     
-    unsigned mask[N_MASK - 1];
+    unsigned mask[N_MASK];
 
     // Clear
     for (unsigned i = 0; i < N_MASK; i++) {
