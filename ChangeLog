@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun 11 15:39:39 PDT 2007
+CalibData/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Moved one include file from CalibData/Tkr to src/Tkr.  Adjust Windows
+macro used to look up include files accordingly.
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jun 11 15:38:53 PDT 2007
 CalibData/CalibData/Tkr
 
