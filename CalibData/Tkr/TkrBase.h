@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrBase.h,v 1.4 2004/12/29 08:23:40 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrBase.h,v 1.5 2005/07/07 01:05:51 jrb Exp $
 /// @file TkrBase.h
 /// @author J. Bogart
 
@@ -7,7 +7,7 @@
 
 #include <vector>
 #include "CalibData/CalibBase.h"
-#include "CalibData/Tkr/TkrFinder.h"
+// #include "CalibData/Tkr/TkrFinder.h"
 #include "idents/TkrId.h"
 
 #define TKRBASE_MAXROW 4
@@ -18,7 +18,7 @@ class RootTkrBaseCnv;
 
 namespace CalibData {
   class UniBase;
-
+  class TkrFinder;
   /**
      Each derived, completely implemented tkr calibration class should
      register a suitable factory object which will produce the right
