@@ -1,8 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/TkrBase.cxx,v 1.4 2005/07/07 01:05:51 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/TkrBase.cxx,v 1.5 2007/06/11 20:32:28 jrb Exp $
 
 #include "CalibData/Tkr/UniBase.h" 
 #include "CalibData/Tkr/TkrBase.h"
-#include  "CalibData/Tkr/TkrFinder.h"
+#include  "TkrFinder.h"
 #include "GaudiKernel/MsgStream.h"
 
 namespace CalibData {
