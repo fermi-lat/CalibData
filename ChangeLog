@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun 11 15:38:53 PDT 2007
+CalibData/CalibData/Tkr
+
+Removed Files:
+	TkrFinder.h 
+Log Message:
+Add private data member m_nFeChip. It's not currently used for anything,
+but it does justify existence of nFeChip arg. to constructor.
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jun 11 13:32:29 PDT 2007
 CalibData/src/Tkr
 
