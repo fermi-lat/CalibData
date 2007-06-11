@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun 11 15:40:54 PDT 2007
+CalibData/src/Tkr
+
+Modified Files:
+	TkrBase.cxx 
+Added Files:
+	TkrFinder.h 
+Log Message:
+TkrFinder.h is only needed by TkrBase.cxx so move out of public include
+area.
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jun 11 15:39:39 PDT 2007
 CalibData/cmt
 
