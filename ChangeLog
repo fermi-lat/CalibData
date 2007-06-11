@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun 11 13:31:56 PDT 2007
+CalibData/CalibData/Tkr
+
+Modified Files:
+	TkrBase.h 
+Log Message:
+Get rid of include of TkrFinder.h; instead just forward-declare the class
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r15p1, operation: add
 Package: CalibData
