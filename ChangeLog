@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: markusa  Wed Aug  1 09:26:22 PDT 2007
+CalibData/CalibData
+
+Modified Files:
+	CalibModel.h 
+Added Files:
+	CalibSAABoundary.h 
+Log Message:
+Added SAA boundary CalibData object.  
+The current valid SAA boundary can now be accessed via the
+metadata in the Calib database and a XML file containing the
+boundary
+
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r16, operation: add
 Package: CalibData
