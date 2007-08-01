@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: markusa  Wed Aug  1 09:26:22 PDT 2007
+CalibData/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added SAA boundary CalibData object.  
+The current valid SAA boundary can now be accessed via the
+metadata in the Calib database and a XML file containing the
+boundary
+
+
+    *
+------------------------------------------------------------
+User: markusa  Wed Aug  1 09:26:22 PDT 2007
 CalibData/CalibData
 
 Modified Files:
