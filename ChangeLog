@@ -1,5 +1,20 @@
 ------------------------------------------------------------
 User: echarles  Tue Oct  9 11:15:22 PDT 2007
+CalibData/src/Acd
+
+Modified Files:
+	AcdCalibBase.cxx 
+Added Files:
+	AcdCalibImpl.cxx AcdCalibObj.cxx 
+Removed Files:
+      Tag: v0r17
+	AcdCalibCno.cxx AcdCalibGain.cxx AcdCalibPed.cxx 
+	AcdCalibVeto.cxx AcdCno.cxx AcdGain.cxx AcdPed.cxx AcdVeto.cxx 
+Log Message:
+Added AcdHighRange, AcdRange, AcdCoherentNoise calibrations and reorganized acd stuff to avoid code duplication
+    *
+------------------------------------------------------------
+User: echarles  Tue Oct  9 11:15:22 PDT 2007
 CalibData/src
 
 Modified Files:
