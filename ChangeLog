@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Oct  9 11:15:21 PDT 2007
+CalibData/CalibData
+
+Modified Files:
+	CalibModel.h 
+Log Message:
+Added AcdHighRange, AcdRange, AcdCoherentNoise calibrations and reorganized acd stuff to avoid code duplication
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r17, operation: add
 Package: CalibData
