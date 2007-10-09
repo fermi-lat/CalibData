@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Tue Oct  9 11:15:21 PDT 2007
+CalibData/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Added AcdHighRange, AcdRange, AcdCoherentNoise calibrations and reorganized acd stuff to avoid code duplication
+    *
+------------------------------------------------------------
+User: echarles  Tue Oct  9 11:15:21 PDT 2007
 CalibData/cmt
 
 Modified Files:
