@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct 10 00:48:52 PDT 2007
+CalibData/src/Acd
+
+Modified Files:
+	AcdCalibObj.cxx 
+Removed Files:
+	AcdCalibCno.cxx AcdCalibGain.cxx AcdCalibPed.cxx 
+	AcdCalibVeto.cxx AcdCno.cxx AcdGain.cxx AcdPed.cxx AcdVeto.cxx 
+Log Message:
+1. Remove files not used by Eric's implementation
+2. AcdCalibObj.cxx: Need explicit #include <cassert> on Windows
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct 10 00:43:53 PDT 2007
 CalibData/CalibData/Acd
 
