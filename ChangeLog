@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 TAG
+Tag name: v0r17, operation: add
+Package: CalibData
+User: heather  Thu Oct 11 08:11:09 2007
+Files:
+  CalibData/CalibData/Acd/AcdCalibGain.h  1.2
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v0r18p3, operation: add
 Package: CalibData
 User: jrb  Wed Oct 10 15:20:34 2007
