@@ -2,6 +2,22 @@
 TAG
 Tag name: v0r17, operation: add
 Package: CalibData
+User: heather  Thu Oct 11 08:14:14 2007
+Files:
+  CalibData/src/Acd/AcdPed.cxx  1.2
+  CalibData/src/Acd/AcdCalibPed.cxx  1.3
+  CalibData/src/Acd/AcdCno.cxx  1.1
+  CalibData/src/Acd/AcdCalibVeto.cxx  1.2
+  CalibData/src/Acd/AcdGain.cxx  1.2
+  CalibData/src/Acd/AcdVeto.cxx  1.1
+  CalibData/src/Acd/AcdCalibGain.cxx  1.3
+  CalibData/src/Acd/AcdCalibCno.cxx  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r17, operation: add
+Package: CalibData
 User: heather  Thu Oct 11 08:12:12 2007
 Files:
   CalibData/CalibData/Acd/AcdCalibCno.h  1.1
