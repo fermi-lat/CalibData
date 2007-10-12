@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.23 2007/08/01 16:26:22 markusa Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.24 2007/10/09 18:15:22 echarles Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -64,7 +64,7 @@ public:
     CalibData::ACD_Ped = CalibData::acd +"_Ped";
     CalibData::ACD_ElecGain = CalibData::acd +"_ElecGain";
     CalibData::ACD_Range = CalibData::acd +"_Range";
-    CalibData::ACD_HighRange = CalibData::acd +"_Range";
+    CalibData::ACD_HighRange = CalibData::acd +"_HighRange";
     CalibData::ACD_CoherentNoise = CalibData::acd +"_CoherentNoise";
 
     CalibData::TKR_BadChan = CalibData::tkr + "_BadChan";
