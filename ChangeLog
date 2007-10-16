@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: markusa  Tue Oct 16 15:17:06 PDT 2007
+CalibData/src
+
+Modified Files:
+	CalibModel.cxx CalibSAABoundary.cxx 
+Added Files:
+	CalibLATAlignment.cxx 
+Log Message:
+added LAT alignment calibration object
+small bugfixes in saa boundary calibration object
+
+
+    *
+------------------------------------------------------------
+User: markusa  Tue Oct 16 15:17:06 PDT 2007
 CalibData/CalibData
 
 Modified Files:
