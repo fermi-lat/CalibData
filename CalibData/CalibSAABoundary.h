@@ -1,6 +1,6 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTest1.h,v 1.6 2003/02/26 01:26:49 jrb Exp $
-#ifndef CalibData_CalibTest1_h
-#define CalibData_CalibTest1_h
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibSAABoundary.h,v 1.1 2007/08/01 16:26:22 markusa Exp $
+#ifndef CalibData_CalibSAABoundary_h
+#define CalibData_CalibSAABoundary_h
 
 /** @class CalibTest1  
 
@@ -14,7 +14,7 @@
 #include "CalibData/CalibModel.h"
 #include <vector>
 
-// extern const CLID& CLID_Calib_SAABoundary;
+// extern const CLID& CLID_Calib_NAS_SAABoundary;
 
 
 namespace CalibData {

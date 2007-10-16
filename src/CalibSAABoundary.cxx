@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTest1.cxx,v 1.5 2003/02/26 01:27:33 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibSAABoundary.cxx,v 1.1 2007/08/01 16:26:22 markusa Exp $
 
 /** @class CalibTest1
  *    Implementation of near-simplest-possible calibration TCDS class
@@ -28,7 +28,7 @@ namespace CalibData {
   }
 
   CalibSAABoundary::CalibSAABoundary(const CalibSAABoundary& other) : 
-         CalibBase(other), m_lat(other.m_lat), m_lon(other.m_lon) {
+         IValidity(),CalibBase(other), m_lat(other.m_lat), m_lon(other.m_lon) {
   }
 
   bool CalibSAABoundary::getFirstVertex(std::pair<double,double>& vertex){
