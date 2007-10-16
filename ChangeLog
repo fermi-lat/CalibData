@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: markusa  Tue Oct 16 15:17:06 PDT 2007
+CalibData/CalibData
+
+Modified Files:
+	CalibModel.h CalibSAABoundary.h 
+Added Files:
+	CalibLATAlignment.h 
+Log Message:
+added LAT alignment calibration object
+small bugfixes in saa boundary calibration object
+
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r18p4, operation: add
 Package: CalibData
