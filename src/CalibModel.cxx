@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.24 2007/10/09 18:15:22 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.25 2007/10/12 20:01:30 jrb Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -104,6 +104,7 @@ public:
 
     CalibData::NAS_TowerCfg    = CalibData::nas + "_TowerCfg";
     CalibData::NAS_SAABoundary = CalibData::nas + "_SAABoundary";
+    CalibData::NAS_LATAlignment = CalibData::nas + "_LATAlignment";
 
     CalibData::ANC_TaggerPed = CalibData::anc + "_TaggerPed";
     CalibData::ANC_TaggerGain = CalibData::anc + "_TaggerGain";
@@ -177,6 +178,8 @@ public:
                                               CLID_Calib_NAS_TowerCfg));
     CalibData::pairs.push_back(std::make_pair(CalibData::NAS_SAABoundary,
                                               CLID_Calib_NAS_SAABoundary));
+    CalibData::pairs.push_back(std::make_pair(CalibData::NAS_LATAlignment,
+                                              CLID_Calib_NAS_LATAlignment));
 
     CalibData::pairs.push_back(std::make_pair(CalibData::ANC_TaggerPed,
                                               CLID_Calib_ANC_TaggerPed));
