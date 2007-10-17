@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct 17 12:54:54 PDT 2007
+CalibData/src
+
+Removed Files:
+	CalibLATAlignment.cxx CalibSAABoundary.cxx 
+Log Message:
+Move to Nas subdirectory
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct 17 12:54:43 PDT 2007
 CalibData/cmt
 
