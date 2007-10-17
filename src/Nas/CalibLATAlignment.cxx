@@ -1,10 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibLATAlignment.cxx,v 1.1 2007/08/01 16:26:22 markusa Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibLATAlignment.cxx,v 1.1 2007/10/16 22:17:06 markusa Exp $
 
 /** @class CalibLATAlignment
  *    Implementation of a calibration class for the LAT-to-spacecraft alignment
  */
 
-#include "CalibData/CalibLATAlignment.h"
+#include "CalibData/Nas/CalibLATAlignment.h"
 #include "GaudiKernel/MsgStream.h"
 
 namespace CalibData {

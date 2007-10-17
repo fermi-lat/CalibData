@@ -1,10 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibSAABoundary.cxx,v 1.1 2007/08/01 16:26:22 markusa Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibSAABoundary.cxx,v 1.2 2007/10/16 22:17:06 markusa Exp $
 
-/** @class CalibTest1
- *    Implementation of near-simplest-possible calibration TCDS class
+/** @class CalibSAABoundary
+ *    Implementation of a calibration class for SAA boundary descirption
  */
 
-#include "CalibData/CalibSAABoundary.h"
+#include "CalibData/Nas/CalibSAABoundary.h"
 #include "GaudiKernel/MsgStream.h"
 
 namespace CalibData {
