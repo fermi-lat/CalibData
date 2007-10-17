@@ -1,6 +1,6 @@
 package CalibData
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/cmt/requirements,v 1.59 2007/10/10 22:20:03 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/cmt/requirements,v 1.60 2007/10/12 20:01:44 jrb Exp $
 
 version v0r18p4
 
@@ -26,9 +26,9 @@ private
 apply_pattern package_headers
 macro_append CalibData_headers "" WIN32 " \
 ../CalibData/Tkr/*.h ../CalibData/Cal/*.h ../CalibData/Acd/*.h \
-../CalibData/Anc/*.h ../src/Tkr/*.h"
+../CalibData/Anc/*.h ../CalibData/Nas/*.h ../src/Tkr/*.h"
 
 library CalibData *.cxx Cal/*.cxx Tkr/*.cxx Acd/*.cxx \
-                  Anc/*.cxx ${CalibData_headers}
+                  Anc/*.cxx Nas/*.cxx ${CalibData_headers}
 
 
