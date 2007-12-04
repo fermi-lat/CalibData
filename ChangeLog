@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Dec  4 08:47:15 PST 2007
+CalibData/src/Acd
+
+Modified Files:
+	AcdCalibObj.cxx 
+Log Message:
+fix needed to avoid crash on Windows
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r19p1, operation: add
 Package: CalibData
