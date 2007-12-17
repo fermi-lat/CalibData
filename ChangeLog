@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Dec 17 12:35:21 PST 2007
+CalibData/CalibData/Acd
+
+Modified Files:
+	AcdCalibObj.h 
+Log Message:
+Bury problematic statics in AcdCalibObj in local singleton class (thanks, Tracy)
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r19p2, operation: add
 Package: CalibData
