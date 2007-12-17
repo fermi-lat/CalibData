@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/TkrTot.cxx,v 1.2 2004/12/17 18:58:35 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/TkrTot.cxx,v 1.3 2004/12/27 00:12:49 jrb Exp $
 
 /**
   @file TkrTot.cxx
@@ -67,7 +67,7 @@ namespace CalibData {
 
   bool TkrTotUni::putStrip(const TkrTotStrip& strip) {
     int iStrip = strip.getStripId();
-    if ( (iStrip < 0) || (iStrip >= m_nStrips) ) return false;
+    if ( (iStrip < 0) || (iStrip >= (int) m_nStrips) ) return false;
 
     m_strips[iStrip].copy(strip);
     return true;

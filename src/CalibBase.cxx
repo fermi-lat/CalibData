@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.10 2006/02/13 22:58:41 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.11 2006/03/21 01:41:33 usher Exp $
 
 /** @class CalibBase
  *    Implementation of base class for all calibration data objects
@@ -20,7 +20,7 @@ namespace CalibData {
   }
 
   CalibBase::CalibBase(const CalibBase& other) : 
-    DataObject( (DataObject&) other) {
+    IValidity( (IValidity&) other), DataObject( (DataObject&) other)  {
     m_validSince = other.m_validSince;
     m_validTill = other.m_validTill;
     m_serNo     = other.m_serNo;

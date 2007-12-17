@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/TkrScale.cxx,v 1.2 2005/03/31 20:30:35 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/TkrScale.cxx,v 1.3 2005/03/31 20:55:50 jrb Exp $
 
 /**
   @file TkrScale.cxx
@@ -103,7 +103,7 @@ namespace CalibData {
 
   bool TkrScaleUni::putObj(const TkrScaleObj& obj) {
     int id = obj.getId();
-    if ( (id < 0) || (id >= m_nObjs) ) return false;
+    if ( (id < 0) || (id >= (int) m_nObjs) ) return false;
 
     m_objs[id].copy(obj);
     return true;
