@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Dec 17 15:26:35 PST 2007
+CalibData/src
+
+Modified Files:
+	CalibBase.cxx 
+Log Message:
+Clean up Linux compiler warnings
+Add rhel4 binary directories to list to be ignored by cvs
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Dec 17 15:26:34 PST 2007
 CalibData
 
