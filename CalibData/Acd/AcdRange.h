@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdVeto.h,v 1.2 2006/04/10 05:44:33 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdRange.h,v 1.1 2007/10/09 18:15:21 echarles Exp $
 #ifndef CalibData_AcdRange_h
 #define CalibData_AcdRange_h
 
@@ -8,15 +8,31 @@
 
 namespace CalibData {
 
+  /** 
+   * @class AcdRangeFitDesc
+   *
+   * @brief Description of an ACD range crossover calibration.
+   * 
+   * This calibration consists of:
+   *  - low_max  = Highest PHA value read in LOW range
+   *  - high_min = Lowest PHA value read in HIGH range, slightly above HIGH range pedestal
+   *
+   * @author Eric Charles
+   * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.14 2007/12/21 22:54:30 echarles Exp $
+   */
+
   class AcdRangeFitDesc : public AcdCalibDescription {
   public:    
+    /// Get this description
     static const AcdRangeFitDesc& instance() {
       static const AcdRangeFitDesc desc;
       return desc;
     };        
   public:
+    /// Trivial D'ctor
     virtual ~AcdRangeFitDesc(){;};    
   private:    
+    /// This is a singleton
     AcdRangeFitDesc()
       :AcdCalibDescription(AcdCalibData::RANGE,"ACD_Range"){
       addVarName("low_max");
@@ -24,26 +40,45 @@ namespace CalibData {
     }
   };
 
+ /** 
+   * @class AcdRange
+   *
+   * @brief An ACD range crossover calibration for 1 PMT.
+   * 
+   * This calibration consists of:
+   *  - low_max  = Highest PHA value read in LOW range
+   *  - high_min = Lowest PHA value read in HIGH range, slightly above HIGH range pedestal
+   *
+   * @author Eric Charles
+   * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.14 2007/12/21 22:54:30 echarles Exp $
+   */
+
   class AcdRange : public AcdCalibObj {
   public:
+    /// For gaudi
     static const CLID& calibCLID() {
       return CLID_Calib_ACD_Range;
     } 
+    /// Define the type of calibration
     static AcdCalibData::CALTYPE calibType() {
       return AcdCalibData::RANGE;
     }
   public:
+    /// Build from description and a set of values
     AcdRange(const AcdCalibDescription& desc, const std::vector<float>& vals, STATUS status=NOFIT) :
       AcdCalibObj(status,vals,desc){
       assert( desc.calibType() == calibType() );
       setVals(vals,status);
     }
+    /// Build from individaul values
     AcdRange(float lowMax, float highMin, STATUS status) :
       AcdCalibObj(status,AcdRangeFitDesc::instance()){
       setVals(lowMax,highMin,status);
     }
+    /// Trivial d'tor
     virtual ~AcdRange() {}
 
+    // Provide access to the values
     float getLowMax() const { return (*this)[0];}
     float getHighMin() const { return (*this)[1]; }
   };
