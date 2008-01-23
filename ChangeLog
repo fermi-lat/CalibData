@@ -1,15 +1,4 @@
 ------------------------------------------------------------
-User: echarles  Wed Jan 23 15:42:38 PST 2008
-CalibData/CalibData/Acd
-
-Modified Files:
-	AcdCalib.h AcdCalibBase.h AcdCalibEnum.h AcdCalibObj.h 
-	AcdCno.h AcdCoherentNoise.h AcdGain.h AcdHighRange.h AcdPed.h 
-	AcdRange.h AcdVeto.h 
-Log Message:
-update comments for acd review
-    *
-------------------------------------------------------------
 TAG
 Tag name: v0r19p3, operation: add
 Package: CalibData
