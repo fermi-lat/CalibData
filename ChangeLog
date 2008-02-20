@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: echarles  Tue Feb 19 16:07:22 PST 2008
+CalibData/CalibData/Acd
+
+Modified Files:
+	AcdCalib.h AcdCalibEnum.h AcdCalibObj.h 
+Added Files:
+	AcdRibbon.h 
+Log Message:
+added AcdRibbon calibration
+    *
+------------------------------------------------------------
 User: echarles  Tue Feb 19 16:07:20 PST 2008
 CalibData/CalibData
 
