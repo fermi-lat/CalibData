@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdCalibImpl.cxx,v 1.1 2007/10/09 18:15:22 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdCalibImpl.cxx,v 1.2 2007/12/17 23:26:35 jrb Exp $
 
 
 #include "CalibData/Acd/AcdPed.h"
@@ -8,6 +8,7 @@
 #include "CalibData/Acd/AcdRange.h"
 #include "CalibData/Acd/AcdHighRange.h"
 #include "CalibData/Acd/AcdCoherentNoise.h"
+#include "CalibData/Acd/AcdRibbon.h"
 
 namespace CalibData {
 
@@ -36,6 +37,8 @@ namespace CalibData {
     //    const AcdCoherentNoiseFitDesc& coherentNois = 
     //            AcdCoherentNoiseFitDesc::instance();    
     AcdCoherentNoiseFitDesc::instance();    
+    // ribbons
+    AcdRibbonFitDesc::instance();    
     return 0;
   }
     
