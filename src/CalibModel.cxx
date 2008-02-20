@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.25 2007/10/12 20:01:30 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.26 2007/10/16 22:17:06 markusa Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -66,6 +66,7 @@ public:
     CalibData::ACD_Range = CalibData::acd +"_Range";
     CalibData::ACD_HighRange = CalibData::acd +"_HighRange";
     CalibData::ACD_CoherentNoise = CalibData::acd +"_CoherentNoise";
+    CalibData::ACD_Ribbon = CalibData::acd +"_Ribbon";
 
     CalibData::TKR_BadChan = CalibData::tkr + "_BadChan";
     CalibData::TKR_HotChan = CalibData::tkr + "_HotChan";
@@ -170,6 +171,8 @@ public:
                                               CLID_Calib_ACD_HighRange));
     CalibData::pairs.push_back(std::make_pair(CalibData::ACD_CoherentNoise,
                                               CLID_Calib_ACD_CoherentNoise));
+    CalibData::pairs.push_back(std::make_pair(CalibData::ACD_Ribbon,
+                                              CLID_Calib_ACD_Ribbon));
 
     CalibData::pairs.push_back(std::make_pair(CalibData::Test_1,
                                               CLID_Calib_CalibTest1));

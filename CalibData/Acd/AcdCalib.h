@@ -11,7 +11,7 @@
  * this class recasts those objects to the correct type.
  * 
  * @author Eric Charles
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.14 2007/12/21 22:54:30 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCalib.h,v 1.2 2008/01/23 23:42:38 echarles Exp $
  */
 
 
@@ -23,6 +23,7 @@
 #include "CalibData/Acd/AcdRange.h"
 #include "CalibData/Acd/AcdHighRange.h"
 #include "CalibData/Acd/AcdCoherentNoise.h"
+#include "CalibData/Acd/AcdRibbon.h"
 
 namespace CalibData {
 
@@ -83,6 +84,7 @@ namespace CalibData {
   typedef AcdCalib<CalibData::AcdRange> AcdRangeCalib; 
   typedef AcdCalib<CalibData::AcdHighRange> AcdHighRangeCalib;  
   typedef AcdCalib<CalibData::AcdCoherentNoise> AcdCoherentNoiseCalib;
+  typedef AcdCalib<CalibData::AcdRibbon> AcdRibbonCalib;
 
 }
 
