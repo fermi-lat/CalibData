@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Feb 19 16:07:25 PST 2008
+CalibData/src/Acd
+
+Modified Files:
+	AcdCalibImpl.cxx AcdCalibObj.cxx 
+Log Message:
+added AcdRibbon calibration
+    *
+------------------------------------------------------------
 User: echarles  Tue Feb 19 16:07:24 PST 2008
 CalibData/src
 
