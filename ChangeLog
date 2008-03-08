@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar  7 17:34:15 PST 2008
+CalibData/CalibData/Moot
+
+Added Files:
+	MootData.h 
+Log Message:
+Classes describing data retrieved through MootSvc (but not via calib. TDS)
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar  7 17:32:40 PST 2008
 CalibData/src/Moot
 
