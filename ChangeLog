@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Mar 11 18:19:06 PDT 2008
+CalibData/CalibData/Moot
+
+Modified Files:
+	MootData.h 
+Log Message:
+Follow usual protocol for include file re-include protection
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar  7 17:34:15 PST 2008
 CalibData/src/Moot
 
