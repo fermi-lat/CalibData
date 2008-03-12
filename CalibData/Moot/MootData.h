@@ -1,7 +1,7 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/CalibSvc/MootTds.h,v 1.1 2007/10/05 18:43:27 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Moot/MootData.h,v 1.1 2008/03/08 01:34:15 jrb Exp $
 
-#ifndef MootData_h
-#define MootData_h
+#ifndef CalibData_MootData_h
+#define CalibData_MootData_h
 
 #include <string>
 #include "GaudiKernel/ContainedObject.h"
