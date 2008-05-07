@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/RangeBase.h,v 1.3 2004/10/07 00:03:06 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/RangeBase.h,v 1.4 2004/12/10 18:50:50 jrb Exp $
 #ifndef CalibData_RangeBase_h
 #define CalibData_RangeBase_h
 namespace CalibData {
@@ -6,7 +6,7 @@ namespace CalibData {
 
   /** 
         Base class for per crystal-face-range Calorimeter calibration data
-        or for per tile-pmt-range ACD calibration data
+        or for per tile-pmt-range ACD calibration data or ..
    */
   class RangeBase {
 

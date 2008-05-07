@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrSplitsCalib.h,v 1.1 2004/08/09 17:38:18 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrSplitsCalib.h,v 1.2 2004/12/17 18:58:12 jrb Exp $
 #ifndef CalibData_TkrSplitsCalib_h
 #define CalibData_TkrSplitsCalib_h
 
@@ -22,7 +22,7 @@ namespace CalibData {
   public:
     TkrSplit(unsigned short low=0, unsigned short high=0) :
     m_low(low), m_high(high) {};
-    ~TkrSplit() {};
+    virtual ~TkrSplit() {};
     unsigned getLow() const {return m_low;}
     unsigned getHigh() const {return m_high;}
 
