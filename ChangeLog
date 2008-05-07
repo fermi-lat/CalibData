@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed May  7 15:34:34 PDT 2008
+CalibData/CalibData
+
+Modified Files:
+	CalibModel.h RangeBase.h 
+Log Message:
+Tracker alignment calibration support (both inter- and intra-tower)
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibData-00-21-00, operation: add
 Package: CalibData
