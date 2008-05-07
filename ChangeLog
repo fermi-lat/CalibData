@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: jrb  Wed May  7 15:34:34 PDT 2008
+CalibData/CalibData/Tkr
+
+Modified Files:
+	TkrSplitsCalib.h 
+Added Files:
+	TkrTowerAlignCalib.h 
+Log Message:
+Tracker alignment calibration support (both inter- and intra-tower)
+
+    *
+------------------------------------------------------------
+User: jrb  Wed May  7 15:34:34 PDT 2008
 CalibData/CalibData
 
 Modified Files:
