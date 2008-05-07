@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModel.h,v 1.18 2007/10/16 22:17:05 markusa Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModel.h,v 1.19 2008/02/20 00:07:20 echarles Exp $
 
 #ifndef CalibData_CalibModel_h
 #define CalibData_CalibModel_h
@@ -42,6 +42,8 @@ const CLID CLID_Calib_TKR_Splits       = 6106;
 const CLID CLID_Calib_TKR_ChargeScale  = 6107;
 const CLID CLID_Calib_TKR_TrgThresh    = 6108;
 const CLID CLID_Calib_TKR_DataThresh   = 6109;
+const CLID CLID_Calib_TKR_TowerAlign   = 6110;
+const CLID CLID_Calib_TKR_InternalAlign = 6111;
 
 
 const CLID CLID_Calib_CAL_LightAtt   = 6200;
@@ -128,6 +130,10 @@ const CLID CLID_Calib_ANC_QdcPed       = 6702;
       _EXTERN_ std::string   TKR_ChargeScale;
       _EXTERN_ std::string   TKR_TrgThresh;
       _EXTERN_ std::string   TKR_DataThresh;
+
+
+      _EXTERN_ std::string   TKR_TowerAlign;
+      _EXTERN_ std::string   TKR_InternalAlign;
     
 
       _EXTERN_ std::string   CAL_LightAtt;
