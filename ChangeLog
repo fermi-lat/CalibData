@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu May  8 13:53:42 PDT 2008
+CalibData/CalibData/Tkr
+
+Added Files:
+	TkrInternalAlignCalib.h 
+Log Message:
+Forgot to add this file, needed for tkr alignment calibration
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibData-00-22-00, operation: add
 Package: CalibData
