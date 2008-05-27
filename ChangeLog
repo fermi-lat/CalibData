@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Mon May 26 22:29:52 PDT 2008
+CalibData/src/Moot
+
+Modified Files:
+	MootData.cxx 
+Log Message:
+Define data class CalibData::MootFilterCfg for Offline use
+
+    *
+------------------------------------------------------------
+User: jrb  Mon May 26 22:29:52 PDT 2008
 CalibData/CalibData/Moot
 
 Modified Files:
