@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jun 10 15:44:55 PDT 2008
+CalibData/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Let Tracy see the Moot headers
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibData-00-23-00, operation: add
 Package: CalibData
