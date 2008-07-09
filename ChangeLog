@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Wed Jul  9 14:13:41 PDT 2008
+GlastRelease-scons/CalibData
+
+Added Files:
+	CalibDataLib.py SConscript 
+Log Message:
+Added SConscript files to packages
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibData-00-23-01, operation: add
 Package: CalibData
