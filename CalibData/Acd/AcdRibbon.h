@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdRibbon.h,v 1.4 2008/01/23 23:42:38 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdRibbon.h,v 1.1 2008/02/20 00:07:22 echarles Exp $
 #ifndef CalibData_AcdRibbon_h
 #define CalibData_AcdRibbon_h
 
@@ -18,7 +18,7 @@ namespace CalibData {
    *  - width = the width of the turn on curve
    *
    * @author Eric Charles
-   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdRibbon.h,v 1.4 2008/01/23 23:42:38 echarles Exp $
+   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdRibbon.h,v 1.1 2008/02/20 00:07:22 echarles Exp $
    */
 
   class AcdRibbonFitDesc : public AcdCalibDescription {
@@ -41,6 +41,7 @@ namespace CalibData {
       addVarName("Frac_p1");
       addVarName("Frac_p2");
       addVarName("Frac_p3");      
+      addVarName("Norm");
     }
   };
 
@@ -54,7 +55,7 @@ namespace CalibData {
    *  - width = the width of the turn on curve
    *
    * @author Eric Charles
-   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdRibbon.h,v 1.4 2008/01/23 23:42:38 echarles Exp $
+   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdRibbon.h,v 1.1 2008/02/20 00:07:22 echarles Exp $
    */
 
   class AcdRibbon : public AcdCalibObj {
@@ -75,9 +76,9 @@ namespace CalibData {
       setVals(vals,status);
     }
     /// Build from individaul values
-    AcdRibbon(float n3, float n2, float n1, float p1, float p2, float p3, STATUS status) :
+    AcdRibbon(float n3, float n2, float n1, float p1, float p2, float p3, float norm, STATUS status) :
       AcdCalibObj(status,AcdRibbonFitDesc::instance()){    
-      setVals(n3,n2,n1,p1,p2,p3,status);
+      setVals(n3,n2,n1,p1,p2,p3,norm,status);
     }
     /// Trivial d'tor
     virtual ~AcdRibbon() {}
@@ -89,6 +90,7 @@ namespace CalibData {
     float getP1() const { return (*this)[3];}
     float getP2() const { return (*this)[4];}
     float getP3() const { return (*this)[5];}
+    float getNorm() const { return (*this)[6];}
   };
 }
 
