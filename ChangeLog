@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Jul 14 18:40:45 PDT 2008
+CalibData/CalibData/Acd
+
+Modified Files:
+	AcdRibbon.h 
+Log Message:
+tag v0r24 Added Acd calibrations: AcdCarbon, AcdVetoFit, AcdCnoFit, AcdHighPed
+    *
+------------------------------------------------------------
 User: echarles  Mon Jul 14 17:00:27 PDT 2008
 CalibData/src/Acd
 
