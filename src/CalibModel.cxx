@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.27 2008/02/20 00:07:24 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibModel.cxx,v 1.28 2008/05/07 22:34:34 jrb Exp $
 
 #define _CalibData_CalibModel_cxx
 
@@ -67,6 +67,10 @@ public:
     CalibData::ACD_HighRange = CalibData::acd +"_HighRange";
     CalibData::ACD_CoherentNoise = CalibData::acd +"_CoherentNoise";
     CalibData::ACD_Ribbon = CalibData::acd +"_Ribbon";
+    CalibData::ACD_HighPed = CalibData::acd +"_HighPed";
+    CalibData::ACD_Carbon = CalibData::acd +"_Carbon";
+    CalibData::ACD_VetoFit = CalibData::acd +"_VetoFit";
+    CalibData::ACD_CnoFit = CalibData::acd +"_CnoFit";
 
     CalibData::TKR_BadChan = CalibData::tkr + "_BadChan";
     CalibData::TKR_HotChan = CalibData::tkr + "_HotChan";
@@ -182,6 +186,14 @@ public:
                                               CLID_Calib_ACD_CoherentNoise));
     CalibData::pairs.push_back(std::make_pair(CalibData::ACD_Ribbon,
                                               CLID_Calib_ACD_Ribbon));
+    CalibData::pairs.push_back(std::make_pair(CalibData::ACD_HighPed,
+                                              CLID_Calib_ACD_HighPed));
+    CalibData::pairs.push_back(std::make_pair(CalibData::ACD_Carbon,
+                                              CLID_Calib_ACD_Carbon));
+    CalibData::pairs.push_back(std::make_pair(CalibData::ACD_VetoFit,
+                                              CLID_Calib_ACD_VetoFit));
+    CalibData::pairs.push_back(std::make_pair(CalibData::ACD_CnoFit,
+                                              CLID_Calib_ACD_CnoFit));
 
     CalibData::pairs.push_back(std::make_pair(CalibData::Test_1,
                                               CLID_Calib_CalibTest1));

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModel.h,v 1.19 2008/02/20 00:07:20 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibModel.h,v 1.20 2008/05/07 22:34:34 jrb Exp $
 
 #ifndef CalibData_CalibModel_h
 #define CalibData_CalibModel_h
@@ -77,6 +77,11 @@ const CLID CLID_Calib_ACD_HighRange      = 6307;
 const CLID CLID_Calib_ACD_CoherentNoise  = 6308;
 const CLID CLID_Calib_ACD_Ribbon         = 6309;
 
+const CLID CLID_Calib_ACD_HighPed        = 6310;
+const CLID CLID_Calib_ACD_Carbon         = 6311;
+const CLID CLID_Calib_ACD_VetoFit        = 6312;
+const CLID CLID_Calib_ACD_CnoFit         = 6313;
+
 const CLID CLID_Calib_CalibTest1       = 6500;
 
 const CLID CLID_Calib_NAS_TowerCfg     = 6600;
@@ -117,6 +122,10 @@ const CLID CLID_Calib_ANC_QdcPed       = 6702;
       _EXTERN_ std::string   ACD_HighRange;
       _EXTERN_ std::string   ACD_CoherentNoise;
       _EXTERN_ std::string   ACD_Ribbon;
+      _EXTERN_ std::string   ACD_HighPed;
+      _EXTERN_ std::string   ACD_Carbon;
+      _EXTERN_ std::string   ACD_VetoFit;
+      _EXTERN_ std::string   ACD_CnoFit;
 
       // TKR calib types
       _EXTERN_ std::string   TKR_BadChan;
