@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Mon Jul 14 17:00:27 PDT 2008
+CalibData/src/Acd
+
+Modified Files:
+	AcdCalibImpl.cxx AcdCalibObj.cxx 
+Log Message:
+Added AcdCarbon, AcdCnoFit, AcdHighPed, AcdVetoFit calibrations
+    *
+------------------------------------------------------------
+User: echarles  Mon Jul 14 17:00:27 PDT 2008
 CalibData/src
 
 Modified Files:
