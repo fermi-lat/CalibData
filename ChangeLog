@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: echarles  Mon Jul 14 17:00:26 PDT 2008
+CalibData/CalibData/Acd
+
+Modified Files:
+	AcdCalibObj.h AcdCalibEnum.h 
+Added Files:
+	AcdCarbon.h AcdCnoFit.h AcdHighPed.h AcdVetoFit.h 
+Log Message:
+Added AcdCarbon, AcdCnoFit, AcdHighPed, AcdVetoFit calibrations
+    *
+------------------------------------------------------------
 User: glastrm  Wed Jul  9 14:13:41 PDT 2008
 GlastRelease-scons/CalibData
 
