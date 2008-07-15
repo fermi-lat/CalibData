@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v0r24p1, operation: mov
+Package: CalibData
+User: glastrm  Tue Jul 15 12:30:44 2008
+Files:
+  CalibData/SConscript  1.3
+
+    *
+------------------------------------------------------------
 User: glastrm  Tue Jul 15 12:30:14 PDT 2008
 CalibData
 
