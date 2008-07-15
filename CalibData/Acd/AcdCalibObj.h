@@ -26,7 +26,7 @@ namespace CalibData {
    * what name goes with each of those floats.
    *
    * @author Eric Charles
-   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCalibObj.h,v 1.6 2008/02/20 00:07:22 echarles Exp $
+   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCalibObj.h,v 1.7 2008/07/15 00:00:26 echarles Exp $
    */
 
   class AcdCalibDescription {    
@@ -162,7 +162,7 @@ namespace CalibData {
     void setVals(float v1, float v2, float v3, float v4, STATUS stat);
     void setVals(float v1, float v2, float v3, float v4, float v5, STATUS stat);
     void setVals(float v1, float v2, float v3, float v4, float v5, float v6, STATUS stat);
-    void setVals(float v1, float v2, float v3, float v4, float v4, float v5, float v7, STATUS stat);
+    void setVals(float v1, float v2, float v3, float v4, float v5, float v6, float v7, STATUS stat);
     
   protected:
     
