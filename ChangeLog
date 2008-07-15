@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Jul 15 11:32:20 PDT 2008
+CalibData/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tag v0r24p1 : Fix type in AcdCalibObj.h in previous tag
+    *
+------------------------------------------------------------
 User: echarles  Tue Jul 15 11:32:19 PDT 2008
 CalibData/cmt
 
