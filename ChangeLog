@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Wed Jul 23 11:00:54 PDT 2008
+CalibData/src/Nas
+
+Modified Files:
+	CalibLATAlignment.cxx 
+Log Message:
+Minor mods in LAT alignment calib. interface
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Jul 23 11:00:54 PDT 2008
 CalibData/CalibData/Nas
 
 Modified Files:
