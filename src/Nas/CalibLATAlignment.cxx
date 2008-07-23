@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibLATAlignment.cxx,v 1.1 2007/10/16 22:17:06 markusa Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Nas/CalibLATAlignment.cxx,v 1.1 2007/10/17 19:54:58 jrb Exp $
 
 /** @class CalibLATAlignment
  *    Implementation of a calibration class for the LAT-to-spacecraft alignment
@@ -10,14 +10,18 @@
 namespace CalibData {
   
   CalibLATAlignment::CalibLATAlignment(double px, double py, double pz,
-                                        const ITime& since, const ITime& till,int serNo):
-         CalibBase(since, till, serNo), m_roll(px), m_pitch(py), m_yaw(pz) {
+                                       const std::string& units,
+                                       const ITime& since, const ITime& till,int serNo):
+    CalibBase(since, till, serNo), m_units(units) {
+    m_r[0] = px; m_r[1] = py; m_r[2] = pz;
     //    m_me = this;
- 
-  }  
+   }  
 
   CalibLATAlignment::CalibLATAlignment(const CalibLATAlignment& other) : 
-        IValidity(), CalibBase(other), m_roll(other.m_roll), m_pitch(other.m_pitch), m_yaw(other.m_yaw){
+    IValidity(), CalibBase(other), m_units(other.m_units) {
+    m_r[0] =other.m_r[0];
+    m_r[1] =other.m_r[1];
+    m_r[2] =other.m_r[2];
   }
 
   StatusCode CalibLATAlignment::update(CalibBase& other, MsgStream* log) {
@@ -25,9 +29,10 @@ namespace CalibData {
     CalibLATAlignment& other1 = dynamic_cast<CalibLATAlignment& >(other);
 
     CalibBase::update(other1, log);
-    m_roll = other1.m_roll;
-    m_pitch = other1.m_pitch;
-    m_yaw = other1.m_yaw;
+    m_r[0] = other1.m_r[0];
+    m_r[1] = other1.m_r[1];
+    m_r[2] = other1.m_r[2];
+    m_units = other1.m_units;
 
     return StatusCode::SUCCESS;
   }
