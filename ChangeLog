@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jul 23 11:00:54 PDT 2008
+CalibData/CalibData/Nas
+
+Modified Files:
+	CalibLATAlignment.h 
+Log Message:
+Minor mods in LAT alignment calib. interface
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibData-00-24-01, operation: add
 Package: CalibData
