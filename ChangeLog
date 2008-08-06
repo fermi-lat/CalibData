@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: echarles  Wed Aug  6 12:57:40 PDT 2008
+CalibData/CalibData/Acd
+
+Modified Files:
+	AcdCalibEnum.h AcdCalibObj.h AcdCarbon.h AcdCnoFit.h 
+	AcdVetoFit.h 
+Added Files:
+	AcdCheck.h 
+Log Message:
+tag v0r26: Added various tweaks to ancillary (non-gleam) ACD calibration types.
+    *
+------------------------------------------------------------
 User: echarles  Wed Aug  6 12:57:39 PDT 2008
 CalibData/CalibData
 
