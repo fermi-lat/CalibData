@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCnoFit.h,v 1.4 2008/01/23 23:42:38 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCnoFit.h,v 1.1 2008/07/15 00:00:25 echarles Exp $
 #ifndef CalibData_AcdCnoFit_h
 #define CalibData_AcdCnoFit_h
 
@@ -18,7 +18,7 @@ namespace CalibData {
    *  - width = the width of the turn on curve
    *
    * @author Eric Charles
-   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCnoFit.h,v 1.4 2008/01/23 23:42:38 echarles Exp $
+   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCnoFit.h,v 1.1 2008/07/15 00:00:25 echarles Exp $
    */
 
   class AcdCnoFitFitDesc : public AcdCalibDescription {
@@ -35,8 +35,9 @@ namespace CalibData {
     /// This is a singleton
     AcdCnoFitFitDesc()
       :AcdCalibDescription(AcdCalibData::CNO_FIT,"ACD_CnoFit"){
-      addVarName("cno");
-      addVarName("width");
+      addVarName("slope");
+      addVarName("offset");
+      addVarName("carbonPeak");
     }
   };
 
@@ -50,7 +51,7 @@ namespace CalibData {
    *  - width = the width of the turn on curve
    *
    * @author Eric Charles
-   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCnoFit.h,v 1.4 2008/01/23 23:42:38 echarles Exp $
+   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCnoFit.h,v 1.1 2008/07/15 00:00:25 echarles Exp $
    */
 
   class AcdCnoFit : public AcdCalibObj {
@@ -81,6 +82,7 @@ namespace CalibData {
     // Provide access to the values
     float getSlope() const { return (*this)[0];}
     float getOffset() const { return (*this)[1]; }
+    float getCarbonPeak() const { return (*this)[2]; }
   };
 }
 

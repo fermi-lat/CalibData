@@ -26,7 +26,7 @@ namespace CalibData {
    * what name goes with each of those floats.
    *
    * @author Eric Charles
-   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCalibObj.h,v 1.7 2008/07/15 00:00:26 echarles Exp $
+   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCalibObj.h,v 1.8 2008/07/15 18:32:19 echarles Exp $
    */
 
   class AcdCalibDescription {    
@@ -185,6 +185,9 @@ namespace CalibData {
     /// Calibration values
     std::vector<float> m_vals;
   };
+
+  int buildAcdCalibDescriptions();
+
 }
 
 
