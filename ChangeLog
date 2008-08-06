@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed Aug  6 12:57:39 PDT 2008
+CalibData/CalibData
+
+Modified Files:
+	CalibModel.h 
+Log Message:
+tag v0r26: Added various tweaks to ancillary (non-gleam) ACD calibration types.
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibData-00-25-00, operation: add
 Package: CalibData
