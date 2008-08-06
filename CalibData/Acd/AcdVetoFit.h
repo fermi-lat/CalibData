@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdVetoFit.h,v 1.4 2008/01/23 23:42:38 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdVetoFit.h,v 1.1 2008/07/15 00:00:25 echarles Exp $
 #ifndef CalibData_AcdVetoFit_h
 #define CalibData_AcdVetoFit_h
 
@@ -18,7 +18,7 @@ namespace CalibData {
    *  - width = the width of the turn on curve
    *
    * @author Eric Charles
-   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdVetoFit.h,v 1.4 2008/01/23 23:42:38 echarles Exp $
+   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdVetoFit.h,v 1.1 2008/07/15 00:00:25 echarles Exp $
    */
 
   class AcdVetoFitFitDesc : public AcdCalibDescription {
@@ -34,9 +34,10 @@ namespace CalibData {
   private:    
     /// This is a singleton
     AcdVetoFitFitDesc()
-      :AcdCalibDescription(AcdCalibData::VETO,"ACD_VetoFit"){
+      :AcdCalibDescription(AcdCalibData::VETO_FIT,"ACD_VetoFit"){
       addVarName("slope");
       addVarName("offset");
+      addVarName("mipPeak");
     }
   };
 
@@ -50,7 +51,7 @@ namespace CalibData {
    *  - width = the width of the turn on curve
    *
    * @author Eric Charles
-   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdVetoFit.h,v 1.4 2008/01/23 23:42:38 echarles Exp $
+   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdVetoFit.h,v 1.1 2008/07/15 00:00:25 echarles Exp $
    */
 
   class AcdVetoFit : public AcdCalibObj {
@@ -81,6 +82,7 @@ namespace CalibData {
     // Provide access to the values
     float getSlope() const { return (*this)[0];}
     float getOffset() const { return (*this)[1]; }
+    float getMipPeak() const { return (*this)[2]; }
   };
 }
 

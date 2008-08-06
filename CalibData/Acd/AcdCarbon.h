@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdGain.h,v 1.6 2008/01/23 23:42:38 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCarbon.h,v 1.1 2008/07/15 00:00:25 echarles Exp $
 #ifndef CalibData_AcdCarbon_h
 #define CalibData_AcdCarbon_h
 
@@ -18,7 +18,7 @@ namespace CalibData {
    *  - width = the width of the MIP peak in PHA counts
    *
    * @author Eric Charles
-   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCarbon.h,v 1.6 2008/01/23 23:42:38 echarles Exp $
+   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCarbon.h,v 1.1 2008/07/15 00:00:25 echarles Exp $
    */
 
   class AcdCarbonFitDesc : public AcdCalibDescription {
@@ -34,7 +34,7 @@ namespace CalibData {
   private:    
     /// This is a singleton
     AcdCarbonFitDesc()
-      :AcdCalibDescription(AcdCalibData::GAIN,"ACD_Carbon"){
+      :AcdCalibDescription(AcdCalibData::CARBON,"ACD_Carbon"){
       addVarName("peak");
       addVarName("width");
     }
@@ -50,7 +50,7 @@ namespace CalibData {
    *  - width = the width of the MIP peak in PHA counts
    *
    * @author Eric Charles
-   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCarbon.h,v 1.6 2008/01/23 23:42:38 echarles Exp $
+   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCarbon.h,v 1.1 2008/07/15 00:00:25 echarles Exp $
    */
 
   class AcdCarbon : public AcdCalibObj {    
