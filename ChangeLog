@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Wed Aug  6 12:57:40 PDT 2008
+CalibData/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tag v0r26: Added various tweaks to ancillary (non-gleam) ACD calibration types.
+    *
+------------------------------------------------------------
+User: echarles  Wed Aug  6 12:57:40 PDT 2008
 CalibData/cmt
 
 Modified Files:
