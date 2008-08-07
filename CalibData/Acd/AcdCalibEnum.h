@@ -5,7 +5,7 @@
  * @brief Data for ACD calibrations
  *
  * @author Eric Charles
- * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCalibEnum.h,v 1.4 2008/07/15 00:00:26 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCalibEnum.h,v 1.5 2008/08/06 19:57:39 echarles Exp $
  **/
 
 namespace AcdCalibData {
@@ -28,7 +28,8 @@ namespace AcdCalibData {
 	       UNPAIRED=13,       // Looking for channels w/ only 1 PMT
 	       HITMAP=14,         // Checking hitmap timing and latching
 	       MERITCALIB=15,     // Checking to make sure that all the calibs are ok
-	       NDESC=16};  
+	       PE=16,             // Number of photon electrons/ MIP
+	       NDESC=17};  
  
 };
 

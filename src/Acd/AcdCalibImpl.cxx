@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdCalibImpl.cxx,v 1.4 2008/07/15 00:00:27 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Acd/AcdCalibImpl.cxx,v 1.5 2008/08/06 19:57:40 echarles Exp $
 
 #include "CalibData/Acd/AcdCalibObj.h"
 #include "CalibData/Acd/AcdPed.h"
@@ -14,6 +14,7 @@
 #include "CalibData/Acd/AcdVetoFit.h"
 #include "CalibData/Acd/AcdCnoFit.h"
 #include "CalibData/Acd/AcdCheck.h"
+#include "CalibData/Acd/AcdPE.h"
 
 namespace CalibData {
 
@@ -51,6 +52,8 @@ namespace CalibData {
     AcdCnoFitFitDesc::instance();
     // Calibration checking
     AcdCheckDesc::instance();
+    // Photon electrons/mip
+    AcdPEFitDesc::instance();
 
     return 0;
   }
