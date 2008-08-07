@@ -26,7 +26,7 @@ namespace CalibData {
    * what name goes with each of those floats.
    *
    * @author Eric Charles
-   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCalibObj.h,v 1.8 2008/07/15 18:32:19 echarles Exp $
+   * $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Acd/AcdCalibObj.h,v 1.9 2008/08/06 19:57:40 echarles Exp $
    */
 
   class AcdCalibDescription {    
@@ -157,6 +157,7 @@ namespace CalibData {
     void setVals(const std::vector<float>& vals, STATUS status);
 
     // fill from individaul values
+    void setVals(float v1, STATUS stat);
     void setVals(float v1, float v2, STATUS stat);
     void setVals(float v1, float v2, float v3, STATUS stat);
     void setVals(float v1, float v2, float v3, float v4, STATUS stat);
