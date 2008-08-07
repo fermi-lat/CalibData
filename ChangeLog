@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Thu Aug  7 12:51:04 PDT 2008
+CalibData/src/Acd
+
+Modified Files:
+	AcdCalibImpl.cxx AcdCalibObj.cxx 
+Log Message:
+Added AcdPE calibration type
+    *
+------------------------------------------------------------
+User: echarles  Thu Aug  7 12:51:04 PDT 2008
 CalibData/src
 
 Modified Files:
