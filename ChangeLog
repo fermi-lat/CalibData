@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Sep  5 13:24:33 PDT 2008
+CalibData/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag v0r26p1: Added typedef for AcdPE calibration
+    *
+------------------------------------------------------------
 User: echarles  Fri Sep  5 13:24:32 PDT 2008
 CalibData/CalibData/Acd
 
