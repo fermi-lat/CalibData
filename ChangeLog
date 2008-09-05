@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Sep  5 13:24:32 PDT 2008
+CalibData/CalibData/Acd
+
+Modified Files:
+	AcdCalib.h 
+Log Message:
+tag v0r26p1: Added typedef for AcdPE calibration
+    *
+------------------------------------------------------------
 User: echarles  Thu Aug  7 12:51:04 PDT 2008
 CalibData/src/Acd
 
