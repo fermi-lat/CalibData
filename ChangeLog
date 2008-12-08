@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Mon Dec  8 13:39:44 PST 2008
+GlastRelease-scons/CalibData
+
+Modified Files:
+	SConscript 
+Log Message:
+Check in SConscript for CalibData v0r26p1 (for branch-tag, GlastReleasev15r49) 
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibData-00-26-01, operation: add
 Package: CalibData
