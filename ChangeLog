@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug  6 18:30:27 PDT 2009
+GlastRelease-scons/CalibData
+
+Modified Files:
+	.cvsignore CalibDataLib.py SConscript 
+Log Message:
+Use registerTargets; add libraries appropriately
+.cvsignore:  add SCons build products
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibData-00-26-01, operation: mov
 Package: CalibData
