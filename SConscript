@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/SConscript,v 1.6 2008/09/05 20:30:29 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/SConscript,v 1.8 2009/01/23 00:07:23 ecephas Exp $
 # Authors: Joanne Bogart <jrb@slac.stanford.edu>
 # Version: CalibData-00-26-01
 Import('baseEnv')
@@ -8,11 +8,16 @@ Import('packages')
 libEnv = baseEnv.Clone()
 
 libEnv.Tool('CalibDataLib', depsOnly = 1)
-CalibDataLib  = libEnv.SharedLibrary('CalibData', listFiles(['src/*.cxx', 'src/Cal/*.cxx', 'src/Tkr/*.cxx',
-                                                             'src/Acd/*.cxx', 'src/Moot/*.cxx', 'src/Anc/*.cxx',
-                                                             'src/Nas/*.cxx']))
+CalibDataLib = libEnv.SharedLibrary('CalibData',
+                                    listFiles(['src/*.cxx', 'src/Cal/*.cxx',
+                                               'src/Tkr/*.cxx','src/Acd/*.cxx',
+                                               'src/Moot/*.cxx',
+                                               'src/Anc/*.cxx',
+                                               'src/Nas/*.cxx']))
 
-baseEnv.Tool('registerObjects', package = 'CalibData', libraries = [CalibDataLib], includes = listFiles(['CalibData/*'], recursive = True))
+libEnv.Tool('registerTargets', package = 'CalibData',
+            libraryCxts = [[CalibDataLib, libEnv]],
+            includes = listFiles(['CalibData/*'], recursive = True))
 
 
 
