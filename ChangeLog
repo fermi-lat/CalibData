@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Sep 11 12:20:48 PDT 2009
+GlastRelease-scons/CalibData/src
+
+Modified Files:
+	CalibTest1.cxx 
+Log Message:
+Fix code causing compiler warnings
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Sep 11 12:20:47 PDT 2009
 GlastRelease-scons/CalibData/CalibData
 
