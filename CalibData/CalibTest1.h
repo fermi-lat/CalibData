@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTest1.h,v 1.5 2003/01/22 21:16:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/CalibData/CalibTest1.h,v 1.6 2003/02/26 01:26:49 jrb Exp $
 #ifndef CalibData_CalibTest1_h
 #define CalibData_CalibTest1_h
 
@@ -12,7 +12,6 @@
 
 #include "CalibData/CalibBase.h"
 #include "CalibData/CalibModel.h"
-// extern const CLID& CLID_Calib_CalibTest1;
 
 
 namespace CalibData {
@@ -20,8 +19,6 @@ namespace CalibData {
   public:
     CalibTest1(const std::string& name, int value, 
                const ITime& since, const ITime& till, int serNo = -1);
-
-    CalibTest1(const CalibTest1& other);
 
     virtual ~CalibTest1() {}
 

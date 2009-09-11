@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTest1.cxx,v 1.4 2003/01/22 21:17:08 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/src/CalibTest1.cxx,v 1.5 2003/02/26 01:27:33 jrb Exp $
 
 /** @class CalibTest1
  *    Implementation of near-simplest-possible calibration TCDS class
@@ -28,11 +28,6 @@ namespace CalibData {
     return StatusCode::SUCCESS;
   }
 
-  CalibTest1::CalibTest1(const CalibTest1& other) : CalibBase(other),
-                                                    m_name(other.m_name), 
-                                                    m_value(other.m_value) {
-  }
-    
   std::string CalibTest1::getValueName() const {
     return m_name;
   }

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Moot/MootData.cxx,v 1.1 2008/03/08 01:34:15 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/src/Moot/MootData.cxx,v 1.2 2008/05/27 05:29:52 jrb Exp $
 
 /** @file MootData.cxx
     @author J. Bogart
@@ -50,6 +50,7 @@ namespace CalibData {
                                const std::string& instanceIdStr) :
     m_keyStr(keyStr), m_name(name), m_pkg(pkg), m_pkgVersion(pkgVersion),
     m_fmxPath(fmxPath), m_srcPath(srcPath), m_fswIdStr(fswIdStr), 
+    m_status(status),
     m_schemaIdStr(schemaIdStr), m_schemaVersionIdStr(schemaVersionIdStr), 
     m_instanceIdStr(instanceIdStr) {
     
