@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Nov 10 15:11:24 PST 2009
+GlastRelease-scons/CalibData
+
+Modified Files:
+	CalibDataLib.py 
+Log Message:
+Add gaudiLibs, clhepLibs
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibData-00-26-02, operation: add
 Package: CalibData
