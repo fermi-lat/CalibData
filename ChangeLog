@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun 10 17:34:02 PDT 2010
+GlastRelease-scons/CalibData
+
+Modified Files:
+	SConscript 
+Log Message:
+updates for SCons build
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibData-00-26-03, operation: add
 Package: CalibData
