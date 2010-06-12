@@ -1,8 +1,8 @@
 package CalibData
 
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/cmt/requirements,v 1.79 2009/09/14 22:13:06 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/cmt/requirements,v 1.80 2009/11/12 01:07:00 jrb Exp $
 
-version v0r26p3
+version v0r26p4
 
 author Joanne Bogart <jrb@slac.stanford.edu>
 
