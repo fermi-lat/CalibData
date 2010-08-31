@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTime.cxx,v 1.3 2003/01/09 23:56:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTime.cxx,v 1.4 2004/08/02 23:27:20 jrb Exp $
 #include "CalibData/CalibTime.h"
 
 namespace {
@@ -15,62 +15,71 @@ namespace CalibData {
   CalibTime::CalibTime(double julianDate) : facilities::Timestamp(julianDate)
   {}
 
-  // This doesn't make any sense unless the input argument already "is"
-  // of type CalibTime
-  CalibTime::CalibTime(const ITime& time) {
-    longlong absTime = time.absoluteTime();
-    m_time = absTime / billion;
-    m_nano = absTime - (m_time * billion);
+  CalibTime::CalibTime(const Gaudi::Time &time) :
+  // true values indicate local time
+  facilities::Timestamp(time.year(true),time.month(true),time.day(true),time.hour(true),time.minute(true),time.second(true),time.nsecond()) 
+  {}
+
+  const Gaudi::Time CalibTime::getGaudiTime() const {
+      return Gaudi::Time(getClibTime(),getNano());
   }
 
-  ITime&  CalibTime::operator+=( const ITime& ) {
+  // This doesn't make any sense unless the input argument already "is"
+  // of type CalibTime
+  //CalibTime::CalibTime(const ITime& time) {
+  //  longlong absTime = time.absoluteTime();
+  //  m_time = absTime / billion;
+  //  m_nano = absTime - (m_time * billion);
+ // }
+
+  //ITime&  CalibTime::operator+=( const ITime& ) {
     /*   *this =  this->facilities::Timestamp::operator+=(CalibTime(other));
          return *this;
     */
-    throw facilities::BadTimeInput
-      ("CalibData::CalibTime Unsupported timestamp operation +=");
-  }
+ //   throw facilities::BadTimeInput
+ //     ("CalibData::CalibTime Unsupported timestamp operation +=");
+  //}
 
-  ITime&  CalibTime::operator-=( const ITime& ) {
+  //ITime&  CalibTime::operator-=( const ITime& ) {
     /*   *this =  this->facilities::Timestamp::operator-=(CalibTime(other));
          return *this;
     */
-    throw facilities::BadTimeInput
-      ("CalibData::CalibTime Unsupported timestamp operation -=");
-  }
+  //  throw facilities::BadTimeInput
+  //    ("CalibData::CalibTime Unsupported timestamp operation -=");
+ // }
 
 
-  ITime::AbsoluteTime CalibTime::absoluteTime() const {
-    ITime::AbsoluteTime abs = m_time;
-    abs *= billion;
-    abs += m_nano;
-    return abs;
-  }
+ // ITime::AbsoluteTime CalibTime::absoluteTime() const {
+ //   ITime::AbsoluteTime abs = m_time;
+ //   abs *= billion;
+ //   abs += m_nano;
+ //   return abs;
+ // }
 
-  ITime::DimensionedTime CalibTime::seconds() const {
-    ITime::DimensionedTime dim = m_nano / 1000000000.0;
-    dim += m_time;
-    return dim;
-  }
+  //ITime::DimensionedTime CalibTime::seconds() const {
+  //  ITime::DimensionedTime dim = m_nano / 1000000000.0;
+  //  dim += m_time;
+  //  return dim;
+  //}
 
-  bool CalibTime::operator==(const ITime& other) const {
-    facilities::Timestamp me = *this;
-    CalibTime otherCalib(other);
-    return (me == otherCalib);
-  }
+  //bool CalibTime::operator==(const ITime& other) const {
+  //  facilities::Timestamp me = *this;
+  //  CalibTime otherCalib(other);
+  //  return (me == otherCalib);
+ // }
 
-  bool CalibTime::operator!=(const ITime& other) const {
-    facilities::Timestamp me = *this;
-    CalibTime otherCalib(other);
-    return (me != otherCalib);
-  }
+ // bool CalibTime::operator!=(const ITime& other) const {
+ //   facilities::Timestamp me = *this;
+ //   CalibTime otherCalib(other);
+  //  return (me != otherCalib);
+ // }
 
-  bool CalibTime::operator<=(const ITime& other) const {
-    facilities::Timestamp me = *this;
-    CalibTime otherCalib(other);
-    return (me <= otherCalib);
-  }
-
+//  bool CalibTime::operator<=(const ITime& other) const {
+//    facilities::Timestamp me = *this;
+ //   CalibTime otherCalib(other);
+//    return (me <= otherCalib);
+//  }
+/*
   bool CalibTime::operator>=(const ITime& other) const {
     facilities::Timestamp me = *this;
     CalibTime otherCalib(other);
@@ -88,8 +97,9 @@ namespace CalibData {
     CalibTime otherCalib(other);
     return (me > otherCalib);
   }
-
+*/
   std::ostream& CalibTime::printOut(std::ostream& o) const {
     return o << getString();
   }
 }
+

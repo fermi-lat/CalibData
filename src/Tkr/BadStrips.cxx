@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/BadStrips.cxx,v 1.6 2005/04/25 07:23:50 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Tkr/BadStrips.cxx,v 1.7 2007/04/18 22:33:52 jrb Exp $
 /** @class BadStrips
  *    Implementation of bad or hot strips TCDS representation
  */
@@ -109,7 +109,7 @@ namespace CalibData {
     delete m_badStrips;
   }
 
-  BadStrips::BadStrips(eBadType bType, const ITime& since, const ITime& till, 
+  BadStrips::BadStrips(eBadType bType, const Gaudi::Time& since, const Gaudi::Time& till, 
                        int serNo) :
     CalibBase(since, till, serNo), m_type(bType), m_towers(0)
   {
