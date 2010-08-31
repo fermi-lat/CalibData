@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Mon Aug 30 19:03:43 PDT 2010
+CalibData/CalibData/Tkr
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	BadStrips.h 
+Log Message:
+migrate to Gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Aug 30 19:03:43 PDT 2010
 CalibData/CalibData/Nas
 
 Modified Files:
