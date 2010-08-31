@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibSAABoundary.h,v 1.2 2007/10/16 22:17:05 markusa Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Nas/CalibSAABoundary.h,v 1.1 2007/10/17 19:54:25 jrb Exp $
 #ifndef CalibData_CalibSAABoundary_h
 #define CalibData_CalibSAABoundary_h
 
@@ -21,7 +21,7 @@ namespace CalibData {
   class CalibSAABoundary : public CalibBase {
   public:
     CalibSAABoundary(std::vector<double>& lat, std::vector<double>& lon,
-                     const ITime& since, const ITime& till,int serNo);
+                     const Gaudi::Time& since, const Gaudi::Time& till,int serNo);
 
     CalibSAABoundary(const CalibSAABoundary& other);
 
