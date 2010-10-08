@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTime.h,v 1.4 2003/01/09 23:56:36 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTime.h,v 1.5.656.1 2010/08/31 02:03:43 heather Exp $
 
 #ifndef CalibData_CalibTime_h
 #define CalibData_CalibTime_h
@@ -12,10 +12,10 @@
     and (seconds, nanoseconds) since Jan. 1 1970.
 */
 #include "facilities/Timestamp.h"
-#include "GaudiKernel/ITime.h" 
+#include "GaudiKernel/Time.h" 
 
 namespace CalibData {
-  class CalibTime : public ITime,
+  class CalibTime : //public ITime,
                     public facilities::Timestamp
 {
 
@@ -26,34 +26,40 @@ namespace CalibData {
 
     // Need this one so that calibration objects can use CalibTime
     // objects internally to satisfy IValidity
-    CalibTime(const ITime& time);
+    CalibTime(const Gaudi::Time& time);
+
+    const Gaudi::Time getGaudiTime() const;
     
     /// absoluteTime, seconds, etc. are needed to satisfy ITime interface
-    ITime::AbsoluteTime absoluteTime() const;
-    ITime::DimensionedTime seconds() const;
-    ITime::DimensionedTime minutes() const {return seconds()/60.0;}
-    ITime::DimensionedTime hours() const {return seconds()/3600.0;}
-    ITime::DimensionedTime days() const {return seconds()/86400.0;}
+    //ITime::AbsoluteTime absoluteTime() const;
+    //ITime::DimensionedTime seconds() const;
+    //ITime::DimensionedTime minutes() const {return seconds()/60.0;}
+    //ITime::DimensionedTime hours() const {return seconds()/3600.0;}
+    //ITime::DimensionedTime days() const {return seconds()/86400.0;}
+    longlong seconds() const { return getGaudiTime().second(true); }
+    int minutes() const { return getGaudiTime().minute(true); }
+    int hours() const { return getGaudiTime().hour(true); }
+    int days() const { return getGaudiTime().day(true); }
 
     /// Reimplement operations for ITime interface using 
     /// facilities::Timestamp implementation
-    bool              operator==(const ITime& other) const;
+    //bool              operator==(const ITime& other) const;
 
-    bool              operator!=( const ITime& other) const;
+   // bool              operator!=( const ITime& other) const;
 
-    bool              operator<=( const ITime& other) const;
+    //bool              operator<=( const ITime& other) const;
 
-    bool              operator>=( const ITime& other) const;
+    //bool              operator>=( const ITime& other) const;
 
-    bool              operator< ( const ITime& other) const;
+    //bool              operator< ( const ITime& other) const;
 
-    bool              operator> ( const ITime& other) const;
+    //bool              operator> ( const ITime& other) const;
   
     // adding   -- doesn't make sense for timestamps
-    ITime&            operator+=(const ITime& other);
+    //ITime&            operator+=(const ITime& other);
   
     // substraction  -- doesn't make sense for timestamps
-    ITime&            operator-=(const ITime& other);
+    //ITime&            operator-=(const ITime& other);
       
     std::ostream& printOut(std::ostream&) const;
   };

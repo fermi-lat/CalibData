@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibSAABoundary.cxx,v 1.2 2007/10/16 22:17:06 markusa Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Nas/CalibSAABoundary.cxx,v 1.1.472.1 2010/08/31 02:03:44 heather Exp $
 
 /** @class CalibSAABoundary
  *    Implementation of a calibration class for SAA boundary descirption
@@ -9,7 +9,7 @@
 
 namespace CalibData {
     CalibSAABoundary:: CalibSAABoundary(std::vector<double>& lat, std::vector<double>& lon,
-                                        const ITime& since, const ITime& till,int serNo):
+                                        const Gaudi::Time& since, const Gaudi::Time& till,int serNo):
          CalibBase(since, till, serNo), m_lat(lat), m_lon(lon)
        {
     //    m_me = this;
