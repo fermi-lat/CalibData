@@ -1,14 +1,14 @@
 package CalibData
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/cmt/requirements,v 1.81 2010/06/12 17:21:18 jrb Exp $
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/cmt/requirements,v 1.80 2009/11/12 01:07:00 jrb Exp $
-
-version v0r26p4
+version v0r26p4gr01
 
 author Joanne Bogart <jrb@slac.stanford.edu>
 
 use facilities v2r*
 use idents     v2r*
 use GaudiInterface * IExternal
+use CLHEP * IExternal
 
 apply_pattern shared_library
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Nas/CalibLATAlignment.h,v 1.1 2007/10/17 19:54:25 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Nas/CalibLATAlignment.h,v 1.2.234.1 2010/08/31 02:03:43 heather Exp $
 #ifndef CalibData_LATAlignment_h
 #define CalibData_LATAlignment_h
 
@@ -23,7 +23,7 @@ namespace CalibData {
   public:
     CalibLATAlignment(double rx, double ry, double rz, 
                       const std::string& units,
-                      const ITime& since, const ITime& till,int serNo);
+                      const Gaudi::Time& since, const Gaudi::Time& till,int serNo);
 
     CalibLATAlignment(const CalibLATAlignment& other);
 
