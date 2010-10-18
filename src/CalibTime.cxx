@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTime.cxx,v 1.4.656.1 2010/08/31 02:03:44 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibTime.cxx,v 1.4.658.1 2010/10/08 16:18:52 heather Exp $
 #include "CalibData/CalibTime.h"
 
 namespace {
@@ -16,12 +16,13 @@ namespace CalibData {
   {}
 
   CalibTime::CalibTime(const Gaudi::Time &time) :
-  // true values indicate local time
+  // false indicate utc time
   facilities::Timestamp(time.year(true),time.month(true),time.day(true),time.hour(true),time.minute(true),time.second(true),time.nsecond()) 
   {}
 
-  const Gaudi::Time CalibTime::getGaudiTime() const {
-      return Gaudi::Time(getClibTime(),getNano());
+  const Gaudi::Time& CalibTime::getGaudiTime() const {
+      static Gaudi::Time gt(this->getClibTime(), this->getNano());
+      return(gt);
   }
 
   // This doesn't make any sense unless the input argument already "is"

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.12.454.1 2010/08/31 02:03:44 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/CalibBase.cxx,v 1.12.456.1 2010/10/08 16:18:52 heather Exp $
 
 /** @class CalibBase
  *    Implementation of base class for all calibration data objects
@@ -63,13 +63,11 @@ namespace CalibData {
   };
 
   const Gaudi::Time& CalibBase::validSince() const {
-      static Gaudi::Time gaudiTime = m_validSince->getGaudiTime();
-    return gaudiTime;
+      return (m_validSince->getGaudiTime());
   }
 
   const Gaudi::Time& CalibBase::validTill() const {
-      static Gaudi::Time gaudiTime = m_validTill->getGaudiTime();
-      return gaudiTime;
+      return (m_validTill->getGaudiTime());
   }
 
   void CalibBase::setValidity(const Gaudi::Time& since, const Gaudi::Time& till) {
