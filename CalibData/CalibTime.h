@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTime.h,v 1.5.656.1 2010/08/31 02:03:43 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTime.h,v 1.5.658.1 2010/10/08 16:18:51 heather Exp $
 
 #ifndef CalibData_CalibTime_h
 #define CalibData_CalibTime_h
@@ -28,7 +28,7 @@ namespace CalibData {
     // objects internally to satisfy IValidity
     CalibTime(const Gaudi::Time& time);
 
-    const Gaudi::Time getGaudiTime() const;
+    const Gaudi::Time& getGaudiTime() const;
     
     /// absoluteTime, seconds, etc. are needed to satisfy ITime interface
     //ITime::AbsoluteTime absoluteTime() const;
@@ -36,10 +36,10 @@ namespace CalibData {
     //ITime::DimensionedTime minutes() const {return seconds()/60.0;}
     //ITime::DimensionedTime hours() const {return seconds()/3600.0;}
     //ITime::DimensionedTime days() const {return seconds()/86400.0;}
-    longlong seconds() const { return getGaudiTime().second(true); }
-    int minutes() const { return getGaudiTime().minute(true); }
-    int hours() const { return getGaudiTime().hour(true); }
-    int days() const { return getGaudiTime().day(true); }
+    longlong seconds() const { return getGaudiTime().second(false); }
+    int minutes() const { return getGaudiTime().minute(false); }
+    int hours() const { return getGaudiTime().hour(false); }
+    int days() const { return getGaudiTime().day(false); }
 
     /// Reimplement operations for ITime interface using 
     /// facilities::Timestamp implementation
