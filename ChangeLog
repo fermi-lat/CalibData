@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Oct 21 12:17:51 PDT 2010
+GlastRelease-scons/CalibData/CalibData
+
+Modified Files:
+      Tag: GlastReleasev18r7p1
+	CalibTime.h 
+Log Message:
+keep Gaudi::Time rep. as private member; handle months correctly
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibData-00-26-04-gr02, operation: add
 Package: CalibData
