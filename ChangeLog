@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-19-03-07, operation: add
+Package: CalibData
+User: heather  Wed Sep  7 10:44:36 2011
+Files:
+  CalibData/.cvsignore  1.6
+  CalibData/ChangeLog  1.502
+  CalibData/SConscript  1.14
+  CalibData/CalibDataLib.py  1.3
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-19-03-07, operation: del
 Package: CalibData
 User: glastrm  Tue Sep  6 14:14:04 2011
