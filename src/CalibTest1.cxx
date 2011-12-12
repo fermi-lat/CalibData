@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/src/CalibTest1.cxx,v 1.5 2003/02/26 01:27:33 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/src/CalibTest1.cxx,v 1.6.22.1 2010/10/08 16:18:52 heather Exp $
 
 /** @class CalibTest1
  *    Implementation of near-simplest-possible calibration TCDS class
@@ -9,7 +9,7 @@
 
 namespace CalibData {
   CalibTest1::CalibTest1(const std::string& name, int value, 
-                         const ITime& since, const ITime& till, 
+                         const Gaudi::Time& since, const Gaudi::Time& till, 
                          int serNo) :
     CalibBase(since, till, serNo), m_name(name), m_value(value)
   {
