@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/CalibData/CalibBase.h,v 1.12.654.1 2010/10/08 16:18:51 heather Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/CalibData/CalibBase.h,v 1.13 2011/12/12 20:39:18 heather Exp $
 #ifndef CalibData_CalibBase_h
 #define CalibData_CalibBase_h
 
@@ -24,14 +24,17 @@
 
 class MsgStream;
 
+class XmlBaseCnv;
+class RootBaseCnv;
+
 namespace CalibData {
   class CalibTime;
 
   class CalibBase : public DataObject,
                     virtual public IValidity {
 
-    friend class XmlBaseCnv;
-    friend class RootBaseCnv;
+    friend class ::XmlBaseCnv;
+    friend class ::RootBaseCnv;
     
   public:
     CalibBase();
