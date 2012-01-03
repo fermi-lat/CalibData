@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/CalibData/Tkr/BadStrips.h,v 1.5.658.1 2010/10/08 16:18:52 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/CalibData/Tkr/BadStrips.h,v 1.6 2011/12/12 20:39:18 heather Exp $
 #ifndef CalibData_BadStrips_h
 #define CalibData_BadStrips_h
 
@@ -77,7 +77,7 @@ namespace CalibData {
 */
   class BadStrips :  public CalibBase {
     /// Allow converter access to private build, set stuff
-    friend class XmlBadStripsCnv;  
+    friend class ::XmlBadStripsCnv;  
     
   public:
     enum eBadType {
