@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan  3 15:18:43 PST 2012
+GlastRelease-scons/CalibData/CalibData
+
+Modified Files:
+	CalibBase.h 
+Log Message:
+patches for compilation with gcc41
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr17, operation: add
 Package: CalibData
