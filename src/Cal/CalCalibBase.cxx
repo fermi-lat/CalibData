@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Cal/CalCalibBase.cxx,v 1.8 2004/09/20 23:11:02 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/src/Cal/CalCalibBase.cxx,v 1.9 2004/10/07 19:46:40 jrb Exp $
 
 #include "CalibData/Cal/CalFinder.h"
 #include "CalibData/RangeBase.h" 
@@ -137,6 +137,7 @@ namespace CalibData {
 
     //    m_pR = new vector<RangeBase*>(n, 0);
     m_ranges.reserve(n);
+    if (m_ranges.size() < n) m_ranges.resize(n);
 
   }
 
