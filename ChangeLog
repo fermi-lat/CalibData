@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan 25 10:36:55 PST 2012
+GlastRelease-scons/CalibData/src/Cal
+
+Modified Files:
+	CalCalibBase.cxx 
+Log Message:
+patch ancient harmless bug, turned up by vc90 compiler
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-br01, operation: add
 Package: CalibData
