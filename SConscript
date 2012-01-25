@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/SConscript,v 1.15 2011/12/12 20:39:17 heather Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibData/SConscript,v 1.16 2012/01/03 23:40:55 jrb Exp $
 # Authors: Joanne Bogart <jrb@slac.stanford.edu>
-# Version: CalibData-00-27-01
+# Version: CalibData-00-27-02
 
 Import('baseEnv')
 Import('listFiles')
