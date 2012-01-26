@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Thu Jan 26 11:43:04 PST 2012
+CalibData/CalibData
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	CalibBase.h CalibTest1.h CalibTime.h 
+Log Message:
+gaudi v21r7 and gcc41 patches
+    *
+------------------------------------------------------------
+User: heather  Thu Jan 26 11:43:04 PST 2012
 CalibData
 
 Modified Files:
