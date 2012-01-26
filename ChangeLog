@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: heather  Thu Jan 26 11:43:05 PST 2012
+CalibData/CalibData/Tkr
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	BadStrips.h TkrBase.h TkrInternalAlignCalib.h TkrScale.h 
+	TkrSplitsCalib.h TkrTot.h TkrTowerAlignCalib.h 
+Log Message:
+gaudi v21r7 and gcc41 patches
+    *
+------------------------------------------------------------
+User: heather  Thu Jan 26 11:43:05 PST 2012
 CalibData/CalibData/Nas
 
 Modified Files:
