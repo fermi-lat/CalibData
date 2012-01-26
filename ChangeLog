@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Jan 26 11:43:05 PST 2012
+CalibData/CalibData/Moot
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	MootData.h 
+Log Message:
+gaudi v21r7 and gcc41 patches
+    *
+------------------------------------------------------------
 User: heather  Thu Jan 26 11:43:04 PST 2012
 CalibData/CalibData
 
