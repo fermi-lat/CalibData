@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Thu Jan 26 11:43:06 PST 2012
+CalibData/src/Tkr
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	BadStrips.cxx 
+Log Message:
+gaudi v21r7 and gcc41 patches
+    *
+------------------------------------------------------------
+User: heather  Thu Jan 26 11:43:06 PST 2012
 CalibData/src/Nas
 
 Modified Files:
