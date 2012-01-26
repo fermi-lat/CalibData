@@ -1,4 +1,4 @@
-// $Header: $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrTowerAlignCalib.h,v 1.2 2012/01/03 23:18:44 jrb Exp $
 #ifndef CalibData_TkrTowerAlignCalib_h
 #define CalibData_TkrTowerAlignCalib_h
 
@@ -29,7 +29,7 @@ namespace CalibData {
   };
 
   class TkrTowerAlignCalib : public CalibBase {
-    friend class XmlTkrTowerAlignCnv;         // to be written
+    friend class ::XmlTkrTowerAlignCnv;         // to be written
 
   public:
     TkrTowerAlignCalib(unsigned maxTowerId=0) {

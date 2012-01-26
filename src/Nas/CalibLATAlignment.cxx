@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Nas/CalibLATAlignment.cxx,v 1.1 2007/10/17 19:54:58 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/src/Nas/CalibLATAlignment.cxx,v 1.3 2011/12/12 20:39:20 heather Exp $
 
 /** @class CalibLATAlignment
  *    Implementation of a calibration class for the LAT-to-spacecraft alignment
@@ -11,7 +11,7 @@ namespace CalibData {
   
   CalibLATAlignment::CalibLATAlignment(double px, double py, double pz,
                                        const std::string& units,
-                                       const ITime& since, const ITime& till,int serNo):
+                                       const Gaudi::Time& since, const Gaudi::Time& till,int serNo):
     CalibBase(since, till, serNo), m_units(units) {
     m_r[0] = px; m_r[1] = py; m_r[2] = pz;
     //    m_me = this;

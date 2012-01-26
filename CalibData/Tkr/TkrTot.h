@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrTot.h,v 1.3 2004/12/27 00:12:22 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrTot.h,v 1.5 2012/01/03 23:18:44 jrb Exp $
 #ifndef CalibData_TkrTot_h
 #define CalibData_TkrTot_h
 
@@ -15,6 +15,8 @@
 
        @author  J. Bogart
 */
+
+class RootTkrTotCnv;
 
 namespace CalibData {
 
@@ -104,7 +106,7 @@ namespace CalibData {
      TDS class for complete (charge-injection) calibration
   */
   class TkrTotCol : public TkrBase {
-    friend class RootTkrTotCnv;
+    friend class ::RootTkrTotCnv;
 
   public:
     TkrTotCol(unsigned nTowerRow=4, unsigned nTowerCol=4, unsigned nTray=19);

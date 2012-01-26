@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrBase.h,v 1.5 2005/07/07 01:05:51 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrBase.h,v 1.7 2012/01/03 23:18:44 jrb Exp $
 /// @file TkrBase.h
 /// @author J. Bogart
 
@@ -37,7 +37,7 @@ namespace CalibData {
      per-strip or per-gtfe structure
   */
   class TkrBase : public CalibBase {
-    friend class RootTkrBaseCnv;
+    friend class ::RootTkrBaseCnv;
 
   public:
     /**
@@ -97,7 +97,7 @@ namespace CalibData {
        for per-uniplane data, derived from UniBase.
     */
     class TkrTower {
-    friend class RootTkrBaseCnv;
+      friend class ::RootTkrBaseCnv;
     public:
       unsigned m_iRow;
       unsigned m_iCol;

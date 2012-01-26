@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/CalibData/CalibTest1.h,v 1.6 2003/02/26 01:26:49 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/CalibTest1.h,v 1.8 2011/12/12 20:39:18 heather Exp $
 #ifndef CalibData_CalibTest1_h
 #define CalibData_CalibTest1_h
 
@@ -18,7 +18,7 @@ namespace CalibData {
   class CalibTest1 : public CalibBase {
   public:
     CalibTest1(const std::string& name, int value, 
-               const ITime& since, const ITime& till, int serNo = -1);
+               const Gaudi::Time& since, const Gaudi::Time& till, int serNo = -1);
 
     virtual ~CalibTest1() {}
 
