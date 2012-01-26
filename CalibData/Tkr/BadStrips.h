@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/BadStrips.h,v 1.4 2003/01/30 22:33:16 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/BadStrips.h,v 1.7 2012/01/03 23:18:44 jrb Exp $
 #ifndef CalibData_BadStrips_h
 #define CalibData_BadStrips_h
 
@@ -77,7 +77,7 @@ namespace CalibData {
 */
   class BadStrips :  public CalibBase {
     /// Allow converter access to private build, set stuff
-    friend class XmlBadStripsCnv;  
+    friend class ::XmlBadStripsCnv;  
     
   public:
     enum eBadType {
@@ -95,7 +95,7 @@ namespace CalibData {
 
     /// Make a contentless (except for CalibBase stuff and hot/dead
     /// discriminator) class.
-    BadStrips(eBadType bType, const ITime& since, const ITime& til, 
+    BadStrips(eBadType bType, const Gaudi::Time& since, const Gaudi::Time& til, 
               int serNo = -1);
     virtual ~BadStrips();
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrSplitsCalib.h,v 1.2 2004/12/17 18:58:12 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrSplitsCalib.h,v 1.4 2012/01/03 23:18:44 jrb Exp $
 #ifndef CalibData_TkrSplitsCalib_h
 #define CalibData_TkrSplitsCalib_h
 
@@ -15,6 +15,8 @@
 
        @author  J. Bogart
 */
+
+class XmlTkrSplitsCnv;
 
 namespace CalibData {
 
@@ -35,7 +37,7 @@ namespace CalibData {
   };
 
   class TkrSplitsCalib : public OldTkrBase {
-    friend class XmlTkrSplitsCnv;
+    friend class ::XmlTkrSplitsCnv;
 
   public:
     TkrSplitsCalib(unsigned nTowerRow, unsigned nTowerCol, 

@@ -1,4 +1,4 @@
-// $Header: $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibData/CalibData/Tkr/TkrInternalAlignCalib.h,v 1.2 2012/01/03 23:18:44 jrb Exp $
 #ifndef CalibData_TkrInternalAlignCalib_h
 #define CalibData_TkrInternalAlignCalib_h
 
@@ -34,7 +34,7 @@ namespace CalibData {
   };
 
   class TkrInternalAlignCalib : public CalibBase {
-    friend class XmlTkrInternalAlignCnv;         // to be written
+    friend class ::XmlTkrInternalAlignCnv;         // to be written
 
   public:
     TkrInternalAlignCalib()    {    };
