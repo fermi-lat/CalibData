@@ -1,4 +1,137 @@
 ------------------------------------------------------------
+TAG
+Tag name: GlastRelease-20-04-02, operation: add
+Package: CalibData
+User: heather  Fri Aug 17 12:25:40 2012
+Files:
+  CalibData/.cvsignore  1.6
+  CalibData/ChangeLog  1.559
+  CalibData/SConscript  1.17
+  CalibData/CalibDataLib.py  1.3
+  CalibData/CalibData/CalibTime.h  1.6
+  CalibData/CalibData/CalibModel.h  1.23
+  CalibData/CalibData/RangeBase.h  1.5
+  CalibData/CalibData/CalibModelSvc.h  1.3
+  CalibData/CalibData/CalibTest1.h  1.8
+  CalibData/CalibData/CalibBase.h  1.14
+  CalibData/CalibData/DacCol.h  1.1
+  CalibData/CalibData/Acd/AcdVetoFit.h  1.2
+  CalibData/CalibData/Acd/AcdRange.h  1.2
+  CalibData/CalibData/Acd/AcdCarbon.h  1.2
+  CalibData/CalibData/Acd/AcdVeto.h  1.4
+  CalibData/CalibData/Acd/AcdRibbon.h  1.2
+  CalibData/CalibData/Acd/AcdPE.h  1.1
+  CalibData/CalibData/Acd/AcdCalib.h  1.4
+  CalibData/CalibData/Acd/AcdCnoFit.h  1.2
+  CalibData/CalibData/Acd/AcdCalibBase.h  1.5
+  CalibData/CalibData/Acd/AcdCalibEnum.h  1.6
+  CalibData/CalibData/Acd/AcdCno.h  1.4
+  CalibData/CalibData/Acd/AcdPed.h  1.6
+  CalibData/CalibData/Acd/AcdCheck.h  1.1
+  CalibData/CalibData/Acd/AcdCalibObj.h  1.10
+  CalibData/CalibData/Acd/AcdHighRange.h  1.2
+  CalibData/CalibData/Acd/AcdHighPed.h  1.1
+  CalibData/CalibData/Acd/AcdGain.h  1.6
+  CalibData/CalibData/Acd/AcdCoherentNoise.h  1.2
+  CalibData/CalibData/Anc/AncCalibTaggerPed.h  1.1
+  CalibData/CalibData/Anc/AncCalibQdcPed.h  1.1
+  CalibData/CalibData/Anc/AncTaggerGain.h  1.1
+  CalibData/CalibData/Anc/AncCalibBase.h  1.1
+  CalibData/CalibData/Anc/AncQdcPed.h  1.3
+  CalibData/CalibData/Anc/AncCalibTaggerGain.h  1.1
+  CalibData/CalibData/Anc/AncTaggerPed.h  1.1
+  CalibData/CalibData/Cal/CalMevPerDac.h  1.3
+  CalibData/CalibData/Cal/Ped.h  1.5
+  CalibData/CalibData/Cal/LightAsym.h  1.4
+  CalibData/CalibData/Cal/CalTholdMuon.h  1.1
+  CalibData/CalibData/Cal/MuSlope.h  1.4
+  CalibData/CalibData/Cal/IntNonlin.h  1.3
+  CalibData/CalibData/Cal/Xpos.h  1.2
+  CalibData/CalibData/Cal/Gain.h  1.5
+  CalibData/CalibData/Cal/LightAtt.h  1.3
+  CalibData/CalibData/Cal/CalAsym.h  1.2
+  CalibData/CalibData/Cal/CalCalibLightAtt.h  1.1
+  CalibData/CalibData/Cal/CalCalibLightAsym.h  1.1
+  CalibData/CalibData/Cal/CalCalibPed.h  1.4
+  CalibData/CalibData/Cal/CalTholdCI.h  1.1
+  CalibData/CalibData/Cal/CalFinder.h  1.10
+  CalibData/CalibData/Cal/CalCalibMuSlope.h  1.1
+  CalibData/CalibData/Cal/CalCalibIntNonlin.h  1.1
+  CalibData/CalibData/Cal/CalCalibBase.h  1.11
+  CalibData/CalibData/Cal/CalCalibGain.h  1.4
+  CalibData/CalibData/Moot/MootData.h  1.4
+  CalibData/CalibData/Nas/CalibSAABoundary.h  1.2
+  CalibData/CalibData/Nas/CalibLATAlignment.h  1.3
+  CalibData/CalibData/Tkr/TkrSplitsCalib.h  1.4
+  CalibData/CalibData/Tkr/UniBase.h  1.1
+  CalibData/CalibData/Tkr/TkrScale.h  1.3
+  CalibData/CalibData/Tkr/BadStrips.h  1.7
+  CalibData/CalibData/Tkr/TkrTot.h  1.5
+  CalibData/CalibData/Tkr/OldTkrBase.h  1.1
+  CalibData/CalibData/Tkr/OldTkrFinder.h  1.1
+  CalibData/CalibData/Tkr/TkrTowerAlignCalib.h  1.2
+  CalibData/CalibData/Tkr/TkrBase.h  1.7
+  CalibData/CalibData/Tkr/TkrInternalAlignCalib.h  1.2
+  CalibData/cmt/.cvsignore  1.1.1.1
+  CalibData/cmt/requirements  1.85
+  CalibData/doc/release.notes  1.69
+  CalibData/src/DacCol.cxx  1.2
+  CalibData/src/mainpage.h  1.3
+  CalibData/src/CalibModelSvc.cxx  1.3
+  CalibData/src/CalibTime.cxx  1.5
+  CalibData/src/CalibTest1.cxx  1.7
+  CalibData/src/CalibModel.cxx  1.30
+  CalibData/src/CalibBase.cxx  1.13
+  CalibData/src/Acd/AcdCalibObj.cxx  1.10
+  CalibData/src/Acd/AcdCalibBase.cxx  1.4
+  CalibData/src/Acd/AcdFinder.cxx  1.2
+  CalibData/src/Acd/AcdCalibImpl.cxx  1.6
+  CalibData/src/Acd/AcdFinder.h  1.2
+  CalibData/src/Anc/AncCalibTaggerPed.cxx  1.1
+  CalibData/src/Anc/AncTaggerGain.cxx  1.1
+  CalibData/src/Anc/AncTaggerPed.cxx  1.1
+  CalibData/src/Anc/AncCalibQdcPed.cxx  1.1
+  CalibData/src/Anc/AncCalibBase.cxx  1.2
+  CalibData/src/Anc/AncFinder.cxx  1.2
+  CalibData/src/Anc/AncFinder.h  1.2
+  CalibData/src/Anc/AncQdcPed.cxx  1.2
+  CalibData/src/Anc/AncCalibTaggerGain.cxx  1.1
+  CalibData/src/Cal/LightAtt.cxx  1.1
+  CalibData/src/Cal/CalFinder.cxx  1.8
+  CalibData/src/Cal/LightAsym.cxx  1.1
+  CalibData/src/Cal/CalCalibPed.cxx  1.4
+  CalibData/src/Cal/IntNonlin.cxx  1.2
+  CalibData/src/Cal/MuSlope.cxx  1.2
+  CalibData/src/Cal/Gain.cxx  1.2
+  CalibData/src/Cal/Ped.cxx  1.2
+  CalibData/src/Cal/CalAsym.cxx  1.2
+  CalibData/src/Cal/CalCalibLightAtt.cxx  1.1
+  CalibData/src/Cal/Xpos.cxx  1.2
+  CalibData/src/Cal/CalTholdMuon.cxx  1.1
+  CalibData/src/Cal/CalCalibBase.cxx  1.10
+  CalibData/src/Cal/CalCalibIntNonlin.cxx  1.1
+  CalibData/src/Cal/CalMevPerDac.cxx  1.2
+  CalibData/src/Cal/CalCalibMuSlope.cxx  1.1
+  CalibData/src/Cal/CalCalibGain.cxx  1.4
+  CalibData/src/Cal/CalTholdCI.cxx  1.1
+  CalibData/src/Cal/CalCalibLightAsym.cxx  1.1
+  CalibData/src/Dll/CalibData_dll.cxx  1.1.1.1
+  CalibData/src/Dll/CalibData_load.cxx  1.1.1.1
+  CalibData/src/Moot/MootData.cxx  1.3
+  CalibData/src/Nas/CalibSAABoundary.cxx  1.2
+  CalibData/src/Nas/CalibLATAlignment.cxx  1.3
+  CalibData/src/Tkr/TkrSplitsCalib.cxx  1.2
+  CalibData/src/Tkr/TkrTot.cxx  1.4
+  CalibData/src/Tkr/BadStrips.cxx  1.8
+  CalibData/src/Tkr/TkrBase.cxx  1.6
+  CalibData/src/Tkr/OldTkrBase.cxx  1.1
+  CalibData/src/Tkr/TkrScale.cxx  1.4
+  CalibData/src/Tkr/TkrFinder.h  1.1
+  CalibData/src/Tkr/OldTkrFinder.cxx  1.1
+  CalibData/src/Tkr/TkrAlign.cxx  1.1
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Aug 17 11:46:08 PDT 2012
 GlastRelease-scons/CalibData
 
