@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/src/CalibTime.cxx,v 1.4.658.3 2010/10/21 19:17:51 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibData/src/CalibTime.cxx,v 1.5 2011/12/12 20:39:19 heather Exp $
 #include "CalibData/CalibTime.h"
 
 namespace {
@@ -17,7 +17,9 @@ namespace CalibData {
   }
 
   CalibTime::CalibTime(double julianDate) : facilities::Timestamp(julianDate)
-  {}
+  {
+    m_gtime = Gaudi::Time(this->getClibTime(), this->getNano());
+  }
 
   // Note Gaudi::Time months have range [0, 11]; 
   // facilities::Timestamp uses [1,12]
